@@ -1,20 +1,23 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { revalidatePath } from 'next/cache';
-import { fetchAllFeeds } from '@/lib/rssFetcher';
-import { downloadAndProcessImage } from '@/lib/imageHandler';
+import { parseEnsonhaberRSS, ParsedNews } from '@/lib/rssParser';
+import { downloadAndOptimizeImage } from '@/lib/imageDownloader';
+import { distributeNews, DistributableArticle } from '@/lib/newsDistributor';
 import { articleExists, saveArticle } from '@/lib/newsRepository';
-import { INewsArticle, SyncNewsResult } from '@/types/news';
+import { INewsArticle } from '@/types/news';
 
-// Disable caching for cron handler
+// Disable Next.js caching for this cron endpoint
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;
-export const maxDuration = 60; // 60 seconds max execution for batch image processing
+export const maxDuration = 60; // 60s timeout for processing batches
+
+const DEFAULT_SECRET = 'super_secret_cron_token_haber_noktasi_2026';
 
 export async function GET(request: NextRequest): Promise<NextResponse> {
   const startTime = Date.now();
 
   try {
-    // 1. Security Authentication Check
+    // 1. Security Authentication Check (Query parameter or Bearer token)
     const { searchParams } = new URL(request.url);
     const querySecret = searchParams.get('secret');
 
@@ -23,7 +26,7 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
       ? authHeader.slice(7).trim()
       : null;
 
-    const configuredSecret = process.env.CRON_SECRET || 'dev-secret-key-123';
+    const configuredSecret = process.env.CRON_SECRET || DEFAULT_SECRET;
     const providedToken = querySecret || bearerToken;
 
     if (!providedToken || providedToken !== configuredSecret) {
@@ -37,96 +40,135 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
       );
     }
 
-    // 2. Fetch all configured Turkish RSS feeds
-    console.log('[Cron Sync] Starting Turkish RSS feeds synchronization...');
-    const { articles: rawFeedArticles, sourceStats } = await fetchAllFeeds();
+    console.log('[Cron Sync] Ensonhaber RSS senkronizasyonu başlatılıyor...');
+
+    // 2. Fetch and parse Ensonhaber RSS feed
+    const rawArticles: ParsedNews[] = await parseEnsonhaberRSS();
+    console.log(`[Cron Sync] Ensonhaber RSS'den ${rawArticles.length} haber ayrıştırıldı.`);
+
+    if (rawArticles.length === 0) {
+      return NextResponse.json(
+        {
+          success: false,
+          error: 'Ensonhaber RSS akışından haber çekilemedi veya akış boş döndü.',
+        },
+        { status: 502 }
+      );
+    }
 
     let newArticlesAdded = 0;
     let duplicatesSkipped = 0;
     let imagesDownloaded = 0;
-    let failedImages = 0;
 
-    const addedPerSource: Record<string, number> = {};
+    const distributableList: DistributableArticle[] = [];
 
-    // 3. Process each article sequentially or in small concurrency batches to preserve server memory on Hostinger
-    for (const rawItem of rawFeedArticles) {
-      // Check for duplication against existing GUID or Source Link
-      const alreadyExists = await articleExists(rawItem.guid, rawItem.sourceLink);
-
-      if (alreadyExists) {
+    // 3. Process articles: download and optimize images with Sharp into WebP
+    for (const item of rawArticles) {
+      // Check for duplication in repository
+      const exists = await articleExists(item.guid, item.link);
+      if (exists) {
         duplicatesSkipped++;
-        continue;
       }
 
-      // Download and optimize external image to local WebP
+      // Download and optimize image to local public/uploads/news/ directory
       let localImagePath = '/placeholder.webp';
-      if (rawItem.rawImageUrl) {
-        localImagePath = await downloadAndProcessImage(rawItem.rawImageUrl, rawItem.title);
+      if (item.imageUrl) {
+        localImagePath = await downloadAndOptimizeImage(item.imageUrl, item.title, {
+          width: 1200,
+          height: 675,
+          quality: 80,
+          folder: 'news',
+        });
+
         if (localImagePath !== '/placeholder.webp') {
           imagesDownloaded++;
-        } else {
-          failedImages++;
         }
       }
 
-      // Build full structured news article model
-      const newArticle: INewsArticle = {
-        id: `rss-${Date.now()}-${Math.floor(Math.random() * 10000)}`,
-        guid: rawItem.guid,
-        title: rawItem.title,
-        slug: rawItem.slug,
-        summary: rawItem.summary,
-        content: rawItem.content,
-        sourceLink: rawItem.sourceLink,
-        sourceName: rawItem.sourceName,
-        category: rawItem.category,
+      // If not duplicate, save into permanent repository/DB
+      if (!exists) {
+        const newRecord: INewsArticle = {
+          id: `ensonhaber-${Date.now()}-${Math.floor(Math.random() * 10000)}`,
+          guid: item.guid,
+          title: item.title,
+          slug: item.link.split('/').filter(Boolean).pop() || `haber-${Date.now()}`,
+          summary: item.summary,
+          content: item.summary,
+          sourceLink: item.link,
+          sourceName: 'Ensonhaber',
+          category: item.normalizedCategory,
+          imageUrl: localImagePath,
+          publishedAt: item.pubDate || new Date().toISOString(),
+          createdAt: new Date().toISOString(),
+        };
+
+        try {
+          await saveArticle(newRecord);
+          newArticlesAdded++;
+        } catch (dbErr) {
+          console.warn('[Cron Sync DB Save Warning]', dbErr);
+        }
+      }
+
+      // Add to list for frontpage distribution
+      distributableList.push({
+        title: item.title,
+        summary: item.summary,
+        category: item.normalizedCategory,
+        normalizedCategory: item.normalizedCategory,
+        categorySlug: item.categorySlug,
         imageUrl: localImagePath,
-        publishedAt: rawItem.publishedAt,
-        createdAt: new Date().toISOString(),
-      };
-
-      await saveArticle(newArticle);
-      newArticlesAdded++;
-
-      addedPerSource[rawItem.sourceName] = (addedPerSource[rawItem.sourceName] || 0) + 1;
+        image: localImagePath,
+        pubDate: item.pubDate,
+        date: item.pubDate,
+        link: item.link,
+      });
     }
 
-    // 4. Revalidate Next.js App Router Cache for Instant Front-End Updates
+    // 4. Distribute news to homepage blocks (newsData.json)
+    console.log('[Cron Sync] Ana sayfa bloklarına haber dağıtımı başlatılıyor...');
+    const distributionResult = await distributeNews(distributableList);
+    console.log('[Cron Sync] Dağıtım tamamlandı:', distributionResult);
+
+    // 5. Revalidate Next.js App Router cache for instantaneous front-end reflect
     try {
       revalidatePath('/');
+      revalidatePath('/ensonhaber');
       revalidatePath('/kategori/gundem');
-      revalidatePath('/kategori/teknoloji');
       revalidatePath('/kategori/ekonomi');
       revalidatePath('/kategori/spor');
+      revalidatePath('/kategori/teknoloji');
+      revalidatePath('/kategori/dunya');
+      revalidatePath('/kategori/kelebek');
+      revalidatePath('/kategori/saglik');
     } catch (revalidateErr) {
-      console.warn('[Cron Sync Revalidation Warning]', revalidateErr);
+      console.warn('[Cron Sync Cache Revalidation Warning]', revalidateErr);
     }
 
     const durationMs = Date.now() - startTime;
 
-    const responsePayload: SyncNewsResult = {
-      success: true,
-      message: `Haber senkronizasyonu tamamlandı. ${newArticlesAdded} yeni haber eklendi, ${duplicatesSkipped} mükerrer haber atlandı. (${durationMs}ms)`,
-      timestamp: new Date().toISOString(),
-      stats: {
-        totalSourcesChecked: sourceStats.length,
-        totalFeedsFetched: rawFeedArticles.length,
-        newArticlesAdded,
-        duplicatesSkipped,
-        imagesDownloaded,
-        failedImages,
+    return NextResponse.json(
+      {
+        success: true,
+        message: `Ensonhaber RSS başarıyla senkronize edildi ve ana sayfa bloklarına dağıtıldı. (${durationMs}ms)`,
+        timestamp: new Date().toISOString(),
+        stats: {
+          totalFetched: rawArticles.length,
+          newArticlesAdded,
+          duplicatesSkipped,
+          imagesDownloaded,
+          durationMs,
+        },
+        distribution: {
+          headlineSliderCount: distributionResult.sliderCount,
+          breakingNewsCount: distributionResult.breakingCount,
+          sicakGundemCount: distributionResult.sicakCount,
+          sliderSideNewsCount: distributionResult.sideCount,
+          updatedCategories: distributionResult.updatedCategories,
+        },
       },
-      sources: sourceStats.map((s) => ({
-        sourceName: s.sourceName,
-        fetched: s.fetched,
-        added: addedPerSource[s.sourceName] || 0,
-        error: s.error,
-      })),
-    };
-
-    console.log(`[Cron Sync Completed] Added: ${newArticlesAdded}, Duplicates: ${duplicatesSkipped}, Time: ${durationMs}ms`);
-
-    return NextResponse.json(responsePayload, { status: 200 });
+      { status: 200 }
+    );
   } catch (error: unknown) {
     const errorMessage = error instanceof Error ? error.message : String(error);
     console.error('[Cron Sync Error]', error);
@@ -134,7 +176,7 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
     return NextResponse.json(
       {
         success: false,
-        error: 'Haber senkronizasyonu sırasında beklenmeyen bir hata oluştu.',
+        error: 'Ensonhaber RSS senkronizasyonu sırasında hata oluştu.',
         details: errorMessage,
       },
       { status: 500 }
@@ -142,6 +184,5 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
   }
 }
 
-// Support both GET and POST for maximum flexibility with various cron providers (Hostinger, cPanel, Vercel, curl)
+// Support both GET and POST requests for external cron providers (Hostinger, cPanel, EasyCron, etc.)
 export const POST = GET;
-

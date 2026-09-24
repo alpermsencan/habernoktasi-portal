@@ -1,91 +1,94 @@
 {
   "breakingNews": [
-    "SON DAKİKA: Marmara Denizi açıklarında 3.9 büyüklüğünde deprem meydana geldi, herhangi bir hasar bildirilmedi.",
-    "Merkez Bankası toplam rezervleri 156.4 milyar dolarla tüm zamanların tarihi zirvesini tazeledi.",
-    "TBMM Genel Kurulu yeni yasama yılı mesaisine başladı: İlk gündem maddesi çalışanlara yönelik yeni vergi paketi.",
-    "Süper Lig'de dev derbi haftası: Şampiyonluk yarışındaki iki dev ekip taktik provalarını tamamladı.",
-    "Milli İstihbarat Teşkilatı'ndan sınır ötesinde nokta operasyon: Terör örgütünün lojistik sorumlusu etkisiz hale getirildi."
+    "SON DAKİKA: Anadolu Efes deplasmanda Barcelona'ya yenildi",
+    "SON DAKİKA: İstanbul Üsküdar'da çocuklara çarpan otomobilin sürücüsü gözaltına alındı",
+    "SON DAKİKA: Binyamin Netanyahu tüm dünyayı çağrı cihazıyla tehdit etti",
+    "SON DAKİKA: Burhanettin Duran'dan İsrail Başbakanı Netanyahu'ya tepki",
+    "SON DAKİKA: Ankara'da su deposunda silahlı kavga: 1 ölü",
+    "SON DAKİKA: Tokat'ta silah kaçakçılığı operasyonu: 11 gözaltı",
+    "SON DAKİKA: New York’tan BM Notları: Üç Gün, 90 Bin Adım ve Biraz da Kulis",
+    "SON DAKİKA: İstanbul Kartal'da otluk alanda ceset bulundu"
   ],
   "todayEvents": [
     {
       "id": 1,
-      "tag": "#DEPREM",
-      "title": "Marmara Denizi Açıklarında 3.9 Büyüklüğünde Sarsıntı",
-      "summary": "AFAD ve Kandilli Rasathanesi olumsuz bir ihbar ve hasar olmadığını açıkladı.",
-      "time": "10 Dk Önce",
-      "image": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=400&q=80"
+      "tag": "#SPOR",
+      "title": "Anadolu Efes deplasmanda Barcelona'ya yenildi",
+      "summary": "Anadolu Efes, EuroLeague'de 2026-2027 sezonunun ilk haftasında konuk olduğu Barcelona'ya 89-82 kaybetti.",
+      "time": "Bugün, 00:30",
+      "image": "/uploads/news/anadolu-efes-deplasmanda-barcelonaya-yenildi-1790285446562.webp"
     },
     {
       "id": 2,
-      "tag": "#SİYASET",
-      "title": "TBMM'de Yeni Yasama Yılı Başladı: Meclis'te İlk Gündem Yeni Vergi Paketi",
-      "summary": "Grup başkanvekilleri yeni vergi düzenlemesi ve maaş intibakları için bir araya geliyor.",
-      "time": "20 Dk Önce",
-      "image": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&w=400&q=80"
+      "tag": "#GÜNDEM",
+      "title": "İstanbul Üsküdar'da çocuklara çarpan otomobilin sürücüsü gözaltına alındı",
+      "summary": "İstanbul Üsküdar'da önce başka bir araca, daha sonra da kaldırımda yürüyen 4 çocuğa çarpan otomobilin 73 yaşındaki sürücüsü gözaltına alındı",
+      "time": "11 Dk Önce",
+      "image": "/uploads/news/istanbul-uskudarda-cocuklara-carpan-otomobili-1790285446802.webp"
     },
     {
       "id": 3,
-      "tag": "#EKONOMİ",
-      "title": "Merkez Bankası Rezervleri 156.4 Milyar Dolara Ulaşarak Tarihi Rekoru Kırdı",
-      "summary": "Swap hariç net rezervlerdeki toparlanma haftalık bazda 4.2 milyar dolar artış gösterdi.",
-      "time": "35 Dk Önce",
-      "image": "https://images.unsplash.com/photo-1610375461246-83df859d849d?auto=format&fit=crop&w=400&q=80"
+      "tag": "#DÜNYA",
+      "title": "Binyamin Netanyahu tüm dünyayı çağrı cihazıyla tehdit etti",
+      "summary": "Birleşmiş Milletler Genel Kurulu'nda kendisini dinleyen ülkelerin temsilcilerine çağrı cihazı gösteren İsrail Başbakanı Binyamin Netanyahu, Eylül 2024'te Lübnan'da Hizbullah mensup",
+      "time": "22 Dk Önce",
+      "image": "/uploads/news/binyamin-netanyahu-tum-dunyayi-cagri-cihaziyl-1790285446889.webp"
     },
     {
       "id": 4,
-      "tag": "#FUTBOL",
-      "title": "Süper Lig'de Dev Derbi Öncesi Taktik Savaşları: Muhtemel 11'ler Belli Oldu",
-      "summary": "Dev derbi öncesi iki takım da taktik antrenmanlarını basına kapalı olarak gerçekleştirdi.",
-      "time": "45 Dk Önce",
-      "image": "https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=400&q=80"
+      "tag": "#GÜNDEM",
+      "title": "Burhanettin Duran'dan İsrail Başbakanı Netanyahu'ya tepki",
+      "summary": "Cumhurbaşkanlığı İletişim Başkanı Burhanettin Duran, Birleşmiş Milletler Genel Kurulu'ndaki konuşması sırasında Cumhurbaşkanı Recep Tayyip Erdoğan'ı hedef alan İsrail Başbakanı Bin",
+      "time": "40 Dk Önce",
+      "image": "/uploads/news/burhanettin-durandan-israil-basbakani-netanya-1790285446976.webp"
     },
     {
       "id": 5,
-      "tag": "#TEKNOLOJİ",
-      "title": "TÜRKSAT 6A Hizmete Alındı: Yerli Haberleşme Uydusu Yörüngede Testleri Geçti",
-      "summary": "Bakanlık Türkiye'nin uzaydaki aktif uydu kapsama alanının 5 milyar nüfusa ulaştığını bildirdi.",
-      "time": "1 Saat Önce",
-      "image": "https://images.unsplash.com/photo-1516849841032-87cbac4d88f7?auto=format&fit=crop&w=400&q=80"
+      "tag": "#GÜNDEM",
+      "title": "Ankara'da su deposunda silahlı kavga: 1 ölü",
+      "summary": "Ankara'da su deposunda çıkan silahlı kavgada 1 kişi hayatını kaybetti.",
+      "time": "47 Dk Önce",
+      "image": "/uploads/news/ankarada-su-deposunda-silahli-kavga-1-olu-1790285447056.webp"
     },
     {
       "id": 6,
-      "tag": "#ASAYİŞ",
-      "title": "31 İlde Eş Zamanlı 'Kafes' Operasyonu: 112 Organize Suç Şüphelisi Yakalandı",
-      "summary": "İçişleri Bakanlığı operasyon kapsamında çok sayıda ruhsatsız silah ve mühimmat ele geçirildiğini duyurdu.",
-      "time": "1.5 Saat Önce",
-      "image": "https://images.unsplash.com/photo-1508847154043-be5407fcaa5a?auto=format&fit=crop&w=400&q=80"
+      "tag": "#GÜNDEM",
+      "title": "Tokat'ta silah kaçakçılığı operasyonu: 11 gözaltı",
+      "summary": "Tokat'ta 11 adrese eş zamanlı düzenlenen silah kaçakçılığı operasyonunda yakalanan 11 şüpheli gözaltına alındı.",
+      "time": "1 Saat Önce",
+      "image": "/uploads/news/tokatta-silah-kacakciligi-operasyonu-11-gozal-1790285447132.webp"
     },
     {
       "id": 7,
-      "tag": "#DÜNYA",
-      "title": "Orta Doğu'da Ateşkes Müzakerelerinde Kritik Aşama: Mısır ve Katar Masada",
-      "summary": "Taraflar esir takası ve insani yardım koridoru için hazırlanan taslak metin üzerinde uzlaştı.",
-      "time": "2 Saat Önce",
-      "image": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=400&q=80"
+      "tag": "#GÜNDEM",
+      "title": "New York’tan BM Notları: Üç Gün, 90 Bin Adım ve Biraz da Kulis",
+      "summary": "Sanırım, 2022’den bu yana Birleşmiş Milletler Genel Kurulunu yerinden takip ediyorum.",
+      "time": "1 Saat Önce",
+      "image": "/uploads/news/new-yorktan-bm-notlari-uc-gun-90-bin-adim-ve--1790285447205.webp"
     },
     {
       "id": 8,
-      "tag": "#HAVA",
-      "title": "Meteoroloji'den 18 İl İçin Sarı Kodlu Fırtına ve Sağanak Yağış Uyarısı",
-      "summary": "Hava sıcaklıkları hafta sonu 8 ila 10 derece birden hissedilir derecede düşecek.",
-      "time": "2.5 Saat Önce",
-      "image": "https://images.unsplash.com/photo-1534088568595-a066f410bcda?auto=format&fit=crop&w=400&q=80"
+      "tag": "#GÜNDEM",
+      "title": "İstanbul Kartal'da otluk alanda ceset bulundu",
+      "summary": "İstanbul Kartal'da otluk alanda erkek cesedi bulundu. Cenaze, incelemelerin ardından kesin ölüm nedeninin belirlenmesi için Adli Tıp Kurumu morguna kaldırıldı.",
+      "time": "1 Saat Önce",
+      "image": "/uploads/news/istanbul-kartalda-otluk-alanda-ceset-bulundu-1790285447276.webp"
     },
     {
       "id": 9,
-      "tag": "#SAĞLIK",
-      "title": "Kış Enfeksiyonlarına Karşı Sağlık Bakanlığı'ndan Aşı ve Koruma Genelgesi",
-      "summary": "Kronik hastalar ve 65 yaş üzeri vatandaşlar için grip aşıları e-Nabız sistemi üzerinden erişime açıldı.",
-      "time": "3 Saat Önce",
-      "image": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=400&q=80"
+      "tag": "#GÜNDEM",
+      "title": "Kayseri'de otobüsün çarptığı bisikletli çocuk öldü",
+      "summary": "Kayseri'de özel halk otobüsünün çarptığı 10 yaşındaki bisikletli çocuk, olay yerinde yaşamını yitirdi.",
+      "time": "1 Saat Önce",
+      "image": "/uploads/news/kayseride-otobusun-carptigi-bisikletli-cocuk--1790285447373.webp"
     },
     {
       "id": 10,
-      "tag": "#TRAFİK",
-      "title": "İstanbul Boğazı ve TEM Bağlantı Yollarında Trafik Yoğunluğu %78 Seviyesinde",
-      "summary": "Köprü girişlerindeki arızalı araçlar çekicilerle tahliye edilirken sürücülere alternatif güzergahlar önerildi.",
-      "time": "3.5 Saat Önce",
-      "image": "https://images.unsplash.com/photo-1509356843151-3e7d96241e11?auto=format&fit=crop&w=400&q=80"
+      "tag": "#GÜNDEM",
+      "title": "Fon soruşturmasında gözaltına alınan 8 şüpheli tutuklandı",
+      "summary": "Sermaye piyasası işlemlerine ilişkin yürütülen soruşturma kapsamında gözaltına alınan 21 şüpheli 8'i tutuklanırken, 2 kişi adli kontrol şartıyla serbest bırakıldı.",
+      "time": "2 Saat Önce",
+      "image": "/uploads/news/fon-sorusturmasinda-gozaltina-alinan-8-suphel-1790285447484.webp"
     }
   ],
   "marketData": [
@@ -141,199 +144,199 @@
   "sicakGundem": [
     {
       "id": 101,
-      "title": "Ankara'da Kritik Güvenlik Zirvesi: Sınır Güvenliği ve Terörle Mücadele Masada",
-      "summary": "Cumhurbaşkanlığı Külliyesi'nde toplanan güvenlik heyeti, sınır ötesi operasyonlar ve yeni askeri koordinasyon adımlarını değerlendirdi.",
-      "category": "SİYASET",
-      "image": "https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?auto=format&fit=crop&w=800&q=80",
-      "date": "12 Dk Önce"
+      "title": "Anadolu Efes deplasmanda Barcelona'ya yenildi",
+      "summary": "Anadolu Efes, EuroLeague'de 2026-2027 sezonunun ilk haftasında konuk olduğu Barcelona'ya 89-82 kaybetti.",
+      "category": "SPOR",
+      "image": "/uploads/news/anadolu-efes-deplasmanda-barcelonaya-yenildi-1790285446562.webp",
+      "date": "Bugün, 00:30"
     },
     {
       "id": 102,
-      "title": "Merkez Bankası'ndan Sıkı Para Politikası Vurgusu: Enflasyonda Hedef Tek Hane",
-      "summary": "Yılın son çeyreğine ilişkin makro ihtiyati tedbirler kapsamında piyasalardaki likidite sterilizasyonu devam edecek.",
-      "category": "EKONOMİ",
-      "image": "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&w=800&q=80",
-      "date": "25 Dk Önce"
+      "title": "İstanbul Üsküdar'da çocuklara çarpan otomobilin sürücüsü gözaltına alındı",
+      "summary": "İstanbul Üsküdar'da önce başka bir araca, daha sonra da kaldırımda yürüyen 4 çocuğa çarpan otomobilin 73 yaşındaki sürücüsü gözaltına alındı",
+      "category": "GÜNDEM",
+      "image": "/uploads/news/istanbul-uskudarda-cocuklara-carpan-otomobili-1790285446802.webp",
+      "date": "11 Dk Önce"
     },
     {
       "id": 103,
-      "title": "Milli Takımda Kadro Belli Oldu: Genç Yıldızlar İlk Kez Aday Kadroda",
-      "summary": "Teknik direktör, Uluslar Ligi'ndeki kritik iki maç öncesi Süper Lig'de parlayan 3 genç futbolcuyu kadroya davet etti.",
-      "category": "FUTBOL",
-      "image": "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=800&q=80",
-      "date": "40 Dk Önce"
+      "title": "Binyamin Netanyahu tüm dünyayı çağrı cihazıyla tehdit etti",
+      "summary": "Birleşmiş Milletler Genel Kurulu'nda kendisini dinleyen ülkelerin temsilcilerine çağrı cihazı gösteren İsrail Başbakanı Binyamin Netanyahu, Eylül 2024'te Lübnan'da Hizbullah mensup",
+      "category": "DÜNYA",
+      "image": "/uploads/news/binyamin-netanyahu-tum-dunyayi-cagri-cihaziyl-1790285446889.webp",
+      "date": "22 Dk Önce"
     }
   ],
   "sliderSideNews": [
     {
       "id": 21,
-      "title": "Merkez Bankası'ndan Bankalara Acil Likidite Talimatı: Kredi Muslukları Açılıyor",
-      "summary": "KOBİ ve ihracatçılara yönelik selektif kredi paketinde yeni limitler yürürlüğe girdi.",
-      "category": "EKONOMİ",
-      "image": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=600&q=80",
-      "views": "84.2K",
-      "time": "18 Dk Önce"
+      "title": "Burhanettin Duran'dan İsrail Başbakanı Netanyahu'ya tepki",
+      "summary": "Cumhurbaşkanlığı İletişim Başkanı Burhanettin Duran, Birleşmiş Milletler Genel Kurulu'ndaki konuşması sırasında Cumhurbaşkanı Recep Tayyip Erdoğan'ı hedef alan İsrail Başbakanı Bin",
+      "category": "GÜNDEM",
+      "image": "/uploads/news/burhanettin-durandan-israil-basbakani-netanya-1790285446976.webp",
+      "views": "110.9K",
+      "time": "40 Dk Önce"
     },
     {
       "id": 22,
-      "title": "Avrupa Devinden Türk Yıldız İçin 45 Milyon Euro: Masada Tarihi Teklif",
-      "summary": "Milli futbolcunun menajeri kulüp binasına çağrıldı. Transferde imzaların bu hafta atılması bekleniyor.",
-      "category": "FUTBOL",
-      "image": "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=600&q=80",
-      "views": "112.9K",
-      "time": "32 Dk Önce"
+      "title": "Ankara'da su deposunda silahlı kavga: 1 ölü",
+      "summary": "Ankara'da su deposunda çıkan silahlı kavgada 1 kişi hayatını kaybetti.",
+      "category": "GÜNDEM",
+      "image": "/uploads/news/ankarada-su-deposunda-silahli-kavga-1-olu-1790285447056.webp",
+      "views": "37.9K",
+      "time": "47 Dk Önce"
     }
   ],
   "headlineSlider": [
     {
       "id": 1,
-      "title": "Milyonlarca Çalışanı İlgilendiriyor: Yeni Vergi Paketi ve Maaş Düzenlemesi Meclis'te",
-      "summary": "Çalışma ve Sosyal Güvenlik Bakanlığı ile Hazine ve Maliye Bakanlığı ortak çalışma yürüttü. Gelir vergisi dilimlerinde çalışan lehine kritik düzenlemeler geliyor.",
-      "category": "SİYASET",
-      "image": "https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=1200&q=80",
-      "date": "Bugün, 14:30",
-      "readCount": "142.5K",
-      "author": "Murat Yetkin"
+      "title": "Tokat'ta silah kaçakçılığı operasyonu: 11 gözaltı",
+      "summary": "Tokat'ta 11 adrese eş zamanlı düzenlenen silah kaçakçılığı operasyonunda yakalanan 11 şüpheli gözaltına alındı.",
+      "category": "GÜNDEM",
+      "image": "/uploads/news/tokatta-silah-kacakciligi-operasyonu-11-gozal-1790285447132.webp",
+      "date": "1 Saat Önce",
+      "readCount": "37.6K",
+      "author": "Barış Terkoğlu"
     },
     {
       "id": 2,
-      "title": "Tarihi Zirveden Küresel Barış İçin Kritik Karar: Liderler Ortak Bildiri İmzaladı",
-      "summary": "Cenevre'de bir araya gelen dünya liderleri, bölgesel çatışmaların sonlandırılması ve insani yardım koridorlarının açılması hususunda mutabakata vardı.",
-      "category": "DÜNYA",
-      "image": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1200&q=80",
-      "date": "Bugün, 13:45",
-      "readCount": "98.2K",
-      "author": "Deniz Zeyrek"
+      "title": "New York’tan BM Notları: Üç Gün, 90 Bin Adım ve Biraz da Kulis",
+      "summary": "Sanırım, 2022’den bu yana Birleşmiş Milletler Genel Kurulunu yerinden takip ediyorum.",
+      "category": "GÜNDEM",
+      "image": "/uploads/news/new-yorktan-bm-notlari-uc-gun-90-bin-adim-ve--1790285447205.webp",
+      "date": "1 Saat Önce",
+      "readCount": "83.5K",
+      "author": "Nevşin Mengü"
     },
     {
       "id": 3,
-      "title": "Merkez Bankası'ndan Sürpriz Likidite Hamlesi: Piyasalara Güven Veren Açıklama",
-      "summary": "Para Politikası Kurulu son toplantısında makroekonomik istikrarı güçlendirecek yeni tedbirleri duyurdu. Enflasyonla mücadelede kararlılık mesajı yinelendi.",
-      "category": "EKONOMİ",
-      "image": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=1200&q=80",
-      "date": "Bugün, 12:15",
-      "readCount": "215.1K",
-      "author": "Çiğdem Toker"
+      "title": "İstanbul Kartal'da otluk alanda ceset bulundu",
+      "summary": "İstanbul Kartal'da otluk alanda erkek cesedi bulundu. Cenaze, incelemelerin ardından kesin ölüm nedeninin belirlenmesi için Adli Tıp Kurumu morguna kaldırıldı.",
+      "category": "GÜNDEM",
+      "image": "/uploads/news/istanbul-kartalda-otluk-alanda-ceset-bulundu-1790285447276.webp",
+      "date": "1 Saat Önce",
+      "readCount": "119.7K",
+      "author": "Uğur Dündar"
     },
     {
       "id": 4,
-      "title": "Dev Derbi Öncesi Nefesler Tutuldu: Taktik Provalarda Sürpriz İsimler 11'de",
-      "summary": "Şampiyonluk yarışının en kritik 90 dakikası öncesinde iki takımın teknik heyetleri hazırlıklarını tamamladı. Derbi biletleri dakikalar içinde tükendi.",
-      "category": "FUTBOL",
-      "image": "https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?auto=format&fit=crop&w=1200&q=80",
-      "date": "Bugün, 11:30",
-      "readCount": "184.7K",
-      "author": "Fatih Altaylı"
+      "title": "Kayseri'de otobüsün çarptığı bisikletli çocuk öldü",
+      "summary": "Kayseri'de özel halk otobüsünün çarptığı 10 yaşındaki bisikletli çocuk, olay yerinde yaşamını yitirdi.",
+      "category": "GÜNDEM",
+      "image": "/uploads/news/kayseride-otobusun-carptigi-bisikletli-cocuk--1790285447373.webp",
+      "date": "1 Saat Önce",
+      "readCount": "71.7K",
+      "author": "Murat Yetkin"
     },
     {
       "id": 5,
-      "title": "Marmara'da Beklenen Büyük Deprem İçin Yeni Bilimsel Rapor: Riskli Alanlar Açıklandı",
-      "summary": "Jeoloji mühendisleri ve sismologlar fay hatlarındaki son gerilim dağılımını modelledi. Kentsel dönüşümde öncelikli ilçeler için acil eylem planı hazırlandı.",
+      "title": "Fon soruşturmasında gözaltına alınan 8 şüpheli tutuklandı",
+      "summary": "Sermaye piyasası işlemlerine ilişkin yürütülen soruşturma kapsamında gözaltına alınan 21 şüpheli 8'i tutuklanırken, 2 kişi adli kontrol şartıyla serbest bırakıldı.",
       "category": "GÜNDEM",
-      "image": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1200&q=80",
-      "date": "Bugün, 10:45",
-      "readCount": "167.3K",
-      "author": "İsmail Saymaz"
+      "image": "/uploads/news/fon-sorusturmasinda-gozaltina-alinan-8-suphel-1790285447484.webp",
+      "date": "2 Saat Önce",
+      "readCount": "112.1K",
+      "author": "Deniz Zeyrek"
     },
     {
       "id": 6,
-      "title": "Emekli Maaşlarında İntibak Düzenlemesi Meclis Komisyonuna Geliyor: İşte Masadaki Rakamlar",
-      "summary": "Prim gün sayısı ve kazanca göre maaş farklarını dengeleyecek kanun teklifi için düğmeye basıldı. 2000 yılı öncesi ve sonrası farklar kapanıyor.",
-      "category": "EKONOMİ",
-      "image": "https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=1200&q=80",
-      "date": "Bugün, 10:10",
-      "readCount": "192.4K",
+      "title": "Vincenzo Montella: Buradaki işimin bittiğine inanmıyorum",
+      "summary": "A Milli Futbol Takımı Teknik Direktörü Vincenzo Montella, Fransa maçı öncesi düzenlenen basın toplantısında açıklamalarda bulundu. İtalyan teknik adam, hala Türkiye uzun bir yolunu",
+      "category": "SPOR",
+      "image": "/uploads/news/vincenzo-montella-buradaki-isimin-bittigine-i-1790285447580.webp",
+      "date": "2 Saat Önce",
+      "readCount": "117.4K",
       "author": "Çiğdem Toker"
     },
     {
       "id": 7,
-      "title": "Savunma Sanayisinde Dev Atılım: Yeni Nesil Gökyüzü Savunma Sistemi Envantere Girdi",
-      "summary": "Tamamen yerli mühendislikle geliştirilen hava savunma bataryası atış testlerini tam isabetle tamamlayarak Türk Silahlı Kuvvetleri'ne teslim edildi.",
+      "title": "Mehmet Şimşek: Şahsımla ilgili dolaşıma sokulan istifa iddiaları asılsızdır",
+      "summary": "Hazine ve Maliye Bakanı Mehmet Şimşek, hakkında çıkan istifa iddialarının asılsız olduğunu açıklayarak spekülatif haberlere itibar edilmemesi gerektiğini söyledi.",
       "category": "GÜNDEM",
-      "image": "https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?auto=format&fit=crop&w=1200&q=80",
-      "date": "Bugün, 09:30",
-      "readCount": "134.6K",
-      "author": "Barış Terkoğlu"
-    },
-    {
-      "id": 8,
-      "title": "Avrupa'da Enerji Krizi Alarmı: Doğalgaz Depolama Tesislerinde Doluluk Oranı Düşüyor",
-      "summary": "Kış mevsimi öncesinde kıtada sanayi üretimini tehdit eden enerji darboğazı nedeniyle AB Enerji Bakanları olağanüstü toplanıyor.",
-      "category": "DÜNYA",
-      "image": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1200&q=80",
-      "date": "Bugün, 09:00",
-      "readCount": "89.1K",
-      "author": "Murat Yetkin"
-    },
-    {
-      "id": 9,
-      "title": "Milli Yıldız Dünya Şampiyonu! Altın Madalya ile Türk Bayrağını Göndere Çektirdi",
-      "summary": "Dünya Güreş Şampiyonası finalinde rakibini teknik üstünlükle mağlup eden milli sporcumuz kariyerinin üçüncü dünya şampiyonluğuna ulaştı.",
-      "category": "SPOR",
-      "image": "https://images.unsplash.com/photo-1569517282132-25d22f4573e6?auto=format&fit=crop&w=1200&q=80",
-      "date": "Bugün, 08:45",
-      "readCount": "156.8K",
-      "author": "Uğur Dündar"
-    },
-    {
-      "id": 10,
-      "title": "Konut Piyasasında Yeni Finansman Modeli: İlk Evini Alacaklara Düşük Faizli Kredi",
-      "summary": "Kamu bankaları öncülüğünde hayata geçirilen projeyle 15 yıl vadeli ve %1.20 oranlı ilk evim konut kredisi başvuruları başlıyor.",
-      "category": "EKONOMİ",
-      "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=80",
-      "date": "Bugün, 08:15",
-      "readCount": "220.5K",
+      "image": "/uploads/news/mehmet-simsek-sahsimla-ilgili-dolasima-sokula-1790285447667.webp",
+      "date": "3 Saat Önce",
+      "readCount": "101.8K",
       "author": "Fatih Altaylı"
     },
     {
-      "id": 11,
-      "title": "Sağlık Bakanlığı'ndan Kızamık ve Grip Aşıları İçin 81 İle Kritik Genelge",
-      "summary": "Okulların açılmasıyla birlikte artış gösteren mevsimsel solunum yolu enfeksiyonlarına karşı sağlık ocaklarında aşılama seferberliği başlatıldı.",
-      "category": "SAĞLIK",
-      "image": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=1200&q=80",
-      "date": "Bugün, 07:50",
-      "readCount": "112.3K",
-      "author": "Nevşin Mengü"
-    },
-    {
-      "id": 12,
-      "title": "Yapay Zeka Dünyasında Devrim: Yerli LLM Modeli Açık Kaynak Olarak Yayınlandı",
-      "summary": "TÜBİTAK ve üniversiteler iş birliğiyle geliştirilen Türkçe büyük dil modeli, kurumsal ve akademik araştırmacıların kullanımına sunuldu.",
-      "category": "TEKNOLOJİ",
-      "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80",
-      "date": "Bugün, 07:20",
-      "readCount": "148.9K",
+      "id": 8,
+      "title": "Birleşmiş Milletler Genel Kurulu'na hitap eden Netanyahu protesto edildi",
+      "summary": "İsrail Başbakanı Binyamin Netanyahu, 81. Birleşmiş Milletler Genel Kurulu'nda konuşma yapmak için New York'a geldi. İsrail Başbakanı'nın hitap için kürsüye çıkmasının ardından yuha",
+      "category": "DÜNYA",
+      "image": "/uploads/news/birlesmis-milletler-genel-kuruluna-hitap-eden-1790285447741.webp",
+      "date": "3 Saat Önce",
+      "readCount": "96.3K",
       "author": "İsmail Saymaz"
     },
     {
+      "id": 9,
+      "title": "BAE, İran hava yolu şirketlerinin uçuşlarını durdurma kararı aldı",
+      "summary": "ABD'den gelen çağrınının ardından Birleşik Arap Emirlikleri (BAE), İran hava yolu şirketlerinin ülkeye ve ülkeden gerçekleştirdiği uçuşların bugünden itibaren ikinci bir duyuruya k",
+      "category": "DÜNYA",
+      "image": "/uploads/news/bae-iran-hava-yolu-sirketlerinin-ucuslarini-d-1790285447849.webp",
+      "date": "3 Saat Önce",
+      "readCount": "102.2K",
+      "author": "Barış Terkoğlu"
+    },
+    {
+      "id": 10,
+      "title": "Cumhurbaşkanı Erdoğan'dan Havvanur Kethüda'ya tebrik telefonu",
+      "summary": "Cumhurbaşkanı Erdoğan 2026 Avrupa Boks Şampiyonası'nda altın madalya kazanarak şampiyon olan milli sporcu Havvanur Kethüda'yı arayarak tebriklerini iletti.",
+      "category": "SPOR",
+      "image": "/uploads/news/cumhurbaskani-erdogandan-havvanur-kethudaya-t-1790285447931.webp",
+      "date": "3 Saat Önce",
+      "readCount": "47.8K",
+      "author": "Nevşin Mengü"
+    },
+    {
+      "id": 11,
+      "title": "Binyamin Netanyahu ile Kiryakos Miçotakis New York'ta bir araya geldi",
+      "summary": "İsrail Başbakanı Binyamin Netanyahu, Birleşmiş Milletler Genel Kurulu oturumu marjında Yunanistan Başbakanı Kiryakos Miçotakis ile bir görüşme gerçekleştirdi.",
+      "category": "DÜNYA",
+      "image": "/uploads/news/binyamin-netanyahu-ile-kiryakos-micotakis-new-1790285448013.webp",
+      "date": "4 Saat Önce",
+      "readCount": "117.4K",
+      "author": "Uğur Dündar"
+    },
+    {
+      "id": 12,
+      "title": "Manisa'da yaşlı kadın konakladığı kaplıcanın havuzunda ölü bulundu",
+      "summary": "Kula ilçesinde belediyeye ait Emir Kaplıcaları'nda yaşlı bir kadın, konakladığı odanın içerisinde bulunan havuzda hayatını kaybetti.",
+      "category": "GÜNDEM",
+      "image": "/uploads/news/manisada-yasli-kadin-konakladigi-kaplicanin-h-1790285448095.webp",
+      "date": "4 Saat Önce",
+      "readCount": "42.1K",
+      "author": "Murat Yetkin"
+    },
+    {
       "id": 13,
-      "title": "Venedik Film Festivali'nden Büyük Ödülle Dönen Türk Yönetmenden Tarihi Başarı",
-      "summary": "Anadolu'nun kadim hikayesini beyaz perdeye taşıyan film, jüriden tam not alarak festivalin en prestijli ödülü olan Gümüş Aslan'a layık görüldü.",
-      "category": "KELEBEK",
-      "image": "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1200&q=80",
-      "date": "Bugün, 06:50",
-      "readCount": "78.4K",
+      "title": "Mahmud Abbas, BM Genel Kurulu’na online olarak seslendi",
+      "summary": "Filistin Devlet Başkanı Mahmud Abbas, Birleşmiş Milletler (BM) 81. Genel Kurulu’na görüntü kaydıyla hitap ederek, İsrail'in büyümesinin önüne geçilmesi konusunda uluslararası toplu",
+      "category": "DÜNYA",
+      "image": "/uploads/news/mahmud-abbas-bm-genel-kuruluna-online-olarak--1790285448198.webp",
+      "date": "4 Saat Önce",
+      "readCount": "44.3K",
       "author": "Deniz Zeyrek"
     },
     {
       "id": 14,
-      "title": "İstanbul Boğazı'nda Görsel Şölen: Tarihi Yatlardan Cumhuriyet Kupası Geçişi",
-      "summary": "Boğaz'ın mavi sularında yüzlerce yelkenli kıyasıya yarıştı. Sahil şeridini dolduran binlerce İstanbullu muhteşem manzarayı hayranlıkla izledi.",
-      "category": "KELEBEK",
-      "image": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1200&q=80",
-      "date": "Bugün, 06:30",
-      "readCount": "64.2K",
-      "author": "Nevşin Mengü"
+      "title": "Zinedine Zidane'dan Türkiye açıklaması: Biliyorum ki bize problem çıkaracaklar",
+      "summary": "Fransa Milli Takımı Teknik Direktörü Zinedine Zidane, Türkiye maçı öncesinde açıklamalarda bulundu. Türkiye'nin son Dünya Kupası'nda gruptan çıkamamasının beklenmedik olduğunu ifad",
+      "category": "SPOR",
+      "image": "/uploads/news/zinedine-zidanedan-turkiye-aciklamasi-biliyor-1790285448289.webp",
+      "date": "5 Saat Önce",
+      "readCount": "80.3K",
+      "author": "Çiğdem Toker"
     },
     {
       "id": 15,
-      "title": "Altın ve Gümüşte Tarihi Ralli: Uzmanlar Yıl Sonu Ons ve Gram Beklentilerini Revize Etti",
-      "summary": "Küresel faiz indirim döngüsünün başlamasıyla kıymetli madenler yeni zirvelere koşuyor. Analistler jeopolitik risklerin altını desteklediğini belirtiyor.",
-      "category": "EKONOMİ",
-      "image": "https://images.unsplash.com/photo-1610375461246-83df859d849d?auto=format&fit=crop&w=1200&q=80",
-      "date": "Bugün, 06:00",
-      "readCount": "289.0K",
-      "author": "Çiğdem Toker"
+      "title": "Samsun'da berber koltuğunda kardeşini öldüren ağabey: Kontrolü kaybettim",
+      "summary": "Samsun'da berber koltuğunda kardeşini silahla vurarak öldüren sanık, duruşmada kardeşinin kendisini öldürmekle tehdit ettiğini ve olay sırasında silahını çektiğini ileri sürerek, \"",
+      "category": "GÜNDEM",
+      "image": "/uploads/news/samsunda-berber-koltugunda-kardesini-olduren--1790285448360.webp",
+      "date": "5 Saat Önce",
+      "readCount": "73.6K",
+      "author": "Fatih Altaylı"
     }
   ],
   "authors": [
@@ -386,43 +389,43 @@
       "articles": [
         {
           "id": 101,
-          "title": "TBMM'de Yeni Yasama Yılı Başladı: Meclis'te İlk Gündem Yeni Vergi Paketi",
-          "summary": "Grup başkanvekilleri çalışanların vergi dilimi muafiyetleri ve intibak yasası için komisyon toplantılarına başladı.",
+          "title": "İstanbul Üsküdar'da çocuklara çarpan otomobilin sürücüsü gözaltına alındı",
+          "summary": "İstanbul Üsküdar'da önce başka bir araca, daha sonra da kaldırımda yürüyen 4 çocuğa çarpan otomobilin 73 yaşındaki sürücüsü gözaltına alındı",
           "category": "Gündem",
-          "image": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&w=600&q=80",
-          "date": "15 Dk Önce",
-          "views": "92.4K",
-          "author": "Murat Yetkin"
+          "image": "/uploads/news/istanbul-uskudarda-cocuklara-carpan-otomobili-1790285446802.webp",
+          "date": "11 Dk Önce",
+          "views": "102.7K",
+          "author": "Deniz Zeyrek"
         },
         {
           "id": 102,
-          "title": "Ankara'da Kritik Güvenlik Zirvesi: Sınır Güvenliği ve Terörle Mücadele Masada",
-          "summary": "Cumhurbaşkanlığı Külliyesi'nde toplanan heyet, sınır ötesi operasyonlar ve yeni askeri koordinasyon adımlarını değerlendirdi.",
+          "title": "Burhanettin Duran'dan İsrail Başbakanı Netanyahu'ya tepki",
+          "summary": "Cumhurbaşkanlığı İletişim Başkanı Burhanettin Duran, Birleşmiş Milletler Genel Kurulu'ndaki konuşması sırasında Cumhurbaşkanı Recep Tayyip Erdoğan'ı hedef alan İsrail Başbakanı Bin",
           "category": "Gündem",
-          "image": "https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?auto=format&fit=crop&w=600&q=80",
+          "image": "/uploads/news/burhanettin-durandan-israil-basbakani-netanya-1790285446976.webp",
           "date": "40 Dk Önce",
-          "views": "64.1K",
-          "author": "Barış Terkoğlu"
+          "views": "110.9K",
+          "author": "Fatih Altaylı"
         },
         {
           "id": 103,
-          "title": "Marmara'da Kapsamlı Deprem Tatbikatı: 7 İl Eş Zamanlı Olarak Katıldı",
-          "summary": "AFAD koordinasyonunda gerçekleştirilen tatbikatta arama kurtarma personelleri enkaz müdahale senaryolarını başarıyla tamamladı.",
+          "title": "Ankara'da su deposunda silahlı kavga: 1 ölü",
+          "summary": "Ankara'da su deposunda çıkan silahlı kavgada 1 kişi hayatını kaybetti.",
           "category": "Gündem",
-          "image": "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&w=600&q=80",
-          "date": "1 Saat Önce",
-          "views": "48.9K",
+          "image": "/uploads/news/ankarada-su-deposunda-silahli-kavga-1-olu-1790285447056.webp",
+          "date": "47 Dk Önce",
+          "views": "37.9K",
           "author": "İsmail Saymaz"
         },
         {
           "id": 104,
-          "title": "Adalet Bakanlığı'ndan Yargı Reformu Strateji Belgesi: Duruşma Süreleri Kısalıyor",
-          "summary": "Uzun süren davaların önüne geçilmesi amacıyla hedef süre uygulaması genişletiliyor ve ihtisas mahkemelerinin sayısı artırılıyor.",
+          "title": "Tokat'ta silah kaçakçılığı operasyonu: 11 gözaltı",
+          "summary": "Tokat'ta 11 adrese eş zamanlı düzenlenen silah kaçakçılığı operasyonunda yakalanan 11 şüpheli gözaltına alındı.",
           "category": "Gündem",
-          "image": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=600&q=80",
-          "date": "2 Saat Önce",
-          "views": "37.5K",
-          "author": "Deniz Zeyrek"
+          "image": "/uploads/news/tokatta-silah-kacakciligi-operasyonu-11-gozal-1790285447132.webp",
+          "date": "1 Saat Önce",
+          "views": "41.5K",
+          "author": "Barış Terkoğlu"
         }
       ]
     },
@@ -432,7 +435,17 @@
       "description": "Piyasalar, Merkez Bankası, Borsa İstanbul, altın, döviz ve bütçe haberleri.",
       "articles": [
         {
-          "id": 301,
+          "id": 201,
+          "title": "New York borsası düşüşle açıldı",
+          "summary": "ABD Başkanı Donald Trump ve Çin Devlet Başkanı Şi Cinping görüşmesi öncesinde New York borsası güne düşüşle başladı. Orta Doğu'daki gerilimle petrolün yüz doları aşması ve yükselen",
+          "category": "Ekonomi",
+          "image": "/uploads/news/new-york-borsasi-dususle-acildi-1790285450409.webp",
+          "date": "7 Saat Önce",
+          "views": "61.2K",
+          "author": "Fatih Altaylı"
+        },
+        {
+          "id": 202,
           "title": "Merkez Bankası Rezervleri 156.4 Milyar Dolara Ulaşarak Tarihi Rekoru Kırdı",
           "summary": "Swap hariç net rezervlerdeki toparlanma haftalık bazda 4.2 milyar dolar artış gösterdi. Piyasalarda güven havası güçleniyor.",
           "category": "Ekonomi",
@@ -442,7 +455,7 @@
           "author": "Çiğdem Toker"
         },
         {
-          "id": 302,
+          "id": 203,
           "title": "Borsa İstanbul BIST 100 Endeksinde Yükseliş: Bankacılık Hisseleri Öncülük Etti",
           "summary": "Yabancı yatırımcı girişlerinin etkisiyle endeks günü yüzde 1.12 primle 9.940 puandan tamamladı.",
           "category": "Ekonomi",
@@ -452,7 +465,7 @@
           "author": "Çiğdem Toker"
         },
         {
-          "id": 303,
+          "id": 204,
           "title": "İhracatta Cumhuriyet Tarihi Rekoru: 12 Aylık Dış Satım 262 Milyar Doları Aştı",
           "summary": "Otomotiv ve kimya sektörleri ihracatta zirvedeki yerini korurken, Avrupa pazarına yapılan teslimatlarda rekor artış kaydedildi.",
           "category": "Ekonomi",
@@ -460,16 +473,6 @@
           "date": "1.5 Saat Önce",
           "views": "51.3K",
           "author": "Fatih Altaylı"
-        },
-        {
-          "id": 304,
-          "title": "Konut Kredisi Faizlerinde İlk İndirim Sinyali: Kamu Bankaları Düğmeye Bastı",
-          "summary": "İlk defa konut sahibi olacak vatandaşlar için 120 ay vadeli uygun faizli konut finansmanı paketi hazırlandı.",
-          "category": "Ekonomi",
-          "image": "https://images.unsplash.com/photo-1582407947304-fd86f028f716?auto=format&fit=crop&w=600&q=80",
-          "date": "2.5 Saat Önce",
-          "views": "89.0K",
-          "author": "Murat Yetkin"
         }
       ]
     },
@@ -479,44 +482,44 @@
       "description": "Futbol, Süper Lig, derbiler, transferler, Şampiyonlar Ligi ve milli takımlar.",
       "articles": [
         {
-          "id": 401,
-          "title": "Süper Lig'de Dev Derbi Öncesi Taktik Savaşları: Muhtemel 11'ler Belli Oldu",
-          "summary": "Liderlik koltuğunu doğrudan etkileyecek tarihi derbi öncesi teknik adamlar sahaya sürecekleri kadroları netleştirdi.",
+          "id": 301,
+          "title": "Anadolu Efes deplasmanda Barcelona'ya yenildi",
+          "summary": "Anadolu Efes, EuroLeague'de 2026-2027 sezonunun ilk haftasında konuk olduğu Barcelona'ya 89-82 kaybetti.",
           "category": "Spor",
-          "image": "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=600&q=80",
-          "date": "30 Dk Önce",
-          "views": "148.2K",
-          "author": "Fatih Altaylı"
+          "image": "/uploads/news/anadolu-efes-deplasmanda-barcelonaya-yenildi-1790285446562.webp",
+          "date": "Bugün, 00:30",
+          "views": "84.9K",
+          "author": "Murat Yetkin"
         },
         {
-          "id": 402,
-          "title": "Milli Takımda Kadro Belli Oldu: Genç Yıldızlar İlk Kez Aday Kadroda",
-          "summary": "A Milli Futbol Takımı'nın Uluslar Ligi maçları için açıklanan aday kadrosunda formda genç futbolcular dikkat çekti.",
+          "id": 302,
+          "title": "Vincenzo Montella: Buradaki işimin bittiğine inanmıyorum",
+          "summary": "A Milli Futbol Takımı Teknik Direktörü Vincenzo Montella, Fransa maçı öncesi düzenlenen basın toplantısında açıklamalarda bulundu. İtalyan teknik adam, hala Türkiye uzun bir yolunu",
           "category": "Spor",
-          "image": "https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=600&q=80",
-          "date": "1 Saat Önce",
-          "views": "83.6K",
-          "author": "Uğur Dündar"
-        },
-        {
-          "id": 403,
-          "title": "Şampiyonlar Ligi'nde Zafer Gecesi: Temsilcimiz Deplasmandan 3 Puanla Döndü",
-          "summary": "Zorlu Avrupa deplasmanında 90 dakika boyunca üstün oynayan temsilcimiz, ikinci yarıda bulduğu gollerle kritik galibiyet aldı.",
-          "category": "Spor",
-          "image": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?auto=format&fit=crop&w=600&q=80",
+          "image": "/uploads/news/vincenzo-montella-buradaki-isimin-bittigine-i-1790285447580.webp",
           "date": "2 Saat Önce",
-          "views": "115.4K",
-          "author": "Fatih Altaylı"
+          "views": "38.2K",
+          "author": "Çiğdem Toker"
         },
         {
-          "id": 404,
-          "title": "Avrupa Devinden Türk Yıldız İçin 45 Milyon Euro: Masada Tarihi Teklif",
-          "summary": "İspanyol devi genç milli futbolcunun serbest kalma bedelini ödemeye hazır olduğunu menajerine iletti.",
+          "id": 303,
+          "title": "Cumhurbaşkanı Erdoğan'dan Havvanur Kethüda'ya tebrik telefonu",
+          "summary": "Cumhurbaşkanı Erdoğan 2026 Avrupa Boks Şampiyonası'nda altın madalya kazanarak şampiyon olan milli sporcu Havvanur Kethüda'yı arayarak tebriklerini iletti.",
           "category": "Spor",
-          "image": "https://images.unsplash.com/photo-1517649763962-0c623266ddc0?auto=format&fit=crop&w=600&q=80",
+          "image": "/uploads/news/cumhurbaskani-erdogandan-havvanur-kethudaya-t-1790285447931.webp",
           "date": "3 Saat Önce",
-          "views": "94.8K",
-          "author": "Uğur Dündar"
+          "views": "60.6K",
+          "author": "Nevşin Mengü"
+        },
+        {
+          "id": 304,
+          "title": "Zinedine Zidane'dan Türkiye açıklaması: Biliyorum ki bize problem çıkaracaklar",
+          "summary": "Fransa Milli Takımı Teknik Direktörü Zinedine Zidane, Türkiye maçı öncesinde açıklamalarda bulundu. Türkiye'nin son Dünya Kupası'nda gruptan çıkamamasının beklenmedik olduğunu ifad",
+          "category": "Spor",
+          "image": "/uploads/news/zinedine-zidanedan-turkiye-aciklamasi-biliyor-1790285448289.webp",
+          "date": "5 Saat Önce",
+          "views": "117.2K",
+          "author": "Çiğdem Toker"
         }
       ]
     },
@@ -526,7 +529,27 @@
       "description": "Yapay zeka, yerli teknoloji, TOGG, uzay sanayii, mobil cihazlar ve siber güvenlik.",
       "articles": [
         {
-          "id": 501,
+          "id": 401,
+          "title": "Nissan'ın en ucuz elektrikli otomobili Pixo tanıtıldı",
+          "summary": "Japon otomotiv devi Nissan, 259 kilometre menzili, LFP bataryası ve Google Gemini yapay zeka desteğiyle öne çıkan yeni A segmenti elektrikli şehir otomobili Pixo'yu resmi olarak ta",
+          "category": "Teknoloji",
+          "image": "/uploads/news/nissanin-en-ucuz-elektrikli-otomobili-pixo-ta-1790285449571.webp",
+          "date": "6 Saat Önce",
+          "views": "104.3K",
+          "author": "Deniz Zeyrek"
+        },
+        {
+          "id": 402,
+          "title": "Renault Captur tamamen yenileniyor: İşte beklenen çıkış tarihi",
+          "summary": "Renault'nun büyük bir tasarımsal değişime imza atacağı üçüncü nesil Captur modeli, yeni motor seçenekleri ve teknolojik donanımlarıyla 2027 yılının sonlarında yollara çıkmaya hazır",
+          "category": "Teknoloji",
+          "image": "/uploads/news/renault-captur-tamamen-yenileniyor-iste-bekle-1790285449967.webp",
+          "date": "7 Saat Önce",
+          "views": "39.7K",
+          "author": "Nevşin Mengü"
+        },
+        {
+          "id": 403,
           "title": "TÜRKSAT 6A Hizmete Alındı: Yerli Haberleşme Uydusu Yörüngede Testleri Geçti",
           "summary": "Tamamen yerli imkanlarla üretilen ilk haberleşme uydumuz, yörüngedeki test yayınlarını başarıyla tamamlayarak hizmete başladı.",
           "category": "Teknoloji",
@@ -536,7 +559,7 @@
           "author": "Barış Terkoğlu"
         },
         {
-          "id": 502,
+          "id": 404,
           "title": "Yerli Elektrikli Otomobil TOGG'un Sedan Modeli T10F Yollara Çıkmaya Hazır",
           "summary": "600 kilometre menzile sahip T10F modelinin seri üretim bandından ilk araçlar indi. Ön sipariş takvimi haftaya açıklanıyor.",
           "category": "Teknoloji",
@@ -544,26 +567,6 @@
           "date": "1 Saat Önce",
           "views": "124.9K",
           "author": "Fatih Altaylı"
-        },
-        {
-          "id": 503,
-          "title": "Yapay Zeka Dünyasında Devrim: Yerli LLM Modeli Açık Kaynak Olarak Yayınlandı",
-          "summary": "TÜBİTAK ve üniversiteler iş birliğiyle geliştirilen Türkçe büyük dil modeli, kurumsal ve akademik araştırmacıların kullanımına sunuldu.",
-          "category": "Teknoloji",
-          "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=600&q=80",
-          "date": "2 Saat Önce",
-          "views": "79.3K",
-          "author": "İsmail Saymaz"
-        },
-        {
-          "id": 504,
-          "title": "Siber Güvenlikte Kritik Adım: Kamu Kurumlarına Yerli Kriptolu İletişim Zorunluluğu",
-          "summary": "Devlet kurumları arasındaki kritik veri transferlerinde kuantum dayanıklı yerli şifreleme altyapısına geçiş tamamlanıyor.",
-          "category": "Teknoloji",
-          "image": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=600&q=80",
-          "date": "3 Saat Önce",
-          "views": "45.1K",
-          "author": "Nevşin Mengü"
         }
       ]
     },
@@ -573,44 +576,44 @@
       "description": "Uluslararası ilişkiler, küresel diplomasi, ABD, Avrupa ve Orta Doğu gelişmeleri.",
       "articles": [
         {
-          "id": 201,
-          "title": "Tarihi Zirveden Küresel Barış İçin Kritik Karar: Liderler Ortak Bildiri İmzaladı",
-          "summary": "Cenevre'de bir araya gelen dünya liderleri, bölgesel çatışmaların sonlandırılması ve insani koridorların açılması konusunda mutabık kaldı.",
+          "id": 501,
+          "title": "Binyamin Netanyahu tüm dünyayı çağrı cihazıyla tehdit etti",
+          "summary": "Birleşmiş Milletler Genel Kurulu'nda kendisini dinleyen ülkelerin temsilcilerine çağrı cihazı gösteren İsrail Başbakanı Binyamin Netanyahu, Eylül 2024'te Lübnan'da Hizbullah mensup",
           "category": "Dünya",
-          "image": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=600&q=80",
-          "date": "35 Dk Önce",
-          "views": "76.5K",
-          "author": "Murat Yetkin"
+          "image": "/uploads/news/binyamin-netanyahu-tum-dunyayi-cagri-cihaziyl-1790285446889.webp",
+          "date": "22 Dk Önce",
+          "views": "56.1K",
+          "author": "Çiğdem Toker"
         },
         {
-          "id": 202,
-          "title": "Orta Doğu'da Ateşkes Müzakerelerinde Kritik Aşama: Mısır ve Katar Masada",
-          "summary": "Taraflar esir takası ve insani yardım koridoru için hazırlanan taslak metin üzerinde uzlaştı.",
+          "id": 502,
+          "title": "Birleşmiş Milletler Genel Kurulu'na hitap eden Netanyahu protesto edildi",
+          "summary": "İsrail Başbakanı Binyamin Netanyahu, 81. Birleşmiş Milletler Genel Kurulu'nda konuşma yapmak için New York'a geldi. İsrail Başbakanı'nın hitap için kürsüye çıkmasının ardından yuha",
           "category": "Dünya",
-          "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=600&q=80",
-          "date": "1.5 Saat Önce",
-          "views": "98.3K",
-          "author": "Deniz Zeyrek"
+          "image": "/uploads/news/birlesmis-milletler-genel-kuruluna-hitap-eden-1790285447741.webp",
+          "date": "3 Saat Önce",
+          "views": "82.8K",
+          "author": "İsmail Saymaz"
         },
         {
-          "id": 203,
-          "title": "Avrupa'da Enerji Krizi Alarmı: Doğalgaz Depolama Tesislerinde Doluluk Oranı Düşüyor",
-          "summary": "Kış mevsimi öncesinde kıtada sanayi üretimini tehdit eden enerji darboğazı nedeniyle AB Enerji Bakanları olağanüstü toplanıyor.",
+          "id": 503,
+          "title": "BAE, İran hava yolu şirketlerinin uçuşlarını durdurma kararı aldı",
+          "summary": "ABD'den gelen çağrınının ardından Birleşik Arap Emirlikleri (BAE), İran hava yolu şirketlerinin ülkeye ve ülkeden gerçekleştirdiği uçuşların bugünden itibaren ikinci bir duyuruya k",
           "category": "Dünya",
-          "image": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=600&q=80",
-          "date": "2.5 Saat Önce",
-          "views": "54.1K",
-          "author": "Nevşin Mengü"
+          "image": "/uploads/news/bae-iran-hava-yolu-sirketlerinin-ucuslarini-d-1790285447849.webp",
+          "date": "3 Saat Önce",
+          "views": "115.9K",
+          "author": "Barış Terkoğlu"
         },
         {
-          "id": 204,
-          "title": "Kafkasya'da Barış Anlaşması İçin Tarihi Adım: Sınır Protokolü İmzalandı",
-          "summary": "Bölgesel ticaret ve ulaştırma koridorlarının açılmasını sağlayacak mutabakat metni heyetler arası görüşmelerde onaylandı.",
+          "id": 504,
+          "title": "Binyamin Netanyahu ile Kiryakos Miçotakis New York'ta bir araya geldi",
+          "summary": "İsrail Başbakanı Binyamin Netanyahu, Birleşmiş Milletler Genel Kurulu oturumu marjında Yunanistan Başbakanı Kiryakos Miçotakis ile bir görüşme gerçekleştirdi.",
           "category": "Dünya",
-          "image": "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=600&q=80",
+          "image": "/uploads/news/binyamin-netanyahu-ile-kiryakos-micotakis-new-1790285448013.webp",
           "date": "4 Saat Önce",
-          "views": "42.7K",
-          "author": "Murat Yetkin"
+          "views": "77.9K",
+          "author": "Uğur Dündar"
         }
       ]
     },
@@ -621,6 +624,16 @@
       "articles": [
         {
           "id": 601,
+          "title": "Ordu'da torununun hayalini gerçekleştirdi: 90 yıllık meşe ağacına ev yaptı",
+          "summary": "85 yaşındaki Adnan Çandır, torununun çocukluk hayalini gerçeğe dönüştürerek yaklaşık 90 yıllık meşe ağacının üzerine ahşap ev yaptırdı. Yerden 6 metre yükseklikteki 16 metrekarelik",
+          "category": "Kelebek",
+          "image": "/uploads/news/orduda-torununun-hayalini-gerceklestirdi-90-y-1790285450213.webp",
+          "date": "7 Saat Önce",
+          "views": "33.7K",
+          "author": "Deniz Zeyrek"
+        },
+        {
+          "id": 602,
           "title": "Venedik Film Festivali'nden Büyük Ödülle Dönen Türk Yönetmenden Tarihi Başarı",
           "summary": "Anadolu'nun kadim hikayesini beyaz perdeye taşıyan film, jüriden tam not alarak festivalin en prestijli ödülü olan Gümüş Aslan'a layık görüldü.",
           "category": "Kelebek",
@@ -630,7 +643,7 @@
           "author": "Deniz Zeyrek"
         },
         {
-          "id": 602,
+          "id": 603,
           "title": "Harbiye Açıkhava'da Yıldızlar Geçidi: Binlerce Hayran Şarkılara Eşlik Etti",
           "summary": "Yaz konserleri serisinin kapanış gecesinde sahne alan ünlü sanatçı, 3 saat boyunca hit şarkılarını seslendirdi.",
           "category": "Kelebek",
@@ -640,7 +653,7 @@
           "author": "Nevşin Mengü"
         },
         {
-          "id": 603,
+          "id": 604,
           "title": "İstanbul Boğazı'nda Görsel Şölen: Tarihi Yatlardan Cumhuriyet Kupası Geçişi",
           "summary": "Boğaz'ın mavi sularında yüzlerce yelkenli kıyasıya yarıştı. Sahil şeridini dolduran binlerce İstanbullu muhteşem manzarayı izledi.",
           "category": "Kelebek",
@@ -648,16 +661,6 @@
           "date": "3 Saat Önce",
           "views": "47.1K",
           "author": "İsmail Saymaz"
-        },
-        {
-          "id": 604,
-          "title": "Dünyaca Ünlü Moda Evi Türk Dokuma Sanatından İlham Alan Koleksiyonunu Tanıttı",
-          "summary": "Paris Moda Haftası'nda sergilenen koleksiyonda el dokuması ipek ve motifler uluslararası moda eleştirmenlerinden tam not aldı.",
-          "category": "Kelebek",
-          "image": "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=600&q=80",
-          "date": "4.5 Saat Önce",
-          "views": "39.6K",
-          "author": "Çiğdem Toker"
         }
       ]
     },
@@ -841,5 +844,6 @@
       "date": "2.5 Saat Önce",
       "author": "İsmail Saymaz"
     }
-  ]
+  ],
+  "lastUpdated": "2026-09-24T21:30:51.062Z"
 }
