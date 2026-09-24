@@ -38,6 +38,13 @@ export const DEFAULT_RSS_SOURCES: RSSSource[] = [
     url: 'https://www.hurriyet.com.tr/rss/anasayfa',
     enabled: true,
   },
+  {
+    id: 'ensonhaber',
+    name: 'Ensonhaber',
+    category: 'Gündem',
+    url: 'https://www.ensonhaber.com/rss/ensonhaber.xml',
+    enabled: true,
+  },
 ];
 
 /**

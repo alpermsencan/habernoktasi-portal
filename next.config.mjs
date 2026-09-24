@@ -31,6 +31,14 @@ const nextConfig = {
         protocol: 'https',
         hostname: '**.hurriyet.com.tr',
       },
+      {
+        protocol: 'https',
+        hostname: '**.ensonhaber.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'imgcdn.ensonhaber.com',
+      },
     ],
   },
 };
