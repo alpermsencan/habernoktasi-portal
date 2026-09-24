@@ -1,47 +1,43 @@
 import newsData from './newsData.json';
-import articleDetails from './articleDetails.json';
 
 export function getArticleById(id) {
   const strId = String(id);
-  if (articleDetails[strId]) {
-    return articleDetails[strId];
-  }
 
-  // Find in headlineSlider
+  // 1. Find in headlineSlider
   let found = newsData.headlineSlider.find((item) => String(item.id) === strId);
 
-  // Or in categories
+  // 2. Or in categories
   if (!found) {
     for (const cat of newsData.categories) {
       const art = cat.articles.find((item) => String(item.id) === strId);
       if (art) {
-        found = { ...art, category: cat.name, categorySlug: cat.slug, author: 'Haber Noktası Haber Merkezi' };
+        found = { ...art, category: cat.name, categorySlug: cat.slug, author: art.author || 'X Yazar' };
         break;
       }
     }
   }
 
-  // Or in sicakGundem
+  // 3. Or in sicakGundem
   if (!found && newsData.sicakGundem) {
     found = newsData.sicakGundem.find((item) => String(item.id) === strId);
   }
 
-  // Or in sliderSideNews
+  // 4. Or in sliderSideNews
   if (!found && newsData.sliderSideNews) {
     found = newsData.sliderSideNews.find((item) => String(item.id) === strId);
   }
 
-  // Or in dynamicFeed
+  // 5. Or in dynamicFeed
   if (!found && newsData.dynamicFeed) {
     found = newsData.dynamicFeed.find((item) => String(item.id) === strId);
   }
 
-  // Or in todayEvents
+  // 6. Or in todayEvents
   if (!found && newsData.todayEvents) {
     found = newsData.todayEvents.find((item) => String(item.id) === strId);
   }
 
-  // Or in mostRead
+  // 7. Or in mostRead
   if (!found && newsData.mostRead) {
     found = newsData.mostRead.find((item) => String(item.id) === strId);
   }
@@ -51,94 +47,80 @@ export function getArticleById(id) {
     found = newsData.headlineSlider[0];
   }
 
+  // Try to find stored article for full text if available
+  let fullArticle = null;
+  try {
+    const storedNews = require('./storedNews.json');
+    fullArticle = storedNews.find(
+      (item) => String(item.id) === strId || item.title === found.title
+    );
+  } catch {
+    // ignore
+  }
+
   // Get 4 related articles from the same category or other categories
   const categoryArticles = [];
   const currentCat = newsData.categories.find(
     (c) => c.name.toLowerCase() === (found.category || '').toLowerCase()
   ) || newsData.categories[0];
 
-  for (const art of currentCat.articles) {
-    if (String(art.id) !== strId) {
-      categoryArticles.push({
-        id: art.id,
-        title: art.title,
-        summary: art.summary,
-        image: art.image,
-        category: currentCat.name,
-        date: art.date
-      });
+  if (currentCat && currentCat.articles) {
+    for (const art of currentCat.articles) {
+      if (String(art.id) !== strId) {
+        categoryArticles.push({
+          id: art.id,
+          title: art.title,
+          summary: art.summary,
+          image: art.image,
+          category: currentCat.name,
+          date: art.date || 'Bugün'
+        });
+      }
+      if (categoryArticles.length >= 4) break;
     }
-    if (categoryArticles.length >= 4) break;
+  }
+
+  const articleText = (fullArticle?.content || fullArticle?.summary || found.summary || '').trim();
+
+  // Content blocks: ONLY real news paragraph, strictly NO template boilerplates or fake sector quotes
+  const contentBlocks = [];
+  if (articleText) {
+    contentBlocks.push({
+      type: "paragraph",
+      text: articleText
+    });
   }
 
   return {
     id: found.id,
     title: found.title,
-    spot: found.summary || 'Son dakika gelişmesinin tüm ayrıntıları, perde arkası ve uzman görüşleri Haber Noktası sayfalarında.',
+    spot: articleText || `${found.title} gelişmelerine ilişkin ayrıntılar ve tüm bilgiler Haber Noktası sayfalarında.`,
     category: found.category || 'GÜNDEM',
     categorySlug: found.categorySlug || 'gundem',
     publishDate: found.date || 'Bugün',
-    updateDate: '15 dakika önce güncellendi',
-    readTime: '3 dakika okuma',
+    updateDate: 'Az önce güncellendi',
+    readTime: '2 dakika okuma',
     readCount: found.readCount || found.views || '85.400',
     mainImage: found.image,
-    imageCaption: `${found.title} konusunda sıcak gelişmeler takip ediliyor. (Fotoğraf: Haber Noktası Arşiv)`,
+    imageCaption: `${found.title} (Fotoğraf: Haber Noktası)`,
     author: {
-      name: found.author || 'Sedat Ergin',
-      role: 'Köşe Yazarı & Kıdemli Muhabir',
+      name: found.author || 'X Yazar',
+      role: 'Haber Merkezi Editörü',
       avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80',
-      bio: 'Gazeteci, yazar ve dış politika analisti. Yıllardır Haber Noktası bünyesinde köşe yazarlığı ve araştırmacı gazetecilik faaliyetlerini sürdürmektedir.',
-      articleCount: 1940,
+      bio: 'Haber Noktası araştırmacı gazetecilik ve son dakika masası.',
+      articleCount: 1850,
       twitter: 'habernoktasi'
     },
     tags: [found.category || 'Gündem', 'Son Dakika', 'Türkiye', 'Haber'],
-    content: [
-      {
-        "type": "paragraph",
-        "text": `${found.title} başlığı altında kamuoyuna yansıyan son gelişmeler, yetkili kurumların koordinasyonunda hızla hayata geçiriliyor. Konuya ilişkin hazırlanan kapsamlı değerlendirme raporu kamuoyu ile paylaşıldı.`
-      },
-      {
-        "type": "highlight",
-        "text": `${found.summary || 'Atılan adımlarla birlikte sürecin tüm taraflar için kazan-kazan prensibi doğrultusunda ilerlemesi hedefleniyor.'}`
-      },
-      {
-        "type": "paragraph",
-        "text": "Uzmanlar tarafından yapılan değerlendirmelerde, uygulamanın orta ve uzun vadeli sonuçlarının hem sektörel bazda hem de genel piyasa dengelerinde önemli bir rahatlama sağlayacağı ifade ediliyor."
-      },
-      {
-        "type": "heading",
-        "text": "Önümüzdeki Süreçte Neler Bekleniyor?"
-      },
-      {
-        "type": "paragraph",
-        "text": "İlgili bakanlık ve sivil toplum kuruluşları temsilcilerinin katılımıyla gerçekleştirilecek genişletilmiş istişare toplantısında, uygulama takviminin detayları masaya yatırılacak."
-      },
-      {
-        "type": "quote",
-        "author": "Sektör Temsilcisi",
-        "text": "Gelişmeleri dikkatle takip ediyoruz. Kararın sahaya ve vatandaşlarımızın günlük yaşamına yansımalarını adım adım değerlendireceğiz."
-      },
-      {
-        "type": "paragraph",
-        "text": "Süreç hakkındaki tüm gelişmeler ve resmi tebliğler Haber Noktası üzerinden anlık olarak aktarılmaya devam edecek."
-      }
-    ],
+    content: contentBlocks,
     comments: [
       {
-        "id": "c1",
-        "userName": "Caner Doğan",
-        "userAvatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=80&q=80",
-        "date": "1 saat önce",
-        "likes": 24,
-        "content": "Çok yerinde ve aydınlatıcı bir haber olmuş. Sürecin hızla tamamlanmasını bekliyoruz."
-      },
-      {
-        "id": "c2",
-        "userName": "Zeynep Kaya",
-        "userAvatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=80&q=80",
-        "date": "45 dakika önce",
-        "likes": 12,
-        "content": "Detayları madde madde vermeniz çok iyi olmuş, emeği geçen herkese teşekkürler."
+        id: "c1",
+        userName: "Vatandaş",
+        userAvatar: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=80&q=80",
+        date: "1 saat önce",
+        likes: 12,
+        content: "Gelişmeleri yakından takip ediyoruz, net bilgilendirme için teşekkürler."
       }
     ],
     relatedArticles: categoryArticles
