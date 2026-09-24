@@ -17,14 +17,14 @@ export interface DistributableArticle {
 }
 
 const AUTHORS = [
-  'Murat Yetkin',
-  'Deniz Zeyrek',
-  'Çiğdem Toker',
-  'Fatih Altaylı',
-  'İsmail Saymaz',
-  'Barış Terkoğlu',
-  'Nevşin Mengü',
-  'Uğur Dündar',
+  'X Yazar',
+  'Y Yazar',
+  'Z Yazar',
+  'A Yazar',
+  'B Yazar',
+  'C Yazar',
+  'D Yazar',
+  'E Yazar',
 ];
 
 function getRandomAuthor(index: number): string {

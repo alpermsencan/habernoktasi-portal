@@ -54,7 +54,7 @@ export default function NewsSlider() {
         
         {/* ================= LEFT: 15-SLIDE HEADLINE CAROUSEL (8 COLS) ================= */}
         <div 
-          className="lg:col-span-8 flex flex-col justify-between bg-neutral-950 rounded-lg overflow-hidden border border-neutral-300 dark:border-neutral-800 shadow-md h-[420px] sm:h-[460px] md:h-[480px]"
+          className="lg:col-span-8 flex flex-col justify-between bg-neutral-950 rounded-lg overflow-hidden border border-neutral-300 dark:border-neutral-800 shadow-md h-[360px] sm:h-[440px] md:h-[480px]"
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
         >
@@ -79,16 +79,16 @@ export default function NewsSlider() {
                 />
 
                 {/* Editorial High Contrast Gradients */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/65 to-transparent opacity-95" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent opacity-95" />
                 <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/40 to-transparent hidden sm:block" />
 
                 {/* Slide Details */}
-                <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6 z-10 text-white">
-                  <div className="flex flex-wrap items-center gap-2 mb-2">
-                    <span className={`text-[10px] sm:text-[11px] font-black uppercase px-2.5 py-0.5 rounded shadow tracking-wider ${catStyle}`}>
+                <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-5 md:p-6 z-10 text-white">
+                  <div className="flex flex-wrap items-center gap-1.5 sm:gap-2 mb-1.5">
+                    <span className={`text-[9px] sm:text-[11px] font-black uppercase px-2 sm:px-2.5 py-0.5 rounded shadow tracking-wider ${catStyle}`}>
                       {currentSlide.category}
                     </span>
-                    <span className="flex items-center gap-1 text-[11px] text-neutral-300 font-bold">
+                    <span className="flex items-center gap-1 text-[10px] sm:text-[11px] text-neutral-300 font-bold">
                       <Clock className="w-3 h-3 text-red-400" />
                       {currentSlide.date}
                     </span>
@@ -99,17 +99,17 @@ export default function NewsSlider() {
                   </div>
 
                   <Link href={`/haber/${currentSlide.id}`} className="group/title block">
-                    <h1 className="font-black text-2xl sm:text-3xl md:text-4xl leading-tight sm:leading-[1.18] text-white drop-shadow-xl mb-2 line-clamp-2 group-hover/title:text-red-400 transition-colors tracking-tight">
+                    <h1 className="font-black text-base sm:text-2xl md:text-3xl leading-snug sm:leading-tight text-white drop-shadow-xl mb-1.5 line-clamp-2 group-hover/title:text-red-400 transition-colors tracking-tight">
                       {currentSlide.title}
                     </h1>
                   </Link>
 
-                  <p className="text-sm sm:text-base md:text-lg font-extrabold text-neutral-100 line-clamp-2 mb-3 max-w-2xl leading-snug sm:leading-relaxed drop-shadow">
+                  <p className="text-xs sm:text-sm md:text-base font-medium sm:font-bold text-neutral-200 line-clamp-2 mb-2 max-w-2xl leading-normal sm:leading-relaxed drop-shadow">
                     {currentSlide.summary}
                   </p>
 
-                  <div className="flex items-center justify-between pt-2 border-t border-white/20 text-xs sm:text-sm">
-                    <span className="text-neutral-200 font-bold">
+                  <div className="flex items-center justify-between pt-1.5 border-t border-white/20 text-[11px] sm:text-xs">
+                    <span className="text-neutral-300 font-medium">
                       Yazar: <strong className="text-white font-black">{currentSlide.author}</strong>
                     </span>
 

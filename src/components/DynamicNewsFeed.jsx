@@ -26,7 +26,7 @@ const extraBatches = [
     category: "GÜNDEM",
     image: "https://images.unsplash.com/photo-1545459720-aac8509eb02c?auto=format&fit=crop&w=600&q=80",
     date: "3 Saat Önce",
-    author: "Barış Terkoğlu"
+    author: "C Yazar"
   },
   {
     id: 908,
@@ -35,7 +35,7 @@ const extraBatches = [
     category: "DÜNYA",
     image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80",
     date: "3.5 Saat Önce",
-    author: "Deniz Zeyrek"
+    author: "Y Yazar"
   },
   {
     id: 909,
@@ -44,7 +44,7 @@ const extraBatches = [
     category: "EKONOMİ",
     image: "https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?auto=format&fit=crop&w=600&q=80",
     date: "4 Saat Önce",
-    author: "Murat Yetkin"
+    author: "X Yazar"
   },
   {
     id: 910,
@@ -53,7 +53,7 @@ const extraBatches = [
     category: "SPOR",
     image: "https://images.unsplash.com/photo-1517466787929-bc90951d0974?auto=format&fit=crop&w=600&q=80",
     date: "4.5 Saat Önce",
-    author: "Fatih Altaylı"
+    author: "A Yazar"
   },
   {
     id: 911,
@@ -62,7 +62,7 @@ const extraBatches = [
     category: "SAĞLIK",
     image: "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=600&q=80",
     date: "5 Saat Önce",
-    author: "Nevşin Mengü"
+    author: "D Yazar"
   },
   {
     id: 912,
@@ -71,7 +71,7 @@ const extraBatches = [
     category: "KELEBEK",
     image: "https://images.unsplash.com/photo-1513584684374-8bab748fbf90?auto=format&fit=crop&w=600&q=80",
     date: "5.5 Saat Önce",
-    author: "Çiğdem Toker"
+    author: "Z Yazar"
   }
 ];
 

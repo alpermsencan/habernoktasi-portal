@@ -232,7 +232,7 @@
       "image": "/uploads/news/anadolu-efes-deplasmanda-barcelonaya-yenildi-1790285686247.webp",
       "date": "4 Dk Önce",
       "readCount": "57.3K",
-      "author": "Murat Yetkin",
+      "author": "X Yazar",
       "isHeadline": true
     },
     {
@@ -243,7 +243,7 @@
       "image": "/uploads/news/istanbul-uskudarda-cocuklara-carpan-otomobili-1790285686447.webp",
       "date": "15 Dk Önce",
       "readCount": "106.9K",
-      "author": "Deniz Zeyrek",
+      "author": "Y Yazar",
       "isHeadline": true
     },
     {
@@ -254,7 +254,7 @@
       "image": "/uploads/news/binyamin-netanyahu-tum-dunyayi-cagri-cihaziyl-1790285686525.webp",
       "date": "25 Dk Önce",
       "readCount": "74.6K",
-      "author": "Çiğdem Toker",
+      "author": "Z Yazar",
       "isHeadline": true
     },
     {
@@ -265,7 +265,7 @@
       "image": "/uploads/news/burhanettin-durandan-israil-basbakani-netanya-1790285686603.webp",
       "date": "44 Dk Önce",
       "readCount": "71.4K",
-      "author": "Fatih Altaylı",
+      "author": "A Yazar",
       "isHeadline": true
     },
     {
@@ -276,7 +276,7 @@
       "image": "/uploads/news/ankarada-su-deposunda-silahli-kavga-1-olu-1790285686673.webp",
       "date": "51 Dk Önce",
       "readCount": "34.5K",
-      "author": "İsmail Saymaz",
+      "author": "B Yazar",
       "isHeadline": true
     },
     {
@@ -287,7 +287,7 @@
       "image": "/uploads/news/tokatta-silah-kacakciligi-operasyonu-11-gozal-1790285686741.webp",
       "date": "1 Saat Önce",
       "readCount": "59.7K",
-      "author": "Barış Terkoğlu",
+      "author": "C Yazar",
       "isHeadline": true
     },
     {
@@ -298,7 +298,7 @@
       "image": "/uploads/news/new-yorktan-bm-notlari-uc-gun-90-bin-adim-ve--1790285686807.webp",
       "date": "1 Saat Önce",
       "readCount": "68.3K",
-      "author": "Nevşin Mengü",
+      "author": "D Yazar",
       "isHeadline": true
     },
     {
@@ -309,7 +309,7 @@
       "image": "/uploads/news/istanbul-kartalda-otluk-alanda-ceset-bulundu-1790285686939.webp",
       "date": "1 Saat Önce",
       "readCount": "111.1K",
-      "author": "Uğur Dündar",
+      "author": "E Yazar",
       "isHeadline": true
     },
     {
@@ -320,7 +320,7 @@
       "image": "/uploads/news/kayseride-otobusun-carptigi-bisikletli-cocuk--1790285687026.webp",
       "date": "1 Saat Önce",
       "readCount": "49.5K",
-      "author": "Murat Yetkin",
+      "author": "X Yazar",
       "isHeadline": true
     },
     {
@@ -331,7 +331,7 @@
       "image": "/uploads/news/fon-sorusturmasinda-gozaltina-alinan-8-suphel-1790285687123.webp",
       "date": "2 Saat Önce",
       "readCount": "33.4K",
-      "author": "Deniz Zeyrek",
+      "author": "Y Yazar",
       "isHeadline": true
     },
     {
@@ -342,7 +342,7 @@
       "image": "/uploads/news/vincenzo-montella-buradaki-isimin-bittigine-i-1790285687210.webp",
       "date": "2 Saat Önce",
       "readCount": "72.5K",
-      "author": "Çiğdem Toker",
+      "author": "Z Yazar",
       "isHeadline": true
     },
     {
@@ -353,7 +353,7 @@
       "image": "/uploads/news/mehmet-simsek-sahsimla-ilgili-dolasima-sokula-1790285687287.webp",
       "date": "3 Saat Önce",
       "readCount": "45.8K",
-      "author": "Fatih Altaylı",
+      "author": "A Yazar",
       "isHeadline": true
     },
     {
@@ -364,7 +364,7 @@
       "image": "/uploads/news/birlesmis-milletler-genel-kuruluna-hitap-eden-1790285687353.webp",
       "date": "3 Saat Önce",
       "readCount": "34.5K",
-      "author": "İsmail Saymaz",
+      "author": "B Yazar",
       "isHeadline": true
     },
     {
@@ -375,7 +375,7 @@
       "image": "/uploads/news/bae-iran-hava-yolu-sirketlerinin-ucuslarini-d-1790285687448.webp",
       "date": "3 Saat Önce",
       "readCount": "67.4K",
-      "author": "Barış Terkoğlu",
+      "author": "C Yazar",
       "isHeadline": true
     },
     {
@@ -386,50 +386,50 @@
       "image": "/uploads/news/cumhurbaskani-erdogandan-havvanur-kethudaya-t-1790285687528.webp",
       "date": "4 Saat Önce",
       "readCount": "50.1K",
-      "author": "Nevşin Mengü",
+      "author": "D Yazar",
       "isHeadline": true
     }
   ],
   "authors": [
     {
-      "name": "Fatih Altaylı",
-      "title": "Siyasetin Perde Arkası ve Medya Analizleri",
-      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80"
-    },
-    {
-      "name": "Murat Yetkin",
+      "name": "X Yazar",
       "title": "Dış Politika, Ankara Kulisleri ve Jeopolitik",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80"
     },
     {
-      "name": "Nevşin Mengü",
-      "title": "Toplumsal Dinamikler ve Küresel Gündem",
-      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=200&q=80"
+      "name": "Y Yazar",
+      "title": "Meclis Koridorları ve Seçim Matematiği",
+      "avatar": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=200&q=80"
     },
     {
-      "name": "İsmail Saymaz",
-      "title": "Yargı, Asayiş ve Araştırmacı Gazetecilik",
-      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80"
-    },
-    {
-      "name": "Uğur Dündar",
-      "title": "Halkın Kürsüsü ve Yolsuzluk Dosyaları",
-      "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=200&q=80"
-    },
-    {
-      "name": "Çiğdem Toker",
+      "name": "Z Yazar",
       "title": "Kamu İhaleleri, Bütçe ve Sayıştay Raporları",
       "avatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=200&q=80"
     },
     {
-      "name": "Barış Terkoğlu",
+      "name": "A Yazar",
+      "title": "Siyasetin Perde Arkası ve Medya Analizleri",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80"
+    },
+    {
+      "name": "B Yazar",
+      "title": "Yargı, Asayiş ve Araştırmacı Gazetecilik",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80"
+    },
+    {
+      "name": "C Yazar",
       "title": "Güvenlik Bürokrasisi ve Devlet Arşivi",
       "avatar": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=200&q=80"
     },
     {
-      "name": "Deniz Zeyrek",
-      "title": "Meclis Koridorları ve Seçim Matematiği",
-      "avatar": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=200&q=80"
+      "name": "D Yazar",
+      "title": "Toplumsal Dinamikler ve Küresel Gündem",
+      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=200&q=80"
+    },
+    {
+      "name": "E Yazar",
+      "title": "Halkın Kürsüsü ve Dosya Haberleri",
+      "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=200&q=80"
     }
   ],
   "categories": [
@@ -446,7 +446,7 @@
           "image": "/uploads/news/istanbul-uskudarda-cocuklara-carpan-otomobili-1790285686447.webp",
           "date": "15 Dk Önce",
           "views": "58.6K",
-          "author": "Deniz Zeyrek"
+          "author": "Y Yazar"
         },
         {
           "id": 102,
@@ -456,7 +456,7 @@
           "image": "/uploads/news/burhanettin-durandan-israil-basbakani-netanya-1790285686603.webp",
           "date": "44 Dk Önce",
           "views": "34.1K",
-          "author": "Fatih Altaylı"
+          "author": "A Yazar"
         },
         {
           "id": 103,
@@ -466,7 +466,7 @@
           "image": "/uploads/news/ankarada-su-deposunda-silahli-kavga-1-olu-1790285686673.webp",
           "date": "51 Dk Önce",
           "views": "95.8K",
-          "author": "İsmail Saymaz"
+          "author": "B Yazar"
         },
         {
           "id": 104,
@@ -476,7 +476,7 @@
           "image": "/uploads/news/tokatta-silah-kacakciligi-operasyonu-11-gozal-1790285686741.webp",
           "date": "1 Saat Önce",
           "views": "119.4K",
-          "author": "Barış Terkoğlu"
+          "author": "C Yazar"
         }
       ]
     },
@@ -493,7 +493,7 @@
           "image": "/uploads/news/new-york-borsasi-dususle-acildi-1790285689819.webp",
           "date": "7 Saat Önce",
           "views": "115.8K",
-          "author": "Fatih Altaylı"
+          "author": "A Yazar"
         },
         {
           "id": 202,
@@ -503,7 +503,7 @@
           "image": "/uploads/news/new-york-borsasi-dususle-acildi-1790285450409.webp",
           "date": "7 Saat Önce",
           "views": "61.2K",
-          "author": "Fatih Altaylı"
+          "author": "A Yazar"
         },
         {
           "id": 203,
@@ -513,7 +513,7 @@
           "image": "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&w=600&q=80",
           "date": "20 Dk Önce",
           "views": "105.8K",
-          "author": "Çiğdem Toker"
+          "author": "Z Yazar"
         },
         {
           "id": 204,
@@ -523,7 +523,7 @@
           "image": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=600&q=80",
           "date": "45 Dk Önce",
           "views": "72.4K",
-          "author": "Çiğdem Toker"
+          "author": "Z Yazar"
         }
       ]
     },
@@ -540,7 +540,7 @@
           "image": "/uploads/news/anadolu-efes-deplasmanda-barcelonaya-yenildi-1790285686247.webp",
           "date": "4 Dk Önce",
           "views": "65.1K",
-          "author": "Murat Yetkin"
+          "author": "X Yazar"
         },
         {
           "id": 302,
@@ -550,7 +550,7 @@
           "image": "/uploads/news/vincenzo-montella-buradaki-isimin-bittigine-i-1790285687210.webp",
           "date": "2 Saat Önce",
           "views": "78.1K",
-          "author": "Çiğdem Toker"
+          "author": "Z Yazar"
         },
         {
           "id": 303,
@@ -560,7 +560,7 @@
           "image": "/uploads/news/cumhurbaskani-erdogandan-havvanur-kethudaya-t-1790285687528.webp",
           "date": "4 Saat Önce",
           "views": "87.1K",
-          "author": "Nevşin Mengü"
+          "author": "D Yazar"
         },
         {
           "id": 304,
@@ -570,7 +570,7 @@
           "image": "/uploads/news/zinedine-zidanedan-turkiye-aciklamasi-biliyor-1790285687859.webp",
           "date": "5 Saat Önce",
           "views": "57.2K",
-          "author": "Çiğdem Toker"
+          "author": "Z Yazar"
         }
       ]
     },
@@ -587,7 +587,7 @@
           "image": "/uploads/news/nissanin-en-ucuz-elektrikli-otomobili-pixo-ta-1790285689011.webp",
           "date": "6 Saat Önce",
           "views": "76.6K",
-          "author": "Deniz Zeyrek"
+          "author": "Y Yazar"
         },
         {
           "id": 402,
@@ -597,7 +597,7 @@
           "image": "/uploads/news/renault-captur-tamamen-yenileniyor-iste-bekle-1790285689408.webp",
           "date": "7 Saat Önce",
           "views": "90.5K",
-          "author": "Nevşin Mengü"
+          "author": "D Yazar"
         },
         {
           "id": 403,
@@ -607,7 +607,7 @@
           "image": "/uploads/news/nissanin-en-ucuz-elektrikli-otomobili-pixo-ta-1790285449571.webp",
           "date": "6 Saat Önce",
           "views": "104.3K",
-          "author": "Deniz Zeyrek"
+          "author": "Y Yazar"
         },
         {
           "id": 404,
@@ -617,7 +617,7 @@
           "image": "/uploads/news/renault-captur-tamamen-yenileniyor-iste-bekle-1790285449967.webp",
           "date": "7 Saat Önce",
           "views": "39.7K",
-          "author": "Nevşin Mengü"
+          "author": "D Yazar"
         }
       ]
     },
@@ -634,7 +634,7 @@
           "image": "/uploads/news/binyamin-netanyahu-tum-dunyayi-cagri-cihaziyl-1790285686525.webp",
           "date": "25 Dk Önce",
           "views": "33.2K",
-          "author": "Çiğdem Toker"
+          "author": "Z Yazar"
         },
         {
           "id": 502,
@@ -644,7 +644,7 @@
           "image": "/uploads/news/birlesmis-milletler-genel-kuruluna-hitap-eden-1790285687353.webp",
           "date": "3 Saat Önce",
           "views": "38.7K",
-          "author": "İsmail Saymaz"
+          "author": "B Yazar"
         },
         {
           "id": 503,
@@ -654,7 +654,7 @@
           "image": "/uploads/news/bae-iran-hava-yolu-sirketlerinin-ucuslarini-d-1790285687448.webp",
           "date": "3 Saat Önce",
           "views": "72.8K",
-          "author": "Barış Terkoğlu"
+          "author": "C Yazar"
         },
         {
           "id": 504,
@@ -664,7 +664,7 @@
           "image": "/uploads/news/binyamin-netanyahu-ile-kiryakos-micotakis-new-1790285687605.webp",
           "date": "4 Saat Önce",
           "views": "78.4K",
-          "author": "Uğur Dündar"
+          "author": "E Yazar"
         }
       ]
     },
@@ -681,7 +681,7 @@
           "image": "/uploads/news/orduda-torununun-hayalini-gerceklestirdi-90-y-1790285689631.webp",
           "date": "7 Saat Önce",
           "views": "92.1K",
-          "author": "Deniz Zeyrek"
+          "author": "Y Yazar"
         },
         {
           "id": 602,
@@ -691,7 +691,7 @@
           "image": "/uploads/news/orduda-torununun-hayalini-gerceklestirdi-90-y-1790285450213.webp",
           "date": "7 Saat Önce",
           "views": "33.7K",
-          "author": "Deniz Zeyrek"
+          "author": "Y Yazar"
         },
         {
           "id": 603,
@@ -701,7 +701,7 @@
           "image": "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=600&q=80",
           "date": "40 Dk Önce",
           "views": "68.3K",
-          "author": "Deniz Zeyrek"
+          "author": "Y Yazar"
         },
         {
           "id": 604,
@@ -711,7 +711,7 @@
           "image": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=600&q=80",
           "date": "1.5 Saat Önce",
           "views": "52.4K",
-          "author": "Nevşin Mengü"
+          "author": "D Yazar"
         }
       ]
     },
@@ -728,7 +728,7 @@
           "image": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=600&q=80",
           "date": "30 Dk Önce",
           "views": "81.9K",
-          "author": "Nevşin Mengü"
+          "author": "D Yazar"
         },
         {
           "id": 702,
@@ -738,7 +738,7 @@
           "image": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=600&q=80",
           "date": "1.5 Saat Önce",
           "views": "63.2K",
-          "author": "Uğur Dündar"
+          "author": "E Yazar"
         },
         {
           "id": 703,
@@ -748,7 +748,7 @@
           "image": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=600&q=80",
           "date": "2.5 Saat Önce",
           "views": "74.8K",
-          "author": "Nevşin Mengü"
+          "author": "D Yazar"
         },
         {
           "id": 704,
@@ -758,7 +758,7 @@
           "image": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=600&q=80",
           "date": "4 Saat Önce",
           "views": "58.4K",
-          "author": "İsmail Saymaz"
+          "author": "B Yazar"
         }
       ]
     }
@@ -848,7 +848,7 @@
       "category": "EKONOMİ",
       "image": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=600&q=80",
       "date": "15 Dk Önce",
-      "author": "Çiğdem Toker"
+      "author": "Z Yazar"
     },
     {
       "id": 902,
@@ -857,7 +857,7 @@
       "category": "GÜNDEM",
       "image": "https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?auto=format&fit=crop&w=600&q=80",
       "date": "40 Dk Önce",
-      "author": "Murat Yetkin"
+      "author": "X Yazar"
     },
     {
       "id": 903,
@@ -866,7 +866,7 @@
       "category": "EKONOMİ",
       "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=600&q=80",
       "date": "1 Saat Önce",
-      "author": "Fatih Altaylı"
+      "author": "A Yazar"
     },
     {
       "id": 904,
@@ -875,7 +875,7 @@
       "category": "SPOR",
       "image": "https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=600&q=80",
       "date": "1.5 Saat Önce",
-      "author": "Uğur Dündar"
+      "author": "E Yazar"
     },
     {
       "id": 905,
@@ -884,7 +884,7 @@
       "category": "SAĞLIK",
       "image": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=600&q=80",
       "date": "2 Saat Önce",
-      "author": "Nevşin Mengü"
+      "author": "D Yazar"
     },
     {
       "id": 906,
@@ -893,7 +893,7 @@
       "category": "KELEBEK",
       "image": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=600&q=80",
       "date": "2.5 Saat Önce",
-      "author": "İsmail Saymaz"
+      "author": "B Yazar"
     }
   ],
   "lastUpdated": "2026-09-24T21:34:50.422Z"

@@ -37,7 +37,7 @@ export default function Header() {
     {
       name: 'Yazarlar',
       href: '#yazarlar',
-      subcategories: ['Fatih Altaylı', 'Murat Yetkin', 'Nevşin Mengü', 'İsmail Saymaz', 'Uğur Dündar', 'Çiğdem Toker']
+      subcategories: ['X Yazar', 'Y Yazar', 'Z Yazar', 'A Yazar', 'B Yazar', 'C Yazar', 'D Yazar', 'E Yazar']
     },
     {
       name: 'Kelebek',

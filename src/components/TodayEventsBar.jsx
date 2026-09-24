@@ -21,32 +21,31 @@ export default function TodayEventsBar() {
   if (!events.length) return null;
   const currentItem = events[currentIndex] || events[0];
   const itemTitle = currentItem.title || currentItem.text || 'Günün sıcak gelişmeleri';
-  const itemSummary = currentItem.summary || '';
   const itemTime = currentItem.time || 'Az önce';
 
   return (
     <div 
-      className="bg-slate-950 text-slate-100 border-b border-slate-800 text-xs shadow-md select-none relative z-10"
+      className="bg-slate-950 text-slate-100 border-b border-slate-800 text-xs shadow-xs select-none relative z-10"
       aria-label="Bugün Neler Oldu Akışı"
     >
       <div className="max-w-7xl mx-auto flex items-stretch overflow-hidden">
-        {/* Badge */}
-        <div className="bg-[#B71015] text-white px-3 sm:px-4 py-2 flex items-center gap-1.5 font-black text-[11px] sm:text-xs tracking-wider uppercase whitespace-nowrap shrink-0">
-          <CalendarDays className="w-3.5 h-3.5 text-amber-300" />
+        {/* Compact Responsive Badge */}
+        <div className="bg-[#B71015] text-white px-2.5 sm:px-4 py-2 flex items-center gap-1.5 font-black text-[10px] sm:text-xs tracking-wider uppercase whitespace-nowrap shrink-0">
+          <CalendarDays className="w-3.5 h-3.5 text-amber-300 shrink-0" />
           <span className="text-amber-300">BUGÜN</span>
-          <span>NELER OLDU?</span>
+          <span className="hidden sm:inline">NELER OLDU?</span>
         </div>
 
-        {/* Content Area */}
+        {/* Content Area - Net Başlık (Açıklamasız) */}
         <div 
-          className="flex-1 flex items-center px-3 sm:px-4 overflow-hidden"
+          className="flex-1 flex items-center px-2.5 sm:px-4 overflow-hidden min-w-0"
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
         >
-          <div className="flex items-center gap-2.5 truncate w-full py-1">
+          <div className="flex items-center gap-2 truncate w-full py-1">
             {/* Thumbnail Image */}
             {currentItem.image && (
-              <div className="relative w-7 h-7 sm:w-8 sm:h-8 rounded-md overflow-hidden shrink-0 border border-slate-700 shadow-xs">
+              <div className="relative w-6 h-6 sm:w-7 sm:h-7 rounded overflow-hidden shrink-0 border border-slate-700 shadow-xs">
                 <img
                   src={currentItem.image}
                   alt={itemTitle}
@@ -55,33 +54,30 @@ export default function TodayEventsBar() {
               </div>
             )}
 
-            <span className="inline-flex items-center gap-0.5 bg-[#E31E24] text-white font-black text-xs px-2 py-0.5 rounded tracking-wide shrink-0 shadow-sm">
-              <Hash className="w-3 h-3" />
+            {/* Hashtag Tag */}
+            <span className="inline-flex items-center gap-0.5 bg-[#E31E24] text-white font-black text-[10px] sm:text-xs px-1.5 sm:px-2 py-0.5 rounded tracking-wide shrink-0 shadow-xs">
+              <Hash className="w-2.5 h-2.5 sm:w-3 sm:h-3" />
               {(currentItem.tag || '#GÜNDEM').replace('#', '')}
             </span>
 
+            {/* Net Haber Başlığı (Açıklama olmaksızın sadece başlık) */}
             <Link 
               href={`/haber/${currentItem.id || 1}`}
-              className="font-black text-white hover:text-amber-300 transition-colors truncate text-sm sm:text-base tracking-tight"
+              className="font-black text-white hover:text-amber-300 transition-colors truncate text-xs sm:text-sm tracking-tight flex-1 min-w-0"
             >
               {itemTitle}
             </Link>
 
-            {itemSummary && (
-              <span className="text-slate-200 font-bold hidden md:inline truncate text-xs sm:text-sm">
-                — {itemSummary}
-              </span>
-            )}
-
-            <span className="text-amber-400 font-black text-xs ml-auto shrink-0 pl-2">
+            {/* Zaman Göstergesi */}
+            <span className="text-amber-400 font-bold text-[10px] sm:text-xs shrink-0 pl-1.5">
               {itemTime}
             </span>
           </div>
         </div>
 
         {/* Controls */}
-        <div className="flex items-center bg-slate-900 px-2 divide-x divide-slate-800 shrink-0 border-l border-slate-800">
-          <div className="hidden sm:flex items-center gap-1 px-2 text-[10px] text-slate-300 font-mono font-bold">
+        <div className="flex items-center bg-slate-900 px-1.5 sm:px-2 divide-x divide-slate-800 shrink-0 border-l border-slate-800">
+          <div className="hidden md:flex items-center gap-1 px-2 text-[10px] text-slate-300 font-mono font-bold">
             <span>{currentIndex + 1}</span>
             <span>/</span>
             <span>{events.length}</span>
@@ -98,18 +94,18 @@ export default function TodayEventsBar() {
 
           <button
             onClick={() => setCurrentIndex((prev) => (prev - 1 + events.length) % events.length)}
-            className="p-1 text-slate-300 hover:text-white transition pl-1.5"
+            className="p-1 text-slate-300 hover:text-white transition"
             title="Önceki"
-            aria-label="Önceki Olay"
+            aria-label="Önceki"
           >
             <ChevronLeft className="w-3.5 h-3.5" />
           </button>
 
           <button
             onClick={() => setCurrentIndex((prev) => (prev + 1) % events.length)}
-            className="p-1 text-slate-300 hover:text-white transition pl-1.5"
+            className="p-1 text-slate-300 hover:text-white transition"
             title="Sonraki"
-            aria-label="Sonraki Olay"
+            aria-label="Sonraki"
           >
             <ChevronRight className="w-3.5 h-3.5" />
           </button>

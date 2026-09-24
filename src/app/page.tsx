@@ -49,7 +49,7 @@ export default function HomePage() {
       <TodayEventsBar />
 
       {/* Ana Gövde Düzeni */}
-      <main className="max-w-7xl mx-auto px-3 sm:px-4 py-3 space-y-6">
+      <main className="max-w-7xl mx-auto px-2.5 sm:px-4 py-2 sm:py-3 space-y-4 sm:space-y-6">
         {/* Canlı Piyasalar (Dolar, Euro, Altın, BIST) */}
         <LiveFinanceSection />
 
@@ -59,7 +59,7 @@ export default function HomePage() {
         <NewsSlider />
 
         {/* 3. Alt Kategori Blokları (Gündem, Spor, Ekonomi, Dünya, Teknoloji - 4'lü kart ızgarası) */}
-        <div className="space-y-8">
+        <div className="space-y-6 sm:space-y-8">
           {/* Gündem Kategorisi (4'lü Kart Izgarası) */}
           {gundemCat && <CategorySection category={gundemCat} />}
 

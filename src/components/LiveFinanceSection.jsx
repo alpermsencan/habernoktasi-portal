@@ -25,7 +25,7 @@ export default function LiveFinanceSection() {
         if (json.success && Array.isArray(json.data) && json.data.length > 0) {
           setMarketItems(json.data);
           const now = new Date();
-          setLastUpdated(now.toLocaleTimeString('tr-TR', { hour: '2-digit', minute: '2-digit', second: '2-digit' }));
+          setLastUpdated(now.toLocaleTimeString('tr-TR', { hour: '2-digit', minute: '2-digit' }));
         }
       }
     } catch (err) {
@@ -36,13 +36,9 @@ export default function LiveFinanceSection() {
   }, []);
 
   useEffect(() => {
-    // 1. Initial live fetch
     fetchLiveData();
-
-    // 2. Periodic live refresh every 30 seconds
     const liveInterval = setInterval(fetchLiveData, 30000);
 
-    // 3. Subtle micro-tick simulation for visual life
     const tickTimer = setInterval(() => {
       setMarketItems((prevItems) =>
         prevItems.map((item) => {
@@ -83,61 +79,65 @@ export default function LiveFinanceSection() {
   }, [fetchLiveData]);
 
   return (
-    <section className="mb-3.5 bg-slate-950 text-white rounded-lg p-2.5 sm:p-3 border border-slate-800 shadow-md" aria-label="Canlı Piyasa Verileri">
-      <div className="flex items-center justify-between pb-1.5 mb-2 border-b border-slate-800/80">
-        <div className="flex items-center gap-2">
-          <span className="relative flex h-2.5 w-2.5">
+    <section 
+      className="mb-2.5 bg-slate-950 text-white rounded-lg p-1.5 sm:p-2 border border-slate-800/90 shadow-xs" 
+      aria-label="Canlı Piyasa Verileri"
+    >
+      {/* Top micro bar: Header & Refresh */}
+      <div className="flex items-center justify-between pb-1 mb-1.5 border-b border-slate-800/60 text-[11px]">
+        <div className="flex items-center gap-1.5">
+          <span className="relative flex h-2 w-2">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-80" />
-            <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500" />
+            <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
           </span>
-          <h2 className="font-black text-xs sm:text-sm uppercase tracking-wider text-white flex items-center gap-1.5">
-            <Activity className="w-3.5 h-3.5 text-emerald-400" />
+          <h2 className="font-black text-[11px] sm:text-xs uppercase tracking-wide text-white flex items-center gap-1">
+            <Activity className="w-3 h-3 text-emerald-400" />
             CANLI PİYASALAR
           </h2>
-          <span className="text-[10px] font-black uppercase text-emerald-400 bg-emerald-950/80 border border-emerald-800/60 px-1.5 py-0.2 rounded">
-            CANLI
+          <span className="text-[9px] font-black uppercase text-emerald-400 bg-emerald-950/80 border border-emerald-800/60 px-1 py-0.2 rounded hidden sm:inline">
+            ANLIK
           </span>
         </div>
 
-        <div className="flex items-center gap-2">
-          <span className="text-[11px] text-slate-300 font-bold font-mono hidden sm:inline">
-            Son Güncelleme: {lastUpdated}
+        <div className="flex items-center gap-1.5">
+          <span className="text-[10px] text-slate-400 font-mono hidden md:inline">
+            {lastUpdated}
           </span>
           <button
             onClick={fetchLiveData}
             disabled={isRefreshing}
-            className="p-1 rounded text-slate-400 hover:text-white hover:bg-slate-800 transition"
+            className="p-0.5 rounded text-slate-400 hover:text-white hover:bg-slate-800 transition"
             title="Piyasaları Yenile"
             aria-label="Piyasaları Yenile"
           >
-            <RefreshCw className={`w-3 h-3 ${isRefreshing ? 'animate-spin text-emerald-400' : ''}`} />
+            <RefreshCw className={`w-2.5 h-2.5 ${isRefreshing ? 'animate-spin text-emerald-400' : ''}`} />
           </button>
         </div>
       </div>
 
-      {/* Ultra-compact 8-symbol grid with high contrast bold typography */}
-      <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-2">
+      {/* Küçültülmüş, mobil uyumlu ve kompakt piyasa kartları */}
+      <div className="grid grid-cols-4 sm:grid-cols-4 lg:grid-cols-8 gap-1 sm:gap-1.5">
         {marketItems.map((item, idx) => {
           const isUp = item.isPositive;
           return (
             <div
               key={idx}
-              className="bg-slate-900/90 hover:bg-slate-850 border border-slate-800 hover:border-slate-700 px-2.5 py-1.5 rounded-md transition-colors flex flex-col justify-center shadow-xs"
+              className="bg-slate-900/90 hover:bg-slate-800/90 border border-slate-800/80 px-1.5 py-1 rounded transition-colors flex flex-col justify-center"
             >
-              <div className="flex items-center justify-between text-[11px] font-black text-slate-300">
+              <div className="flex items-center justify-between text-[9px] sm:text-[10px] font-bold text-slate-400">
                 <span className="truncate tracking-tight">{item.symbol}</span>
                 {isUp ? (
-                  <ArrowUpRight className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+                  <ArrowUpRight className="w-2.5 h-2.5 text-emerald-400 shrink-0" />
                 ) : (
-                  <ArrowDownRight className="w-3.5 h-3.5 text-red-400 shrink-0" />
+                  <ArrowDownRight className="w-2.5 h-2.5 text-red-400 shrink-0" />
                 )}
               </div>
 
-              <div className="flex items-baseline justify-between gap-1 mt-1">
-                <span className="font-black text-sm sm:text-base text-white tracking-tight">
+              <div className="flex items-baseline justify-between gap-0.5 mt-0.5">
+                <span className="font-black text-[11px] sm:text-xs text-white tracking-tight truncate">
                   {item.value}
                 </span>
-                <span className={`text-[10px] font-black ${isUp ? 'text-emerald-400' : 'text-red-400'}`}>
+                <span className={`text-[8px] sm:text-[9px] font-bold shrink-0 ${isUp ? 'text-emerald-400' : 'text-red-400'}`}>
                   {item.change}
                 </span>
               </div>
