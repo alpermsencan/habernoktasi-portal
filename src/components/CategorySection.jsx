@@ -48,7 +48,7 @@ export default function CategorySection({ category }) {
 
         {/* 'Daha Fazla' link */}
         <Link
-          href={`/kategori/${slug}`}
+          href={slug === 'kelebek' ? '/kategori/kelebek-magazin' : `/kategori/${slug}`}
           className={`inline-flex items-center gap-0.5 text-xs sm:text-sm font-black ${textAccent} hover:underline transition`}
         >
           <span>Tüm {name} Haberleri</span>

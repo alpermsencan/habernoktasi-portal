@@ -12,6 +12,7 @@ const slugToCategoryMap = {
   ekonomi: { name: 'Ekonomi', parent: null, desc: 'Piyasalar, Borsa İstanbul, döviz, altın, konut ve çalışma hayatı analizleri.' },
   spor: { name: 'Spor', parent: null, desc: 'Süper Lig, derbiler, Avrupa kupaları, transfer haberleri ve canlı skorlar.' },
   kelebek: { name: 'Kelebek (Magazin & Sanat)', parent: null, desc: 'Magazin dünyası, film festivalleri, podyum trendleri ve kültür sanat etkinlikleri.' },
+  'kelebek-magazin': { name: 'Kelebek Magazin', parent: null, desc: 'Magazin dünyası, ünlülerin yaşamı, dizi ve televizyon dünyasından en sıcak ve özel haberler.' },
   magazin: { name: 'Magazin', parent: 'Kelebek', desc: 'Dizi dünyası, ünlülerin yaşamı ve özel röportajlar.' },
   moda: { name: 'Moda', parent: 'Kelebek', desc: 'Dünya moda haftaları, sezon trendleri ve tasarımcı koleksiyonları.' },
   'kultur-sanat': { name: 'Kültür & Sanat', parent: 'Kelebek', desc: 'Tiyatro, sinema, sergiler, edebiyat ve konserler.' },
@@ -43,12 +44,12 @@ export default async function CategoryPage({ params }) {
 
   // Find articles matching category from local data
   let localArticles = [];
+  const isMagazinMatch = (s) => s === 'kelebek' || s === 'magazin' || s === 'kelebek-magazin';
   const foundCategory = newsData.categories.find(
     (c) =>
       c.slug === params.slug ||
-      (info.parent && c.name.toLowerCase().includes(info.parent.toLowerCase())) ||
-      (params.slug === 'magazin' && (c.slug === 'kelebek' || c.slug === 'magazin')) ||
-      (params.slug === 'kelebek' && (c.slug === 'kelebek' || c.slug === 'magazin'))
+      (isMagazinMatch(params.slug) && isMagazinMatch(c.slug)) ||
+      (info.parent && c.name.toLowerCase().includes(info.parent.toLowerCase()))
   );
 
   if (foundCategory) {

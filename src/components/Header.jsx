@@ -41,7 +41,7 @@ export default function Header() {
     },
     {
       name: 'Kelebek',
-      href: '/kategori/kelebek',
+      href: '/kategori/kelebek-magazin',
       subcategories: ['Magazin', 'Moda', 'Kültür & Sanat', 'Müzik']
     },
     {

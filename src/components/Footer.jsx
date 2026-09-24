@@ -28,7 +28,7 @@ export default function Footer() {
         { label: 'Dünya', href: '#dunya' },
         { label: 'Ekonomi', href: '#ekonomi' },
         { label: 'Spor', href: '#spor' },
-        { label: 'Kelebek / Magazin', href: '#kelebek' },
+        { label: 'Kelebek / Magazin', href: '/kategori/kelebek-magazin' },
         { label: 'Teknoloji', href: '#teknoloji' },
         { label: 'Sağlık', href: '#saglik' },
         { label: 'Yazarlar', href: '#yazarlar' }
