@@ -1,1 +1,119 @@
-{}
+{
+  "1": {
+    "id": 1,
+    "title": "Milyonlarca Çalışanı İlgilendiriyor: Yeni Vergi ve Maaş Düzenlemesinde Detaylar Belli Oldu",
+    "spot": "Çalışma ve Sosyal Güvenlik Bakanlığı koordinasyonunda hazırlanan yeni istihdam ve ücret paketi TBMM gündemine geliyor. Gelir vergisi dilimlerinden asgari geçim şartlarına, kıdem tazminatı tavanından yan haklara kadar milyonların beklediği tüm ayrıntılar netleşti.",
+    "category": "GÜNDEM",
+    "categorySlug": "gundem",
+    "publishDate": "24 Eylül 2026 - 14:30",
+    "updateDate": "24 Eylül 2026 - 15:45",
+    "readTime": "4 dakika okuma",
+    "readCount": "142.500",
+    "mainImage": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1200&q=80",
+    "imageCaption": "Yeni vergi düzenlemesi taslağının önümüzdeki hafta başında Meclis Başkanlığı'na sunulması bekleniyor. (Fotoğraf: AA)",
+    "author": {
+      "name": "X Yazar",
+      "role": "Haber Noktası Genel Yayın Yönetmeni & Yazar",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80",
+      "bio": "Gazeteci, yazar ve dış politika analisti. Uzun yıllardır Haber Noktası'nda köşe yazarlığı ve yöneticilik yapmaktadır.",
+      "articleCount": 2480,
+      "twitter": "muratyetkin"
+    },
+    "tags": ["Vergi Reformu", "Maaş Düzenlemesi", "Çalışma Hayatı", "TBMM", "Gündem"],
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Türkiye genelinde milyonlarca ücretli çalışanın merakla beklediği vergi dilimi ve gelir vergisi matrahı düzenlemesinde sona gelindi. Hazine ve Maliye Bakanlığı ile Çalışma ve Sosyal Güvenlik Bakanlığı uzmanlarının aylardır üzerinde çalıştığı teknik taslak, ekonomi yönetiminin onayından geçerek yasa teklifi haline getirildi."
+      },
+      {
+        "type": "highlight",
+        "text": "Yeni düzenlemeyle birlikte çalışanların yıl ortasında bir üst vergi dilimine girerek net maaşlarının erimesinin önüne geçilecek kademeli bir matrah güncellemesi hedefleniyor."
+      },
+      {
+        "type": "paragraph",
+        "text": "Mevcut sistemde ilk vergi dilimi matrahının enflasyon karşısında reel olarak gerilemesi, özellikle asgari ücretin üzerinde kazanan mavi ve beyaz yakalı çalışanların yaz aylarından itibaren yüzde 20 ve yüzde 27'lik vergi dilimlerine takılmasına yol açıyordu. Yeni kanun teklifinde bu basamakların arasındaki makas genişletiliyor."
+      },
+      {
+        "type": "heading",
+        "text": "Kademeli Geçiş ve Yeni Vergi Oranları"
+      },
+      {
+        "type": "paragraph",
+        "text": "Taslakta yer alan birinci maddeye göre, ilk vergi dilimi tavanı yeniden değerleme oranının üzerinde bir katsayı ile güncellenecek. Bu sayede bir çalışanın ocak ayında aldığı net maaş ile aralık ayında alacağı net maaş arasındaki fark minimum düzeye indirilecek."
+      },
+      {
+        "type": "quote",
+        "author": "Ekonomi Yetkilisi",
+        "text": "Amacımız alın teriyle çalışan her bir vatandaşımızın satın alma gücünü korumak ve vergi adaletini tabana dengeli bir şekilde yaymaktır. Reform paketi sadece bordrolu çalışanları değil, istihdam yaratan işverenleri de teşvik edecek mekanizmalar içermektedir."
+      },
+      {
+        "type": "paragraph",
+        "text": "Düzenlemede dikkat çeken bir diğer başlık ise kıdem tazminatı tavanı ve yan hakların vergilendirilmesi. Yemek kartları, ulaşım destekleri ve kreş yardımlarının gelir vergisinden istisna tutulan üst sınırları da güncel piyasa koşullarına göre revize ediliyor."
+      },
+      {
+        "type": "paragraph",
+        "text": "Yasa teklifinin önümüzdeki hafta başında TBMM Plan ve Bütçe Komisyonu'nda görüşülmeye başlanması, ardından Genel Kurul'da oylanarak Resmi Gazete'de yayımlanması öngörülüyor."
+      }
+    ],
+    "comments": [
+      {
+        "id": "c1",
+        "userName": "Mehmet Yılmaz",
+        "userAvatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=80&q=80",
+        "date": "2 saat önce",
+        "likes": 42,
+        "content": "Özellikle yılın ikinci yarısında bordrolarda yaşanan erime gerçekten can sıkıyordu. Eğer matrahlar reel oranda artırılırsa hem çalışan hem de piyasa için çok olumlu bir canlanma sağlar."
+      },
+      {
+        "id": "c2",
+        "userName": "Ayşe Demir",
+        "userAvatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=80&q=80",
+        "date": "1 saat önce",
+        "likes": 19,
+        "content": "Yan haklardaki istisna limitlerinin de yükseltilecek olması harika bir gelişme. Yemek ve yol yardımları günümüz şartlarında çok geride kalmıştı. Komisyondan hızlı geçmesini temenni ediyoruz."
+      },
+      {
+        "id": "c3",
+        "userName": "Kemal Özkan",
+        "userAvatar": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?auto=format&fit=crop&w=80&q=80",
+        "date": "35 dakika önce",
+        "likes": 8,
+        "content": "Haber Noktası her zamanki gibi ayrıntıları en net ve güvenilir şekilde aktarmış. Emeğinize sağlık."
+      }
+    ],
+    "relatedArticles": [
+      {
+        "id": 101,
+        "title": "Ankara'da Yoğun Diplomasi Trafiği: Dışişleri'nden Peş Peşe Kritik Görüşmeler",
+        "summary": "Bölgesel gelişmeler ve stratejik ortaklıklar bağlamında yabancı mevkidaşlarla yapılan görüşmelerde ortak bildiri yayımlandı.",
+        "image": "https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?auto=format&fit=crop&w=600&q=80",
+        "category": "GÜNDEM",
+        "date": "35 Dk Önce"
+      },
+      {
+        "id": 102,
+        "title": "Meteoroloji'den 16 İle Sarı Kodlu Uyarı: Yarın Sabaha Dikkat!",
+        "summary": "Kuzey ve İç Ege ile İç Anadolu'nun batısında kuvvetli rüzgar ve sağanak yağış bekleniyor. Su baskınlarına karşı uyarı yapıldı.",
+        "image": "https://images.unsplash.com/photo-1534088568595-a066f410bcda?auto=format&fit=crop&w=600&q=80",
+        "category": "GÜNDEM",
+        "date": "1 Saat Önce"
+      },
+      {
+        "id": 103,
+        "title": "Ulaşımda Yeni Dönem: Yüksek Hızlı Tren Ağında İki Yeni Hat Hizmete Giriyor",
+        "summary": "Ulaştırma Bakanlığı'nın mega projeleri arasında yer alan iki kritik güzergahın test sürüşleri tamamlandı.",
+        "image": "https://images.unsplash.com/photo-1474487548417-781cb71495f3?auto=format&fit=crop&w=600&q=80",
+        "category": "GÜNDEM",
+        "date": "2 Saat Önce"
+      },
+      {
+        "id": 104,
+        "title": "Milli Eğitim'den Müfredat Açıklaması: Beceri Temelli Eğitim Başlıyor",
+        "summary": "Yeni eğitim öğretim yılı hedefleri doğrultusunda öğretmen eğitimleri ve pilot okullardaki uygulamalar hızlandırıldı.",
+        "image": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=600&q=80",
+        "category": "GÜNDEM",
+        "date": "3 Saat Önce"
+      }
+    ]
+  }
+}
