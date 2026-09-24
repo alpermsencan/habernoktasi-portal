@@ -124,61 +124,81 @@ export async function distributeNews(
     };
   });
 
-  // 1. Breaking News (Son Dakika: 5-8 items)
-  const breakingNewsTitles: string[] = preparedArticles.slice(0, 8).map((art) => {
-    const cleanTitle = art.title.replace(/^SON\s*DAKİKA\s*[:|-]?\s*/i, '');
-    return `SON DAKİKA: ${cleanTitle}`;
-  });
+  // Exclude soft news / magazin from hard news slots (Headline, Breaking, Sıcak Gündem, Today Events)
+  const isMagazin = (art: any) => {
+    const slug = (art.categorySlug || '').toLowerCase();
+    const cat = (art.categoryNormal || art.category || '').toLowerCase();
+    return slug === 'kelebek' || slug === 'magazin' || /magazin|kelebek|ünlü|dizi|moda/i.test(cat);
+  };
 
-  // 2. Sıcak Gündem / Trending Side Feed (6 items)
-  const sicakGundem = preparedArticles.slice(0, 6).map((art, idx) => ({
-    id: 101 + idx,
-    title: art.title,
-    summary: art.summary,
-    category: art.category,
-    image: art.image,
-    date: art.date,
-    time: art.time,
-    views: art.views,
-  }));
+  const hardNewsArticles = preparedArticles.filter((art) => !isMagazin(art));
 
-  // 3. Slider Side News (2 items for backward compat)
-  const sliderSideNews = sicakGundem.slice(0, 2).map((art, idx) => ({
-    id: 21 + idx,
-    title: art.title,
-    summary: art.summary,
-    category: art.category,
-    image: art.image,
-    views: art.views,
-    time: art.time,
-  }));
-
-  // 4. Headline Slider (Exact 15 items with isHeadline: true)
-  const sliderSource = preparedArticles.slice(0, 15);
-  let headlineSlider = sliderSource.map((art, idx) => ({
-    id: idx + 1,
-    title: art.title,
-    summary: art.summary,
-    category: art.category,
-    image: art.image,
-    date: art.date,
-    readCount: art.readCount,
-    author: art.author,
-    isHeadline: true,
-  }));
-
-  if (headlineSlider.length < 15 && Array.isArray(existingData.headlineSlider)) {
-    // Fill remaining from existing headlineSlider
-    const needed = 15 - headlineSlider.length;
-    const fillers = existingData.headlineSlider.slice(0, needed).map((f: any, i: number) => ({
-      ...f,
-      id: headlineSlider.length + i + 1,
-      isHeadline: true,
-    }));
-    headlineSlider = [...headlineSlider, ...fillers];
+  // 1. Breaking News (Son Dakika: 5-8 items from hard news only)
+  let breakingNewsTitles: string[] = existingData.breakingNews || [];
+  if (hardNewsArticles.length > 0) {
+    breakingNewsTitles = hardNewsArticles.slice(0, 8).map((art) => {
+      const cleanTitle = art.title.replace(/^SON\s*DAKİKA\s*[:|-]?\s*/i, '');
+      return `SON DAKİKA: ${cleanTitle}`;
+    });
   }
 
-  // 5. Category Sections Distribution (4 items each: 1 main + 3 side)
+  // 2. Sıcak Gündem / Trending Side Feed (6 items from hard news only)
+  let sicakGundem = existingData.sicakGundem || [];
+  if (hardNewsArticles.length > 0) {
+    sicakGundem = hardNewsArticles.slice(0, 6).map((art, idx) => ({
+      id: 101 + idx,
+      title: art.title,
+      summary: art.summary,
+      category: art.category,
+      image: art.image,
+      date: art.date,
+      time: art.time,
+      views: art.views,
+    }));
+  }
+
+  // 3. Slider Side News (2 items from hard news only)
+  let sliderSideNews = existingData.sliderSideNews || [];
+  if (sicakGundem.length >= 2) {
+    sliderSideNews = sicakGundem.slice(0, 2).map((art: any, idx: number) => ({
+      id: 21 + idx,
+      title: art.title,
+      summary: art.summary,
+      category: art.category,
+      image: art.image,
+      views: art.views,
+      time: art.time,
+    }));
+  }
+
+  // 4. Headline Slider (Exact 15 items with isHeadline: true, from hard news only)
+  let headlineSlider = existingData.headlineSlider || [];
+  if (hardNewsArticles.length > 0) {
+    const sliderSource = hardNewsArticles.slice(0, 15);
+    headlineSlider = sliderSource.map((art, idx) => ({
+      id: idx + 1,
+      title: art.title,
+      summary: art.summary,
+      category: art.category,
+      image: art.image,
+      date: art.date,
+      readCount: art.readCount,
+      author: art.author,
+      isHeadline: true,
+    }));
+
+    if (headlineSlider.length < 15 && Array.isArray(existingData.headlineSlider)) {
+      const needed = 15 - headlineSlider.length;
+      const fillers = existingData.headlineSlider.slice(0, needed).map((f: any, i: number) => ({
+        ...f,
+        id: headlineSlider.length + i + 1,
+        isHeadline: true,
+      }));
+      headlineSlider = [...headlineSlider, ...fillers];
+    }
+  }
+
+  // 5. Category Sections Distribution (Home page uses top 4, category page uses all)
   const categoryDefs = [
     { name: 'Gündem', slug: 'gundem', desc: "Türkiye'nin siyaset, parlamento, güvenlik ve iç politika gündemi." },
     { name: 'Ekonomi', slug: 'ekonomi', desc: 'Piyasalar, Merkez Bankası, Borsa İstanbul, altın, döviz ve bütçe haberleri.' },
@@ -206,8 +226,9 @@ export async function distributeNews(
       : null;
     const existingArticles = existingCat?.articles || [];
 
-    // Convert matched to category article structure
-    const newArticles = matched.slice(0, 4).map((art, aIdx) => ({
+    // Kelebek/Magazin can keep up to 40 articles for the dedicated category page
+    const maxArticlesForCategory = def.slug === 'kelebek' ? 40 : 4;
+    const newArticles = matched.slice(0, maxArticlesForCategory).map((art, aIdx) => ({
       id: (cIdx + 1) * 100 + aIdx + 1,
       title: art.title,
       summary: art.summary,
@@ -241,15 +262,18 @@ export async function distributeNews(
     };
   });
 
-  // 6. Update todayEvents (top 10 hashtag ribbon items)
-  const todayEvents = preparedArticles.slice(0, 10).map((art, idx) => ({
-    id: idx + 1,
-    tag: `#${art.category}`,
-    title: art.title,
-    summary: art.summary,
-    time: art.time,
-    image: art.image,
-  }));
+  // 6. Update todayEvents (top 10 hashtag ribbon items from hard news only)
+  let todayEvents = existingData.todayEvents || [];
+  if (hardNewsArticles.length > 0) {
+    todayEvents = hardNewsArticles.slice(0, 10).map((art, idx) => ({
+      id: idx + 1,
+      tag: `#${art.category}`,
+      title: art.title,
+      summary: art.summary,
+      time: art.time,
+      image: art.image,
+    }));
+  }
 
   // Construct complete updated newsData payload
   const updatedData = {

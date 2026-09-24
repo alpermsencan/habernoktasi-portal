@@ -44,7 +44,11 @@ export default async function CategoryPage({ params }) {
   // Find articles matching category from local data
   let localArticles = [];
   const foundCategory = newsData.categories.find(
-    (c) => c.slug === params.slug || (info.parent && c.name.toLowerCase().includes(info.parent.toLowerCase()))
+    (c) =>
+      c.slug === params.slug ||
+      (info.parent && c.name.toLowerCase().includes(info.parent.toLowerCase())) ||
+      (params.slug === 'magazin' && (c.slug === 'kelebek' || c.slug === 'magazin')) ||
+      (params.slug === 'kelebek' && (c.slug === 'kelebek' || c.slug === 'magazin'))
   );
 
   if (foundCategory) {
