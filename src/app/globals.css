@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #F8F9FA;
+  --foreground: #1A1A1A;
+  --text-muted: #666666;
+}
+
+.dark {
+  --background: #0F172A;
+  --foreground: #F8FAFC;
+  --text-muted: #94A3B8;
+}
+
+body {
+  color: var(--foreground);
+  background-color: var(--background);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: -0.025em;
+  font-weight: 800;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #E5E7EB;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #1E293B;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #E31E24;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B71015;
+}
+
+/* Typography Helpers */
+@layer components {
+  .news-card-title {
+    @apply font-serif text-neutral-900 dark:text-neutral-100 group-hover:text-hurriyet-red transition-colors duration-200;
+  }
+  
+  .editorial-lead {
+    @apply font-serif font-bold text-3xl sm:text-4xl leading-tight text-neutral-900 dark:text-white;
+  }
+  
+  .editorial-body {
+    @apply text-base text-neutral-600 dark:text-neutral-300 leading-[1.7];
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.25s ease-out forwards;
+}

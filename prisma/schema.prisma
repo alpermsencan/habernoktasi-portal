@@ -1,0 +1,32 @@
+// Prisma Schema Definition for News Portal
+// Compatible with MySQL (Hostinger Default) and PostgreSQL
+
+datasource db {
+  provider = "mysql" // or "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model News {
+  id          String   @id @default(uuid())
+  guid        String   @unique
+  title       String   @db.VarChar(500)
+  slug        String   @db.VarChar(500)
+  summary     String?  @db.Text
+  content     String?  @db.LongText
+  sourceLink  String   @unique @db.VarChar(750)
+  sourceName  String   @db.VarChar(100)
+  category    String   @default("Gündem") @db.VarChar(50)
+  imageUrl    String   @db.VarChar(500)
+  publishedAt DateTime @default(now())
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([category])
+  @@index([publishedAt(sort: Desc)])
+  @@index([sourceName])
+  @@map("news_articles")
+}
