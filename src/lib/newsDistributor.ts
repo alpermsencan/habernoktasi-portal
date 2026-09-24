@@ -193,9 +193,12 @@ export async function distributeNews(
 
   const updatedCategories = categoryDefs.map((def, cIdx) => {
     // Match articles belonging to this category
-    const matched = preparedArticles.filter(
-      (a) => a.categorySlug === def.slug || a.categoryNormal.toLowerCase() === def.name.toLowerCase()
-    );
+    const matched = preparedArticles.filter((a) => {
+      if (a.categorySlug === def.slug) return true;
+      if (a.categoryNormal.toLowerCase() === def.name.toLowerCase()) return true;
+      if (def.slug === 'kelebek' && (a.categoryNormal.toLowerCase().includes('magazin') || a.categorySlug === 'magazin')) return true;
+      return false;
+    });
 
     // Existing articles for this category as fallback
     const existingCat = Array.isArray(existingData.categories)

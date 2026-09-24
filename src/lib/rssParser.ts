@@ -232,6 +232,7 @@ export const ENSONHABER_FEEDS = {
   dunya: 'https://www.ensonhaber.com/rss/dunya.xml',
   saglik: 'https://www.ensonhaber.com/rss/saglik.xml',
   otomobil: 'https://www.ensonhaber.com/rss/otomobil.xml',
+  magazin: 'https://www.ensonhaber.com/rss/magazin.xml',
 } as const;
 
 export const ENSONHABER_FEED_URLS = Object.values(ENSONHABER_FEEDS);
