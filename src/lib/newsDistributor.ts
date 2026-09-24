@@ -130,18 +130,20 @@ export async function distributeNews(
     return `SON DAKİKA: ${cleanTitle}`;
   });
 
-  // 2. Sıcak Gündem (3 items)
-  const sicakGundem = preparedArticles.slice(0, 3).map((art, idx) => ({
+  // 2. Sıcak Gündem / Trending Side Feed (6 items)
+  const sicakGundem = preparedArticles.slice(0, 6).map((art, idx) => ({
     id: 101 + idx,
     title: art.title,
     summary: art.summary,
     category: art.category,
     image: art.image,
     date: art.date,
+    time: art.time,
+    views: art.views,
   }));
 
-  // 3. Slider Side News (2 items)
-  const sliderSideNews = preparedArticles.slice(3, 5).map((art, idx) => ({
+  // 3. Slider Side News (2 items for backward compat)
+  const sliderSideNews = sicakGundem.slice(0, 2).map((art, idx) => ({
     id: 21 + idx,
     title: art.title,
     summary: art.summary,
@@ -151,9 +153,8 @@ export async function distributeNews(
     time: art.time,
   }));
 
-  // 4. Headline Slider (Exact 15 items)
-  // Take from index 5 onwards, then wrap around or merge with existing to guarantee exactly 15
-  const sliderSource = preparedArticles.slice(5, 20);
+  // 4. Headline Slider (Exact 15 items with isHeadline: true)
+  const sliderSource = preparedArticles.slice(0, 15);
   let headlineSlider = sliderSource.map((art, idx) => ({
     id: idx + 1,
     title: art.title,
@@ -163,6 +164,7 @@ export async function distributeNews(
     date: art.date,
     readCount: art.readCount,
     author: art.author,
+    isHeadline: true,
   }));
 
   if (headlineSlider.length < 15 && Array.isArray(existingData.headlineSlider)) {
@@ -171,6 +173,7 @@ export async function distributeNews(
     const fillers = existingData.headlineSlider.slice(0, needed).map((f: any, i: number) => ({
       ...f,
       id: headlineSlider.length + i + 1,
+      isHeadline: true,
     }));
     headlineSlider = [...headlineSlider, ...fillers];
   }

@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { revalidatePath } from 'next/cache';
 import { parseEnsonhaberRSS, ParsedNews } from '@/lib/rssParser';
-import { downloadAndOptimizeImage } from '@/lib/imageDownloader';
+import { downloadAndProcessImage } from '@/lib/imageHandler';
 import { distributeNews, DistributableArticle } from '@/lib/newsDistributor';
 import { articleExists, saveArticle } from '@/lib/newsRepository';
 import { INewsArticle } from '@/types/news';
@@ -13,11 +13,29 @@ export const maxDuration = 60; // 60s timeout for processing batches
 
 const DEFAULT_SECRET = 'super_secret_cron_token_haber_noktasi_2026';
 
+/**
+ * Normalizes raw RSS categories to portal standards:
+ * - "Futbol", "Basketbol", "Milli Takımlar", "Boks" -> "Spor"
+ * - "3. Sayfa", "İç Haber", "Asayiş" -> "Gündem"
+ * - "Dünya", "Ekonomi", "Teknoloji", "Otomobil", "Magazin" -> Standard
+ */
+function standardizeCategory(rawCat: string = ''): string {
+  const c = rawCat.trim().toLowerCase();
+  if (/futbol|basketbol|milli\s*takım|boks|voleybol|spor/i.test(c)) return 'Spor';
+  if (/3\.\s*sayfa|iç\s*haber|asayiş|politika|siyaset/i.test(c)) return 'Gündem';
+  if (/ekonomi|piyasa|finans|borsa/i.test(c)) return 'Ekonomi';
+  if (/teknoloji|bilim|yapay\s*zeka|otomobil|yazılım/i.test(c)) return 'Teknoloji';
+  if (/dünya|dunya|uluslararası|global/i.test(c)) return 'Dünya';
+  if (/magazin|kelebek|kültür|sanat|sinema|dizi/i.test(c)) return 'Magazin';
+  if (/sağlık|saglik|tıp/i.test(c)) return 'Sağlık';
+  return 'Gündem';
+}
+
 export async function GET(request: NextRequest): Promise<NextResponse> {
   const startTime = Date.now();
 
   try {
-    // 1. Security Authentication Check (Query parameter or Bearer token)
+    // 1. Security Authentication Check (Query parameter ?secret=... or Authorization: Bearer <TOKEN>)
     const { searchParams } = new URL(request.url);
     const querySecret = searchParams.get('secret');
 
@@ -34,17 +52,17 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
         {
           success: false,
           error: 'Yetkisiz erişim. Geçerli bir CRON_SECRET belirtilmedi.',
-          hint: 'İstek URL parametresi (?secret=...) veya Authorization: Bearer <TOKEN> başlığı kullanın.',
+          hint: 'İstek URL parametresi (?secret=CRON_SECRET) veya Authorization: Bearer <TOKEN> başlığı kullanın.',
         },
         { status: 401 }
       );
     }
 
-    console.log('[Cron Sync] Ensonhaber RSS senkronizasyonu başlatılıyor...');
+    console.log('[Cron Sync] Ensonhaber RSS akışı çekiliyor (https://www.ensonhaber.com/rss/ensonhaber.xml)...');
 
     // 2. Fetch and parse Ensonhaber RSS feed
-    const rawArticles: ParsedNews[] = await parseEnsonhaberRSS();
-    console.log(`[Cron Sync] Ensonhaber RSS'den ${rawArticles.length} haber ayrıştırıldı.`);
+    const rawArticles: ParsedNews[] = await parseEnsonhaberRSS('https://www.ensonhaber.com/rss/ensonhaber.xml');
+    console.log(`[Cron Sync] Ensonhaber RSS'den ${rawArticles.length} haber başarıyla ayrıştırıldı.`);
 
     if (rawArticles.length === 0) {
       return NextResponse.json(
@@ -62,30 +80,38 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
 
     const distributableList: DistributableArticle[] = [];
 
-    // 3. Process articles: download and optimize images with Sharp into WebP
-    for (const item of rawArticles) {
-      // Check for duplication in repository
+    // 3. Process articles, download images via lib/imageHandler, categorize and flag
+    for (let index = 0; index < rawArticles.length; index++) {
+      const item = rawArticles[index];
+
+      // Mükerrer haber kontrolü (guid veya link)
       const exists = await articleExists(item.guid, item.link);
       if (exists) {
         duplicatesSkipped++;
       }
 
-      // Download and optimize image to local public/uploads/news/ directory
+      // Kategori standardizasyonu
+      const standardCat = standardizeCategory(item.category);
+
+      // En son gelen ilk 5-10 haberi otomatik olarak isHeadline: true (Manşet Slider) olarak işaretle
+      const isHeadline = index < 10;
+
+      // Yayınlanma saati son 2 saat içinde olanları veya "Gündem / 3. Sayfa" olanları isBreaking: true (Son Dakika) olarak ata
+      const pubTime = item.pubDate ? new Date(item.pubDate).getTime() : NaN;
+      const isWithin2Hours = !isNaN(pubTime) && (Date.now() - pubTime) <= 2 * 60 * 60 * 1000;
+      const isGundemOr3Sayfa = /gündem|3\.\s*sayfa|iç\s*haber/i.test(item.category);
+      const isBreaking = isWithin2Hours || isGundemOr3Sayfa;
+
+      // Dış görsel URL'sini sharp ile 1200x675 WebP olarak indir ve public/uploads/news/ dizinine kaydet
       let localImagePath = '/placeholder.webp';
       if (item.imageUrl) {
-        localImagePath = await downloadAndOptimizeImage(item.imageUrl, item.title, {
-          width: 1200,
-          height: 675,
-          quality: 80,
-          folder: 'news',
-        });
-
+        localImagePath = await downloadAndProcessImage(item.imageUrl, item.title);
         if (localImagePath !== '/placeholder.webp') {
           imagesDownloaded++;
         }
       }
 
-      // If not duplicate, save into permanent repository/DB
+      // Veritabanına kaydet (Eğer mükerrer değilse)
       if (!exists) {
         const newRecord: INewsArticle = {
           id: `ensonhaber-${Date.now()}-${Math.floor(Math.random() * 10000)}`,
@@ -96,10 +122,12 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
           content: item.summary,
           sourceLink: item.link,
           sourceName: 'Ensonhaber',
-          category: item.normalizedCategory,
+          category: standardCat,
           imageUrl: localImagePath,
           publishedAt: item.pubDate || new Date().toISOString(),
           createdAt: new Date().toISOString(),
+          isHeadline,
+          isBreaking,
         };
 
         try {
@@ -110,13 +138,13 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
         }
       }
 
-      // Add to list for frontpage distribution
+      // Dağıtıcı listesine ekle
       distributableList.push({
         title: item.title,
         summary: item.summary,
-        category: item.normalizedCategory,
-        normalizedCategory: item.normalizedCategory,
-        categorySlug: item.categorySlug,
+        category: standardCat,
+        normalizedCategory: standardCat,
+        categorySlug: standardCat.toLowerCase() === 'magazin' ? 'kelebek' : standardCat.toLowerCase(),
         imageUrl: localImagePath,
         image: localImagePath,
         pubDate: item.pubDate,
@@ -125,12 +153,11 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
       });
     }
 
-    // 4. Distribute news to homepage blocks (newsData.json)
+    // 4. Ana sayfa bloklarına haber dağıtımı yap
     console.log('[Cron Sync] Ana sayfa bloklarına haber dağıtımı başlatılıyor...');
     const distributionResult = await distributeNews(distributableList);
-    console.log('[Cron Sync] Dağıtım tamamlandı:', distributionResult);
 
-    // 5. Revalidate Next.js App Router cache for instantaneous front-end reflect
+    // 5. İşlem bittiğinde revalidatePath('/') çalıştırarak önbelleği anında tazele
     try {
       revalidatePath('/');
       revalidatePath('/ensonhaber');
@@ -184,5 +211,5 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
   }
 }
 
-// Support both GET and POST requests for external cron providers (Hostinger, cPanel, EasyCron, etc.)
+// Support both GET and POST for maximum compatibility with server cron providers
 export const POST = GET;

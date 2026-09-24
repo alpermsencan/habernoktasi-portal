@@ -68,6 +68,8 @@ export interface INewsArticle {
   publishedAt: string;
   createdAt: string;
   updatedAt?: string;
+  isHeadline?: boolean;
+  isBreaking?: boolean;
 }
 
 export interface SyncNewsResult {

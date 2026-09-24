@@ -170,55 +170,64 @@ export default function NewsSlider() {
           </div>
         </div>
 
-        {/* ================= RIGHT: 2 SIDE PHOTO NEWS CARDS (4 COLS) ================= */}
-        <div className="lg:col-span-4 flex flex-col gap-3 justify-between h-auto lg:h-[480px]">
-          {sideNews.map((item) => (
-            <Link
-              key={item.id}
-              href={`/haber/${item.id}`}
-              className="group relative flex-1 bg-white dark:bg-neutral-900 rounded-lg overflow-hidden border border-neutral-300 dark:border-neutral-800 hover:border-red-500 dark:hover:border-red-500 shadow-sm hover:shadow-md transition-all flex flex-col justify-between"
-            >
-              <div className="relative h-28 sm:h-32 lg:h-32 w-full overflow-hidden bg-neutral-100 dark:bg-neutral-800 shrink-0">
-                <Image
-                  src={item.image}
-                  alt={item.title}
-                  fill
-                  sizes="(max-width: 1024px) 100vw, 33vw"
-                  className="object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+        {/* ================= RIGHT: SICAK GÜNDEM / TRENDING SIDE FEED (4 COLS) ================= */}
+        <div className="lg:col-span-4 flex flex-col bg-white dark:bg-neutral-900 rounded-lg overflow-hidden border border-neutral-300 dark:border-neutral-800 shadow-sm h-auto lg:h-[480px]">
+          {/* Header Bar */}
+          <div className="bg-neutral-900 text-white px-3.5 py-2.5 flex items-center justify-between border-b border-neutral-800 shrink-0">
+            <div className="flex items-center gap-2">
+              <span className="w-2.5 h-2.5 rounded-full bg-[#E31E24] animate-ping" />
+              <h2 className="font-black text-sm uppercase tracking-wider text-white">
+                Sıcak Gündem
+              </h2>
+            </div>
+            <span className="text-[10px] font-bold text-neutral-400 uppercase tracking-widest">
+              GÜNCEL AKIŞ
+            </span>
+          </div>
 
-                <div className="absolute top-2 left-2 flex items-center gap-1.5">
-                  <span className="bg-[#E31E24] text-white text-[9px] font-black uppercase px-2 py-0.5 rounded shadow">
+          {/* 5-6 Item Vertical Stack with Small Thumbnails and Bold Titles */}
+          <div className="flex-1 divide-y divide-neutral-200 dark:divide-neutral-800 overflow-y-auto p-1.5 flex flex-col justify-between">
+            {(newsData.sicakGundem && newsData.sicakGundem.length > 0 ? newsData.sicakGundem.slice(0, 6) : slides.slice(0, 6)).map((item, idx) => (
+              <Link
+                key={item.id || idx}
+                href={`/haber/${item.id}`}
+                className="group flex items-center gap-2.5 p-1.5 sm:p-2 rounded hover:bg-neutral-100 dark:hover:bg-neutral-800/80 transition-colors"
+              >
+                {/* Small Optimized Image Thumbnail */}
+                <div className="relative w-18 sm:w-20 h-14 sm:h-15 shrink-0 rounded overflow-hidden bg-neutral-200 dark:bg-neutral-800">
+                  <Image
+                    src={item.image || '/placeholder.webp'}
+                    alt={item.title}
+                    fill
+                    sizes="90px"
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <span className="absolute bottom-0 left-0 bg-[#E31E24] text-white text-[8px] font-black uppercase px-1 leading-none py-0.5">
                     {item.category}
                   </span>
-                  <span className="bg-black/60 text-white text-[10px] font-bold px-2 py-0.5 rounded backdrop-blur-sm">
-                    {item.time}
-                  </span>
                 </div>
 
-                <div className="absolute bottom-1.5 right-2 text-white/90 text-[10px] font-bold flex items-center gap-1">
-                  <Eye className="w-3 h-3 text-red-400" />
-                  <span>{item.views}</span>
-                </div>
-              </div>
-
-              <div className="p-3 sm:p-3.5 flex-1 flex flex-col justify-between">
-                <div>
-                  <h3 className="font-black text-base sm:text-lg text-neutral-950 dark:text-neutral-50 group-hover:text-[#E31E24] transition-colors line-clamp-2 leading-snug tracking-tight mb-1.5">
+                {/* Title and Meta */}
+                <div className="flex-1 min-w-0">
+                  <h3 className="font-black text-xs sm:text-sm text-neutral-900 dark:text-neutral-100 group-hover:text-[#E31E24] transition-colors line-clamp-2 leading-snug tracking-tight">
                     {item.title}
                   </h3>
-                  <p className="text-xs sm:text-sm font-bold text-neutral-800 dark:text-neutral-200 line-clamp-2 leading-relaxed">
-                    {item.summary}
-                  </p>
+                  <div className="flex items-center gap-2 mt-1 text-[10px] font-bold text-neutral-500 dark:text-neutral-400">
+                    <span className="flex items-center gap-0.5">
+                      <Clock className="w-2.5 h-2.5 text-red-500" />
+                      {item.date || item.time || 'Az önce'}
+                    </span>
+                    {item.views && (
+                      <span className="flex items-center gap-0.5">
+                        <Eye className="w-2.5 h-2.5 text-neutral-400" />
+                        {item.views}
+                      </span>
+                    )}
+                  </div>
                 </div>
-                <div className="mt-2.5 pt-1.5 border-t border-neutral-100 dark:border-neutral-800 flex items-center justify-between text-xs font-black text-red-600 dark:text-red-400">
-                  <span>Haberin Devamı</span>
-                  <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
-                </div>
-              </div>
-            </Link>
-          ))}
+              </Link>
+            ))}
+          </div>
         </div>
 
       </div>
