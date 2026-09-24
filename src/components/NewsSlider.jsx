@@ -44,6 +44,23 @@ export default function NewsSlider() {
     setActiveIndex((prev) => (prev + 1) % slides.length);
   };
 
+  const [touchStartX, setTouchStartX] = useState(null);
+
+  const handleTouchStart = (e) => {
+    setTouchStartX(e.touches[0].clientX);
+  };
+
+  const handleTouchEnd = (e) => {
+    if (touchStartX === null) return;
+    const diff = touchStartX - e.changedTouches[0].clientX;
+    if (diff > 50) {
+      handleNext();
+    } else if (diff < -50) {
+      handlePrev();
+    }
+    setTouchStartX(null);
+  };
+
   if (!currentSlide) return null;
 
   const catStyle = categoryTagStyles[(currentSlide.category || 'gündem').toLowerCase()] || 'bg-[#E31E24] text-white';
@@ -57,17 +74,25 @@ export default function NewsSlider() {
           className="lg:col-span-8 flex flex-col justify-between bg-neutral-950 rounded-lg overflow-hidden border border-neutral-300 dark:border-neutral-800 shadow-md h-[360px] sm:h-[440px] md:h-[480px]"
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
+          onTouchStart={handleTouchStart}
+          onTouchEnd={handleTouchEnd}
         >
           {/* Visual Canvas Area */}
-          <div className="relative flex-1 w-full overflow-hidden bg-neutral-900">
-            <AnimatePresence mode="wait">
+          <div className="relative flex-1 w-full overflow-hidden bg-neutral-900 select-none touch-pan-y">
+            <AnimatePresence mode="popLayout" initial={false}>
               <motion.div
                 key={currentSlide.id}
-                initial={{ opacity: 0, scale: 1.02 }}
-                animate={{ opacity: 1, scale: 1 }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
-                transition={{ duration: 0.35, ease: 'easeInOut' }}
-                className="relative w-full h-full"
+                transition={{ duration: 0.3, ease: 'easeOut' }}
+                className="absolute inset-0 w-full h-full overflow-hidden"
+                style={{
+                  willChange: 'opacity',
+                  transform: 'translateZ(0)',
+                  WebkitBackfaceVisibility: 'hidden',
+                  backfaceVisibility: 'hidden',
+                }}
               >
                 <Image
                   src={currentSlide.image}
@@ -76,6 +101,7 @@ export default function NewsSlider() {
                   priority={activeIndex === 0}
                   sizes="(max-width: 1024px) 100vw, 66vw"
                   className="object-cover object-center"
+                  draggable={false}
                 />
 
                 {/* Editorial High Contrast Gradients */}
