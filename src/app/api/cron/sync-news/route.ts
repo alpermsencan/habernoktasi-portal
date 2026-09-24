@@ -141,3 +141,7 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
     );
   }
 }
+
+// Support both GET and POST for maximum flexibility with various cron providers (Hostinger, cPanel, Vercel, curl)
+export const POST = GET;
+

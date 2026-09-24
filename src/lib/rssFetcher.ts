@@ -33,7 +33,7 @@ export const DEFAULT_RSS_SOURCES: RSSSource[] = [
   },
   {
     id: 'hurriyet-anasayfa',
-    name: 'Haber Noktası Akış',
+    name: 'Hürriyet',
     category: 'Gündem',
     url: 'https://www.hurriyet.com.tr/rss/anasayfa',
     enabled: true,
