@@ -223,6 +223,19 @@ export function normalizeCategory(rawCat: string | null | undefined): { name: st
   return { name: 'Gündem', slug: 'gundem' };
 }
 
+export const ENSONHABER_FEEDS = {
+  main: 'https://www.ensonhaber.com/rss/ensonhaber.xml',
+  mansetler: 'https://www.ensonhaber.com/rss/mansetler.xml',
+  gundem: 'https://www.ensonhaber.com/rss/gundem.xml',
+  politika: 'https://www.ensonhaber.com/rss/politika.xml',
+  ekonomi: 'https://www.ensonhaber.com/rss/ekonomi.xml',
+  dunya: 'https://www.ensonhaber.com/rss/dunya.xml',
+  saglik: 'https://www.ensonhaber.com/rss/saglik.xml',
+  otomobil: 'https://www.ensonhaber.com/rss/otomobil.xml',
+} as const;
+
+export const ENSONHABER_FEED_URLS = Object.values(ENSONHABER_FEEDS);
+
 /**
  * Fetch and parse Ensonhaber RSS feed without missing any images or categories
  */
@@ -268,7 +281,35 @@ export async function parseEnsonhaberRSS(
       })
       .filter((n) => n.title.length > 5 && n.link.length > 0);
   } catch (error: any) {
-    console.error('[Ensonhaber RSS Error]', error.message || error);
-    throw error;
+    console.error(`[Ensonhaber RSS Error: ${feedUrl}]`, error.message || error);
+    return [];
   }
+}
+
+/**
+ * Fetches news from all Ensonhaber category feeds concurrently or sequentially,
+ * deduplicating by guid and link.
+ */
+export async function fetchAllEnsonhaberFeeds(
+  feedUrls: string[] = ENSONHABER_FEED_URLS
+): Promise<ParsedNews[]> {
+  const allArticles: ParsedNews[] = [];
+  const seenKeys = new Set<string>();
+
+  for (const url of feedUrls) {
+    try {
+      const items = await parseEnsonhaberRSS(url);
+      for (const item of items) {
+        const key = item.guid || item.link;
+        if (key && !seenKeys.has(key)) {
+          seenKeys.add(key);
+          allArticles.push(item);
+        }
+      }
+    } catch (err: any) {
+      console.warn(`[Multi-feed Warning] Failed to parse ${url}:`, err.message || err);
+    }
+  }
+
+  return allArticles;
 }

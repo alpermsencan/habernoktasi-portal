@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { revalidatePath } from 'next/cache';
-import { parseEnsonhaberRSS, ParsedNews } from '@/lib/rssParser';
+import { parseEnsonhaberRSS, fetchAllEnsonhaberFeeds, ENSONHABER_FEEDS, ParsedNews } from '@/lib/rssParser';
 import { downloadAndProcessImage } from '@/lib/imageHandler';
 import { distributeNews, DistributableArticle } from '@/lib/newsDistributor';
 import { articleExists, saveArticle } from '@/lib/newsRepository';
@@ -58,10 +58,23 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
       );
     }
 
-    console.log('[Cron Sync] Ensonhaber RSS akışı çekiliyor (https://www.ensonhaber.com/rss/ensonhaber.xml)...');
+    const feedParam = (searchParams.get('feed') || 'all').toLowerCase();
+    let rawArticles: ParsedNews[] = [];
 
-    // 2. Fetch and parse Ensonhaber RSS feed
-    const rawArticles: ParsedNews[] = await parseEnsonhaberRSS('https://www.ensonhaber.com/rss/ensonhaber.xml');
+    if (feedParam === 'all') {
+      console.log('[Cron Sync] Ensonhaber tüm kategori RSS akışları çekiliyor...');
+      rawArticles = await fetchAllEnsonhaberFeeds();
+    } else if (feedParam in ENSONHABER_FEEDS) {
+      const targetUrl = ENSONHABER_FEEDS[feedParam as keyof typeof ENSONHABER_FEEDS];
+      console.log(`[Cron Sync] Ensonhaber ${feedParam} RSS akışı çekiliyor (${targetUrl})...`);
+      rawArticles = await parseEnsonhaberRSS(targetUrl);
+    } else if (feedParam.startsWith('http')) {
+      console.log(`[Cron Sync] Özel RSS akışı çekiliyor (${feedParam})...`);
+      rawArticles = await parseEnsonhaberRSS(feedParam);
+    } else {
+      rawArticles = await parseEnsonhaberRSS();
+    }
+
     console.log(`[Cron Sync] Ensonhaber RSS'den ${rawArticles.length} haber başarıyla ayrıştırıldı.`);
 
     if (rawArticles.length === 0) {
