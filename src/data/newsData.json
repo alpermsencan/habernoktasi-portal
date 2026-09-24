@@ -1,94 +1,94 @@
 {
   "breakingNews": [
-    "SON DAKİKA: Dünya Kupası'nın gizli finali: İsrail destekçisi Arjantin'le, Filistin'in yanında olan İspanya!",
-    "SON DAKİKA: Muhsin Yazıcıoğlu soruşturmasında 19 kişi tutuklandı",
-    "SON DAKİKA: Akın Gürlek paylaştı: 19 şüpheliye yasa dışı bahis operasyonu",
-    "SON DAKİKA: Eskişehir'de yolcu otobüsü devrildi",
-    "SON DAKİKA: Ons altın 4 bin doların altına geriledi",
-    "SON DAKİKA: Beyaz Saray: İran'ı her yerde, her zaman, her koşulda vurabiliriz",
-    "SON DAKİKA: Ahbap soruşturmasına bilirkişi heyeti görevlendirildi",
-    "SON DAKİKA: İran'ın Husilerden Kızıldeniz'i kapatmasını istediği iddiası"
+    "SON DAKİKA: 13 ilde sahte belgelerle vatandaşlık operasyonu: 26 şüpheli tutuklandı",
+    "SON DAKİKA: Anadolu Efes deplasmanda Barcelona'ya yenildi",
+    "SON DAKİKA: İstanbul Üsküdar'da çocuklara çarpan otomobilin sürücüsü gözaltına alındı",
+    "SON DAKİKA: Binyamin Netanyahu tüm dünyayı çağrı cihazıyla tehdit etti",
+    "SON DAKİKA: Burhanettin Duran'dan İsrail Başbakanı Netanyahu'ya tepki",
+    "SON DAKİKA: Ankara'da su deposunda silahlı kavga: 1 ölü",
+    "SON DAKİKA: Tokat'ta silah kaçakçılığı operasyonu: 11 gözaltı",
+    "SON DAKİKA: New York’tan BM Notları: Üç Gün, 90 Bin Adım ve Biraz da Kulis"
   ],
   "todayEvents": [
     {
       "id": 1,
-      "tag": "#DÜNYA",
-      "title": "Dünya Kupası'nın gizli finali: İsrail destekçisi Arjantin'le, Filistin'in yanında olan İspanya!",
-      "summary": "Pazar günü oynanacak olası Arjantin-İspanya karşılaşması bir Dünya Kupası finalinin ötesinde anlamlar taşıyor. Bir yandan her fırsatta Arjantin'e yönelik destek açıklayan İsrail, d",
-      "time": "Bugün, 09:59",
-      "image": "/uploads/news/dunya-kupasinin-gizli-finali-israil-destekcis-1790286900593.webp"
+      "tag": "#GÜNDEM",
+      "title": "13 ilde sahte belgelerle vatandaşlık operasyonu: 26 şüpheli tutuklandı",
+      "summary": "İstanbul merkezli 13 ilde düzenlenen operasyonda Türk vatandaşlığı için muvazaalı gayrimenkul satışları ile usulsüz işlemler yaptığı iddiasıyla gözaltına alınan 74 şüpheliden 26'sı",
+      "time": "7 Dk Önce",
+      "image": "/uploads/news/13-ilde-sahte-belgelerle-vatandaslik-operasyo-1790287165659.webp"
     },
     {
       "id": 2,
-      "tag": "#GÜNDEM",
-      "title": "Muhsin Yazıcıoğlu soruşturmasında 19 kişi tutuklandı",
-      "summary": "Muhsin Yazıcıoğlu'nun helikopterinin düşerek hayatını kaybetmesiyle ilgili soruşturmada gözaltına alınan 27 kişiden 19'u tutuklanarak cezaevine gönderildi.",
-      "time": "Bugün, 09:27",
-      "image": "/uploads/news/muhsin-yazicioglu-sorusturmasinda-19-kisi-tut-1790286901188.webp"
+      "tag": "#SPOR",
+      "title": "Anadolu Efes deplasmanda Barcelona'ya yenildi",
+      "summary": "Anadolu Efes, EuroLeague'de 2026-2027 sezonunun ilk haftasında konuk olduğu Barcelona'ya 89-82 kaybetti.",
+      "time": "30 Dk Önce",
+      "image": "/uploads/news/anadolu-efes-deplasmanda-barcelonaya-yenildi-1790287165851.webp"
     },
     {
       "id": 3,
       "tag": "#GÜNDEM",
-      "title": "Akın Gürlek paylaştı: 19 şüpheliye yasa dışı bahis operasyonu",
-      "summary": "Adalet Bakanı Akın Gürlek, profesyonel liglerde görev yapan bazı kulüp yöneticilerine yönelik operasyon yapıldığını açıkladı. Bakan Gürlek 19 şüpheli hakkında gözaltı kararı verild",
-      "time": "Bugün, 09:16",
-      "image": "/uploads/news/akin-gurlek-paylasti-19-supheliye-yasa-disi-b-1790286901643.webp"
+      "title": "İstanbul Üsküdar'da çocuklara çarpan otomobilin sürücüsü gözaltına alındı",
+      "summary": "İstanbul Üsküdar'da önce başka bir araca, daha sonra da kaldırımda yürüyen 4 çocuğa çarpan otomobilin 73 yaşındaki sürücüsü gözaltına alındı",
+      "time": "41 Dk Önce",
+      "image": "/uploads/news/istanbul-uskudarda-cocuklara-carpan-otomobili-1790287165968.webp"
     },
     {
       "id": 4,
-      "tag": "#GÜNDEM",
-      "title": "Eskişehir'de yolcu otobüsü devrildi",
-      "summary": "Eskişehir'de yolcu otobüsünün devrilmesi sonucu meydana gelen trafik kazasında 24 kişi yaralanırken, sürücünün ise direksiyon başında uyuduğu iddia edildi.",
-      "time": "Bugün, 09:13",
-      "image": "/uploads/news/eskisehirde-yolcu-otobusu-devrildi-1790286901929.webp"
+      "tag": "#DÜNYA",
+      "title": "Binyamin Netanyahu tüm dünyayı çağrı cihazıyla tehdit etti",
+      "summary": "Birleşmiş Milletler Genel Kurulu'nda kendisini dinleyen ülkelerin temsilcilerine çağrı cihazı gösteren İsrail Başbakanı Binyamin Netanyahu, Eylül 2024'te Lübnan'da Hizbullah mensup",
+      "time": "51 Dk Önce",
+      "image": "/uploads/news/binyamin-netanyahu-tum-dunyayi-cagri-cihaziyl-1790287166044.webp"
     },
     {
       "id": 5,
-      "tag": "#EKONOMI",
-      "title": "Ons altın 4 bin doların altına geriledi",
-      "summary": "Jeopolitik riskler petrol fiyatını artırırken, petrol fiyatlarının oluşturduğu baskı da altın fiyatlarının düşüşünü derinleştirdi. Günün başlangıcında ons altın 4 bin doların altın",
-      "time": "Bugün, 09:11",
-      "image": "/uploads/news/ons-altin-4-bin-dolarin-altina-geriledi-1790286902169.webp"
+      "tag": "#GÜNDEM",
+      "title": "Burhanettin Duran'dan İsrail Başbakanı Netanyahu'ya tepki",
+      "summary": "Cumhurbaşkanlığı İletişim Başkanı Burhanettin Duran, Birleşmiş Milletler Genel Kurulu'ndaki konuşması sırasında Cumhurbaşkanı Recep Tayyip Erdoğan'ı hedef alan İsrail Başbakanı Bin",
+      "time": "1 Saat Önce",
+      "image": "/uploads/news/burhanettin-durandan-israil-basbakani-netanya-1790287166122.webp"
     },
     {
       "id": 6,
-      "tag": "#DÜNYA",
-      "title": "Beyaz Saray: İran'ı her yerde, her zaman, her koşulda vurabiliriz",
-      "summary": "Basın mensuplarına açıklamalarda bulunan Beyaz Saray Sözcüsü Karoline Levavitt, son günlerde İran'a yönelik gerçekleştirilen saldırıların nedeninin Tahran yönetiminin mutabakat ihl",
-      "time": "Bugün, 09:05",
-      "image": "/uploads/news/beyaz-saray-irani-her-yerde-her-zaman-her-kos-1790286902481.webp"
+      "tag": "#GÜNDEM",
+      "title": "Ankara'da su deposunda silahlı kavga: 1 ölü",
+      "summary": "Ankara'da su deposunda çıkan silahlı kavgada 1 kişi hayatını kaybetti.",
+      "time": "1 Saat Önce",
+      "image": "/uploads/news/ankarada-su-deposunda-silahli-kavga-1-olu-1790287166191.webp"
     },
     {
       "id": 7,
       "tag": "#GÜNDEM",
-      "title": "Ahbap soruşturmasına bilirkişi heyeti görevlendirildi",
-      "summary": "İstanbul Cumhuriyet Başsavcılığı, 6 Şubat depremi nedeniyle Ahbap Derneği tarafından toplanan bağış ve yardımların kullanımıyla alakalı bilirkişi heyeti görevlendirildiğini açıklad",
-      "time": "Bugün, 09:04",
-      "image": "/uploads/news/ahbap-sorusturmasina-bilirkisi-heyeti-gorevle-1790286902835.webp"
+      "title": "Tokat'ta silah kaçakçılığı operasyonu: 11 gözaltı",
+      "summary": "Tokat'ta 11 adrese eş zamanlı düzenlenen silah kaçakçılığı operasyonunda yakalanan 11 şüpheli gözaltına alındı.",
+      "time": "1 Saat Önce",
+      "image": "/uploads/news/tokatta-silah-kacakciligi-operasyonu-11-gozal-1790287166266.webp"
     },
     {
       "id": 8,
-      "tag": "#DÜNYA",
-      "title": "İran'ın Husilerden Kızıldeniz'i kapatmasını istediği iddiası",
-      "summary": "ABD'nin İran'ın enerji altyapısına yönelik muhtemel saldırıları halinde İran yönetiminin Yemen'deki Husilere Kızıldeniz'deki deniz taşımacılığı güzergahlarını kapatma çağrısında bu",
-      "time": "Bugün, 09:01",
-      "image": "/uploads/news/iranin-husilerden-kizildenizi-kapatmasini-ist-1790286903063.webp"
+      "tag": "#GÜNDEM",
+      "title": "New York’tan BM Notları: Üç Gün, 90 Bin Adım ve Biraz da Kulis",
+      "summary": "Sanırım, 2022’den bu yana Birleşmiş Milletler Genel Kurulunu yerinden takip ediyorum.",
+      "time": "1 Saat Önce",
+      "image": "/uploads/news/new-yorktan-bm-notlari-uc-gun-90-bin-adim-ve--1790287166331.webp"
     },
     {
       "id": 9,
       "tag": "#GÜNDEM",
-      "title": "Rusya: Ukrayna ile müzakerelerin Türkiye arabuluculuğunda başlatılmasına açığız",
-      "summary": "Ukrayna krizinin çözümüne yönelik müzakerelerin Türkiye'nin arabuluculuğunda yeniden başlatılmasına açık olduklarını belirten Kremlin Sözcüsü Dmitriy Peskov, \"Bu konuda Türk tarafı",
-      "time": "Bugün, 09:00",
-      "image": "/uploads/news/rusya-ukrayna-ile-muzakerelerin-turkiye-arabu-1790286903439.webp"
+      "title": "İstanbul Kartal'da otluk alanda ceset bulundu",
+      "summary": "İstanbul Kartal'da otluk alanda erkek cesedi bulundu. Cenaze, incelemelerin ardından kesin ölüm nedeninin belirlenmesi için Adli Tıp Kurumu morguna kaldırıldı.",
+      "time": "1 Saat Önce",
+      "image": "/uploads/news/istanbul-kartalda-otluk-alanda-ceset-bulundu-1790287166398.webp"
     },
     {
       "id": 10,
-      "tag": "#DÜNYA",
-      "title": "ABD'de Trump'a destek oranı yüzde 37'de kaldı",
-      "summary": "ABD'de Başkan Donald Trump'a destek oranının yüzde 37 olduğu tespit edildi. İran ve ekonomi konularındaki karamsarlık nedeniyle Trump'a destek oranı başkanlık seçimlerini kaybettiğ",
-      "time": "Bugün, 09:00",
-      "image": "/uploads/news/abdde-trumpa-destek-orani-yuzde-37de-kaldi-1790286903905.webp"
+      "tag": "#GÜNDEM",
+      "title": "Kayseri'de otobüsün çarptığı bisikletli çocuk öldü",
+      "summary": "Kayseri'de özel halk otobüsünün çarptığı 10 yaşındaki bisikletli çocuk, olay yerinde yaşamını yitirdi.",
+      "time": "2 Saat Önce",
+      "image": "/uploads/news/kayseride-otobusun-carptigi-bisikletli-cocuk--1790287166483.webp"
     }
   ],
   "marketData": [
@@ -144,248 +144,248 @@
   "sicakGundem": [
     {
       "id": 101,
-      "title": "Dünya Kupası'nın gizli finali: İsrail destekçisi Arjantin'le, Filistin'in yanında olan İspanya!",
-      "summary": "Pazar günü oynanacak olası Arjantin-İspanya karşılaşması bir Dünya Kupası finalinin ötesinde anlamlar taşıyor. Bir yandan her fırsatta Arjantin'e yönelik destek açıklayan İsrail, d",
-      "category": "DÜNYA",
-      "image": "/uploads/news/dunya-kupasinin-gizli-finali-israil-destekcis-1790286900593.webp",
-      "date": "Bugün, 09:59",
-      "time": "Bugün, 09:59",
-      "views": "37.4K"
+      "title": "13 ilde sahte belgelerle vatandaşlık operasyonu: 26 şüpheli tutuklandı",
+      "summary": "İstanbul merkezli 13 ilde düzenlenen operasyonda Türk vatandaşlığı için muvazaalı gayrimenkul satışları ile usulsüz işlemler yaptığı iddiasıyla gözaltına alınan 74 şüpheliden 26'sı",
+      "category": "GÜNDEM",
+      "image": "/uploads/news/13-ilde-sahte-belgelerle-vatandaslik-operasyo-1790287165659.webp",
+      "date": "7 Dk Önce",
+      "time": "7 Dk Önce",
+      "views": "42.8K"
     },
     {
       "id": 102,
-      "title": "Muhsin Yazıcıoğlu soruşturmasında 19 kişi tutuklandı",
-      "summary": "Muhsin Yazıcıoğlu'nun helikopterinin düşerek hayatını kaybetmesiyle ilgili soruşturmada gözaltına alınan 27 kişiden 19'u tutuklanarak cezaevine gönderildi.",
-      "category": "GÜNDEM",
-      "image": "/uploads/news/muhsin-yazicioglu-sorusturmasinda-19-kisi-tut-1790286901188.webp",
-      "date": "Bugün, 09:27",
-      "time": "Bugün, 09:27",
-      "views": "81.6K"
+      "title": "Anadolu Efes deplasmanda Barcelona'ya yenildi",
+      "summary": "Anadolu Efes, EuroLeague'de 2026-2027 sezonunun ilk haftasında konuk olduğu Barcelona'ya 89-82 kaybetti.",
+      "category": "SPOR",
+      "image": "/uploads/news/anadolu-efes-deplasmanda-barcelonaya-yenildi-1790287165851.webp",
+      "date": "30 Dk Önce",
+      "time": "30 Dk Önce",
+      "views": "72.4K"
     },
     {
       "id": 103,
-      "title": "Akın Gürlek paylaştı: 19 şüpheliye yasa dışı bahis operasyonu",
-      "summary": "Adalet Bakanı Akın Gürlek, profesyonel liglerde görev yapan bazı kulüp yöneticilerine yönelik operasyon yapıldığını açıkladı. Bakan Gürlek 19 şüpheli hakkında gözaltı kararı verild",
+      "title": "İstanbul Üsküdar'da çocuklara çarpan otomobilin sürücüsü gözaltına alındı",
+      "summary": "İstanbul Üsküdar'da önce başka bir araca, daha sonra da kaldırımda yürüyen 4 çocuğa çarpan otomobilin 73 yaşındaki sürücüsü gözaltına alındı",
       "category": "GÜNDEM",
-      "image": "/uploads/news/akin-gurlek-paylasti-19-supheliye-yasa-disi-b-1790286901643.webp",
-      "date": "Bugün, 09:16",
-      "time": "Bugün, 09:16",
-      "views": "113.1K"
+      "image": "/uploads/news/istanbul-uskudarda-cocuklara-carpan-otomobili-1790287165968.webp",
+      "date": "41 Dk Önce",
+      "time": "41 Dk Önce",
+      "views": "112.6K"
     },
     {
       "id": 104,
-      "title": "Eskişehir'de yolcu otobüsü devrildi",
-      "summary": "Eskişehir'de yolcu otobüsünün devrilmesi sonucu meydana gelen trafik kazasında 24 kişi yaralanırken, sürücünün ise direksiyon başında uyuduğu iddia edildi.",
-      "category": "GÜNDEM",
-      "image": "/uploads/news/eskisehirde-yolcu-otobusu-devrildi-1790286901929.webp",
-      "date": "Bugün, 09:13",
-      "time": "Bugün, 09:13",
-      "views": "114.7K"
+      "title": "Binyamin Netanyahu tüm dünyayı çağrı cihazıyla tehdit etti",
+      "summary": "Birleşmiş Milletler Genel Kurulu'nda kendisini dinleyen ülkelerin temsilcilerine çağrı cihazı gösteren İsrail Başbakanı Binyamin Netanyahu, Eylül 2024'te Lübnan'da Hizbullah mensup",
+      "category": "DÜNYA",
+      "image": "/uploads/news/binyamin-netanyahu-tum-dunyayi-cagri-cihaziyl-1790287166044.webp",
+      "date": "51 Dk Önce",
+      "time": "51 Dk Önce",
+      "views": "90.9K"
     },
     {
       "id": 105,
-      "title": "Ons altın 4 bin doların altına geriledi",
-      "summary": "Jeopolitik riskler petrol fiyatını artırırken, petrol fiyatlarının oluşturduğu baskı da altın fiyatlarının düşüşünü derinleştirdi. Günün başlangıcında ons altın 4 bin doların altın",
-      "category": "EKONOMI",
-      "image": "/uploads/news/ons-altin-4-bin-dolarin-altina-geriledi-1790286902169.webp",
-      "date": "Bugün, 09:11",
-      "time": "Bugün, 09:11",
-      "views": "33.6K"
+      "title": "Burhanettin Duran'dan İsrail Başbakanı Netanyahu'ya tepki",
+      "summary": "Cumhurbaşkanlığı İletişim Başkanı Burhanettin Duran, Birleşmiş Milletler Genel Kurulu'ndaki konuşması sırasında Cumhurbaşkanı Recep Tayyip Erdoğan'ı hedef alan İsrail Başbakanı Bin",
+      "category": "GÜNDEM",
+      "image": "/uploads/news/burhanettin-durandan-israil-basbakani-netanya-1790287166122.webp",
+      "date": "1 Saat Önce",
+      "time": "1 Saat Önce",
+      "views": "77.1K"
     },
     {
       "id": 106,
-      "title": "Beyaz Saray: İran'ı her yerde, her zaman, her koşulda vurabiliriz",
-      "summary": "Basın mensuplarına açıklamalarda bulunan Beyaz Saray Sözcüsü Karoline Levavitt, son günlerde İran'a yönelik gerçekleştirilen saldırıların nedeninin Tahran yönetiminin mutabakat ihl",
-      "category": "DÜNYA",
-      "image": "/uploads/news/beyaz-saray-irani-her-yerde-her-zaman-her-kos-1790286902481.webp",
-      "date": "Bugün, 09:05",
-      "time": "Bugün, 09:05",
-      "views": "63.4K"
+      "title": "Ankara'da su deposunda silahlı kavga: 1 ölü",
+      "summary": "Ankara'da su deposunda çıkan silahlı kavgada 1 kişi hayatını kaybetti.",
+      "category": "GÜNDEM",
+      "image": "/uploads/news/ankarada-su-deposunda-silahli-kavga-1-olu-1790287166191.webp",
+      "date": "1 Saat Önce",
+      "time": "1 Saat Önce",
+      "views": "99.8K"
     }
   ],
   "sliderSideNews": [
     {
       "id": 21,
-      "title": "Dünya Kupası'nın gizli finali: İsrail destekçisi Arjantin'le, Filistin'in yanında olan İspanya!",
-      "summary": "Pazar günü oynanacak olası Arjantin-İspanya karşılaşması bir Dünya Kupası finalinin ötesinde anlamlar taşıyor. Bir yandan her fırsatta Arjantin'e yönelik destek açıklayan İsrail, d",
-      "category": "DÜNYA",
-      "image": "/uploads/news/dunya-kupasinin-gizli-finali-israil-destekcis-1790286900593.webp",
-      "views": "37.4K",
-      "time": "Bugün, 09:59"
+      "title": "13 ilde sahte belgelerle vatandaşlık operasyonu: 26 şüpheli tutuklandı",
+      "summary": "İstanbul merkezli 13 ilde düzenlenen operasyonda Türk vatandaşlığı için muvazaalı gayrimenkul satışları ile usulsüz işlemler yaptığı iddiasıyla gözaltına alınan 74 şüpheliden 26'sı",
+      "category": "GÜNDEM",
+      "image": "/uploads/news/13-ilde-sahte-belgelerle-vatandaslik-operasyo-1790287165659.webp",
+      "views": "42.8K",
+      "time": "7 Dk Önce"
     },
     {
       "id": 22,
-      "title": "Muhsin Yazıcıoğlu soruşturmasında 19 kişi tutuklandı",
-      "summary": "Muhsin Yazıcıoğlu'nun helikopterinin düşerek hayatını kaybetmesiyle ilgili soruşturmada gözaltına alınan 27 kişiden 19'u tutuklanarak cezaevine gönderildi.",
-      "category": "GÜNDEM",
-      "image": "/uploads/news/muhsin-yazicioglu-sorusturmasinda-19-kisi-tut-1790286901188.webp",
-      "views": "81.6K",
-      "time": "Bugün, 09:27"
+      "title": "Anadolu Efes deplasmanda Barcelona'ya yenildi",
+      "summary": "Anadolu Efes, EuroLeague'de 2026-2027 sezonunun ilk haftasında konuk olduğu Barcelona'ya 89-82 kaybetti.",
+      "category": "SPOR",
+      "image": "/uploads/news/anadolu-efes-deplasmanda-barcelonaya-yenildi-1790287165851.webp",
+      "views": "72.4K",
+      "time": "30 Dk Önce"
     }
   ],
   "headlineSlider": [
     {
       "id": 1,
-      "title": "Dünya Kupası'nın gizli finali: İsrail destekçisi Arjantin'le, Filistin'in yanında olan İspanya!",
-      "summary": "Pazar günü oynanacak olası Arjantin-İspanya karşılaşması bir Dünya Kupası finalinin ötesinde anlamlar taşıyor. Bir yandan her fırsatta Arjantin'e yönelik destek açıklayan İsrail, d",
-      "category": "DÜNYA",
-      "image": "/uploads/news/dunya-kupasinin-gizli-finali-israil-destekcis-1790286900593.webp",
-      "date": "Bugün, 09:59",
-      "readCount": "78.4K",
+      "title": "13 ilde sahte belgelerle vatandaşlık operasyonu: 26 şüpheli tutuklandı",
+      "summary": "İstanbul merkezli 13 ilde düzenlenen operasyonda Türk vatandaşlığı için muvazaalı gayrimenkul satışları ile usulsüz işlemler yaptığı iddiasıyla gözaltına alınan 74 şüpheliden 26'sı",
+      "category": "GÜNDEM",
+      "image": "/uploads/news/13-ilde-sahte-belgelerle-vatandaslik-operasyo-1790287165659.webp",
+      "date": "7 Dk Önce",
+      "readCount": "48.6K",
       "author": "X Yazar",
       "isHeadline": true
     },
     {
       "id": 2,
-      "title": "Muhsin Yazıcıoğlu soruşturmasında 19 kişi tutuklandı",
-      "summary": "Muhsin Yazıcıoğlu'nun helikopterinin düşerek hayatını kaybetmesiyle ilgili soruşturmada gözaltına alınan 27 kişiden 19'u tutuklanarak cezaevine gönderildi.",
-      "category": "GÜNDEM",
-      "image": "/uploads/news/muhsin-yazicioglu-sorusturmasinda-19-kisi-tut-1790286901188.webp",
-      "date": "Bugün, 09:27",
-      "readCount": "98.6K",
+      "title": "Anadolu Efes deplasmanda Barcelona'ya yenildi",
+      "summary": "Anadolu Efes, EuroLeague'de 2026-2027 sezonunun ilk haftasında konuk olduğu Barcelona'ya 89-82 kaybetti.",
+      "category": "SPOR",
+      "image": "/uploads/news/anadolu-efes-deplasmanda-barcelonaya-yenildi-1790287165851.webp",
+      "date": "30 Dk Önce",
+      "readCount": "63.6K",
       "author": "Y Yazar",
       "isHeadline": true
     },
     {
       "id": 3,
-      "title": "Akın Gürlek paylaştı: 19 şüpheliye yasa dışı bahis operasyonu",
-      "summary": "Adalet Bakanı Akın Gürlek, profesyonel liglerde görev yapan bazı kulüp yöneticilerine yönelik operasyon yapıldığını açıkladı. Bakan Gürlek 19 şüpheli hakkında gözaltı kararı verild",
+      "title": "İstanbul Üsküdar'da çocuklara çarpan otomobilin sürücüsü gözaltına alındı",
+      "summary": "İstanbul Üsküdar'da önce başka bir araca, daha sonra da kaldırımda yürüyen 4 çocuğa çarpan otomobilin 73 yaşındaki sürücüsü gözaltına alındı",
       "category": "GÜNDEM",
-      "image": "/uploads/news/akin-gurlek-paylasti-19-supheliye-yasa-disi-b-1790286901643.webp",
-      "date": "Bugün, 09:16",
-      "readCount": "104.3K",
+      "image": "/uploads/news/istanbul-uskudarda-cocuklara-carpan-otomobili-1790287165968.webp",
+      "date": "41 Dk Önce",
+      "readCount": "92.4K",
       "author": "Z Yazar",
       "isHeadline": true
     },
     {
       "id": 4,
-      "title": "Eskişehir'de yolcu otobüsü devrildi",
-      "summary": "Eskişehir'de yolcu otobüsünün devrilmesi sonucu meydana gelen trafik kazasında 24 kişi yaralanırken, sürücünün ise direksiyon başında uyuduğu iddia edildi.",
-      "category": "GÜNDEM",
-      "image": "/uploads/news/eskisehirde-yolcu-otobusu-devrildi-1790286901929.webp",
-      "date": "Bugün, 09:13",
-      "readCount": "95.2K",
+      "title": "Binyamin Netanyahu tüm dünyayı çağrı cihazıyla tehdit etti",
+      "summary": "Birleşmiş Milletler Genel Kurulu'nda kendisini dinleyen ülkelerin temsilcilerine çağrı cihazı gösteren İsrail Başbakanı Binyamin Netanyahu, Eylül 2024'te Lübnan'da Hizbullah mensup",
+      "category": "DÜNYA",
+      "image": "/uploads/news/binyamin-netanyahu-tum-dunyayi-cagri-cihaziyl-1790287166044.webp",
+      "date": "51 Dk Önce",
+      "readCount": "65.7K",
       "author": "A Yazar",
       "isHeadline": true
     },
     {
       "id": 5,
-      "title": "Ons altın 4 bin doların altına geriledi",
-      "summary": "Jeopolitik riskler petrol fiyatını artırırken, petrol fiyatlarının oluşturduğu baskı da altın fiyatlarının düşüşünü derinleştirdi. Günün başlangıcında ons altın 4 bin doların altın",
-      "category": "EKONOMI",
-      "image": "/uploads/news/ons-altin-4-bin-dolarin-altina-geriledi-1790286902169.webp",
-      "date": "Bugün, 09:11",
-      "readCount": "35.6K",
+      "title": "Burhanettin Duran'dan İsrail Başbakanı Netanyahu'ya tepki",
+      "summary": "Cumhurbaşkanlığı İletişim Başkanı Burhanettin Duran, Birleşmiş Milletler Genel Kurulu'ndaki konuşması sırasında Cumhurbaşkanı Recep Tayyip Erdoğan'ı hedef alan İsrail Başbakanı Bin",
+      "category": "GÜNDEM",
+      "image": "/uploads/news/burhanettin-durandan-israil-basbakani-netanya-1790287166122.webp",
+      "date": "1 Saat Önce",
+      "readCount": "59.3K",
       "author": "B Yazar",
       "isHeadline": true
     },
     {
       "id": 6,
-      "title": "Beyaz Saray: İran'ı her yerde, her zaman, her koşulda vurabiliriz",
-      "summary": "Basın mensuplarına açıklamalarda bulunan Beyaz Saray Sözcüsü Karoline Levavitt, son günlerde İran'a yönelik gerçekleştirilen saldırıların nedeninin Tahran yönetiminin mutabakat ihl",
-      "category": "DÜNYA",
-      "image": "/uploads/news/beyaz-saray-irani-her-yerde-her-zaman-her-kos-1790286902481.webp",
-      "date": "Bugün, 09:05",
-      "readCount": "91.9K",
+      "title": "Ankara'da su deposunda silahlı kavga: 1 ölü",
+      "summary": "Ankara'da su deposunda çıkan silahlı kavgada 1 kişi hayatını kaybetti.",
+      "category": "GÜNDEM",
+      "image": "/uploads/news/ankarada-su-deposunda-silahli-kavga-1-olu-1790287166191.webp",
+      "date": "1 Saat Önce",
+      "readCount": "62.9K",
       "author": "C Yazar",
       "isHeadline": true
     },
     {
       "id": 7,
-      "title": "Ahbap soruşturmasına bilirkişi heyeti görevlendirildi",
-      "summary": "İstanbul Cumhuriyet Başsavcılığı, 6 Şubat depremi nedeniyle Ahbap Derneği tarafından toplanan bağış ve yardımların kullanımıyla alakalı bilirkişi heyeti görevlendirildiğini açıklad",
+      "title": "Tokat'ta silah kaçakçılığı operasyonu: 11 gözaltı",
+      "summary": "Tokat'ta 11 adrese eş zamanlı düzenlenen silah kaçakçılığı operasyonunda yakalanan 11 şüpheli gözaltına alındı.",
       "category": "GÜNDEM",
-      "image": "/uploads/news/ahbap-sorusturmasina-bilirkisi-heyeti-gorevle-1790286902835.webp",
-      "date": "Bugün, 09:04",
-      "readCount": "91.1K",
+      "image": "/uploads/news/tokatta-silah-kacakciligi-operasyonu-11-gozal-1790287166266.webp",
+      "date": "1 Saat Önce",
+      "readCount": "35.5K",
       "author": "D Yazar",
       "isHeadline": true
     },
     {
       "id": 8,
-      "title": "İran'ın Husilerden Kızıldeniz'i kapatmasını istediği iddiası",
-      "summary": "ABD'nin İran'ın enerji altyapısına yönelik muhtemel saldırıları halinde İran yönetiminin Yemen'deki Husilere Kızıldeniz'deki deniz taşımacılığı güzergahlarını kapatma çağrısında bu",
-      "category": "DÜNYA",
-      "image": "/uploads/news/iranin-husilerden-kizildenizi-kapatmasini-ist-1790286903063.webp",
-      "date": "Bugün, 09:01",
-      "readCount": "37.2K",
+      "title": "New York’tan BM Notları: Üç Gün, 90 Bin Adım ve Biraz da Kulis",
+      "summary": "Sanırım, 2022’den bu yana Birleşmiş Milletler Genel Kurulunu yerinden takip ediyorum.",
+      "category": "GÜNDEM",
+      "image": "/uploads/news/new-yorktan-bm-notlari-uc-gun-90-bin-adim-ve--1790287166331.webp",
+      "date": "1 Saat Önce",
+      "readCount": "64.5K",
       "author": "E Yazar",
       "isHeadline": true
     },
     {
       "id": 9,
-      "title": "Rusya: Ukrayna ile müzakerelerin Türkiye arabuluculuğunda başlatılmasına açığız",
-      "summary": "Ukrayna krizinin çözümüne yönelik müzakerelerin Türkiye'nin arabuluculuğunda yeniden başlatılmasına açık olduklarını belirten Kremlin Sözcüsü Dmitriy Peskov, \"Bu konuda Türk tarafı",
+      "title": "İstanbul Kartal'da otluk alanda ceset bulundu",
+      "summary": "İstanbul Kartal'da otluk alanda erkek cesedi bulundu. Cenaze, incelemelerin ardından kesin ölüm nedeninin belirlenmesi için Adli Tıp Kurumu morguna kaldırıldı.",
       "category": "GÜNDEM",
-      "image": "/uploads/news/rusya-ukrayna-ile-muzakerelerin-turkiye-arabu-1790286903439.webp",
-      "date": "Bugün, 09:00",
-      "readCount": "97.6K",
+      "image": "/uploads/news/istanbul-kartalda-otluk-alanda-ceset-bulundu-1790287166398.webp",
+      "date": "1 Saat Önce",
+      "readCount": "37.3K",
       "author": "X Yazar",
       "isHeadline": true
     },
     {
       "id": 10,
-      "title": "ABD'de Trump'a destek oranı yüzde 37'de kaldı",
-      "summary": "ABD'de Başkan Donald Trump'a destek oranının yüzde 37 olduğu tespit edildi. İran ve ekonomi konularındaki karamsarlık nedeniyle Trump'a destek oranı başkanlık seçimlerini kaybettiğ",
-      "category": "DÜNYA",
-      "image": "/uploads/news/abdde-trumpa-destek-orani-yuzde-37de-kaldi-1790286903905.webp",
-      "date": "Bugün, 09:00",
-      "readCount": "105.6K",
+      "title": "Kayseri'de otobüsün çarptığı bisikletli çocuk öldü",
+      "summary": "Kayseri'de özel halk otobüsünün çarptığı 10 yaşındaki bisikletli çocuk, olay yerinde yaşamını yitirdi.",
+      "category": "GÜNDEM",
+      "image": "/uploads/news/kayseride-otobusun-carptigi-bisikletli-cocuk--1790287166483.webp",
+      "date": "2 Saat Önce",
+      "readCount": "70.8K",
       "author": "Y Yazar",
       "isHeadline": true
     },
     {
       "id": 11,
-      "title": "Oğuzhan Uğur gözaltına alındı",
-      "summary": "Haluk Levent hakkında yürütülen soruşturmanın ardından kamuoyunda tepki gören Oğuzhan Uğur'un Mali Şube ekiplerince gözaltına alındığı belirtildi.",
+      "title": "Fon soruşturmasında gözaltına alınan 8 şüpheli tutuklandı",
+      "summary": "Sermaye piyasası işlemlerine ilişkin yürütülen soruşturma kapsamında gözaltına alınan 21 şüpheli 8'i tutuklanırken, 2 kişi adli kontrol şartıyla serbest bırakıldı.",
       "category": "GÜNDEM",
-      "image": "/uploads/news/oguzhan-ugur-gozaltina-alindi-1790286904211.webp",
-      "date": "Bugün, 08:56",
-      "readCount": "106.1K",
+      "image": "/uploads/news/fon-sorusturmasinda-gozaltina-alinan-8-suphel-1790287166581.webp",
+      "date": "2 Saat Önce",
+      "readCount": "53.7K",
       "author": "Z Yazar",
       "isHeadline": true
     },
     {
       "id": 12,
-      "title": "Akaryakıta çifte zam",
-      "summary": "Akaryakıtta tabela bir kez daha değişti. Motorinin litresine ortalama 3 lira 12 kuruş, benzine ise 1 lira 14 kuruş zam geldi.",
-      "category": "GÜNDEM",
-      "image": "/uploads/news/akaryakita-cifte-zam-1790286904455.webp",
-      "date": "Bugün, 08:43",
-      "readCount": "38.4K",
+      "title": "Vincenzo Montella: Buradaki işimin bittiğine inanmıyorum",
+      "summary": "A Milli Futbol Takımı Teknik Direktörü Vincenzo Montella, Fransa maçı öncesi düzenlenen basın toplantısında açıklamalarda bulundu. İtalyan teknik adam, hala Türkiye uzun bir yolunu",
+      "category": "SPOR",
+      "image": "/uploads/news/vincenzo-montella-buradaki-isimin-bittigine-i-1790287166673.webp",
+      "date": "3 Saat Önce",
+      "readCount": "44.1K",
       "author": "A Yazar",
       "isHeadline": true
     },
     {
       "id": 13,
-      "title": "Ünlülere yönelik uyuşturucu soruşturması: İlyas Yalçıntaş dahil 4 tutuklama",
-      "summary": "Ünlülere yönelik uyuşturucu soruşturması kapsamında gözaltına alınan 16 şüpheliden şarkıcı İlyas Yalçıntaş dahil 4'ü tutuklanarak cezaevine gönderildi.",
+      "title": "Mehmet Şimşek: Şahsımla ilgili dolaşıma sokulan istifa iddiaları asılsızdır",
+      "summary": "Hazine ve Maliye Bakanı Mehmet Şimşek, hakkında çıkan istifa iddialarının asılsız olduğunu açıklayarak spekülatif haberlere itibar edilmemesi gerektiğini söyledi.",
       "category": "GÜNDEM",
-      "image": "/uploads/news/unlulere-yonelik-uyusturucu-sorusturmasi-ilya-1790286904702.webp",
-      "date": "Bugün, 00:47",
-      "readCount": "59.8K",
+      "image": "/uploads/news/mehmet-simsek-sahsimla-ilgili-dolasima-sokula-1790287166756.webp",
+      "date": "3 Saat Önce",
+      "readCount": "96.3K",
       "author": "B Yazar",
       "isHeadline": true
     },
     {
       "id": 14,
-      "title": "Ahbap Derneği soruşturmasında 4 tutuklama daha",
-      "summary": "Ahbap Derneği'ne yapılan 125 milyon 765 bin lira bağışın Haluk Levent'in kardeşi Berkant Acil ve bağlantılı olduğu kişilerin hesaplarına aktırıldığının tespiti sonrası gözaltındaki",
-      "category": "GÜNDEM",
-      "image": "/uploads/news/ahbap-dernegi-sorusturmasinda-4-tutuklama-dah-1790286904968.webp",
-      "date": "Bugün, 23:28",
-      "readCount": "62.1K",
+      "title": "Birleşmiş Milletler Genel Kurulu'na hitap eden Netanyahu protesto edildi",
+      "summary": "İsrail Başbakanı Binyamin Netanyahu, 81. Birleşmiş Milletler Genel Kurulu'nda konuşma yapmak için New York'a geldi. İsrail Başbakanı'nın hitap için kürsüye çıkmasının ardından yuha",
+      "category": "DÜNYA",
+      "image": "/uploads/news/birlesmis-milletler-genel-kuruluna-hitap-eden-1790287166822.webp",
+      "date": "3 Saat Önce",
+      "readCount": "77.4K",
       "author": "C Yazar",
       "isHeadline": true
     },
     {
       "id": 15,
-      "title": "12. Yargı Paketi TBMM'den geçti",
-      "summary": "TBMM Genel Kurulu’nda kabul edilen 12’inci Yargı Paketi'nde \"IBAN mağdurları\" olarak bilinen kişilere yönelik ceza indirimi düzenlemesi de yer aldı.",
-      "category": "GÜNDEM",
-      "image": "/uploads/news/12-yargi-paketi-tbmmden-gecti-1790286905193.webp",
-      "date": "Bugün, 23:28",
-      "readCount": "57.3K",
+      "title": "BAE, İran hava yolu şirketlerinin uçuşlarını durdurma kararı aldı",
+      "summary": "ABD'den gelen çağrınının ardından Birleşik Arap Emirlikleri (BAE), İran hava yolu şirketlerinin ülkeye ve ülkeden gerçekleştirdiği uçuşların bugünden itibaren ikinci bir duyuruya k",
+      "category": "DÜNYA",
+      "image": "/uploads/news/bae-iran-hava-yolu-sirketlerinin-ucuslarini-d-1790287166918.webp",
+      "date": "4 Saat Önce",
+      "readCount": "57.6K",
       "author": "D Yazar",
       "isHeadline": true
     }
@@ -440,43 +440,43 @@
       "articles": [
         {
           "id": 101,
-          "title": "Muhsin Yazıcıoğlu soruşturmasında 19 kişi tutuklandı",
-          "summary": "Muhsin Yazıcıoğlu'nun helikopterinin düşerek hayatını kaybetmesiyle ilgili soruşturmada gözaltına alınan 27 kişiden 19'u tutuklanarak cezaevine gönderildi.",
+          "title": "13 ilde sahte belgelerle vatandaşlık operasyonu: 26 şüpheli tutuklandı",
+          "summary": "İstanbul merkezli 13 ilde düzenlenen operasyonda Türk vatandaşlığı için muvazaalı gayrimenkul satışları ile usulsüz işlemler yaptığı iddiasıyla gözaltına alınan 74 şüpheliden 26'sı",
           "category": "Gündem",
-          "image": "/uploads/news/muhsin-yazicioglu-sorusturmasinda-19-kisi-tut-1790286901188.webp",
-          "date": "Bugün, 09:27",
-          "views": "81.6K",
-          "author": "Y Yazar"
+          "image": "/uploads/news/13-ilde-sahte-belgelerle-vatandaslik-operasyo-1790287165659.webp",
+          "date": "7 Dk Önce",
+          "views": "42.8K",
+          "author": "X Yazar"
         },
         {
           "id": 102,
-          "title": "Akın Gürlek paylaştı: 19 şüpheliye yasa dışı bahis operasyonu",
-          "summary": "Adalet Bakanı Akın Gürlek, profesyonel liglerde görev yapan bazı kulüp yöneticilerine yönelik operasyon yapıldığını açıkladı. Bakan Gürlek 19 şüpheli hakkında gözaltı kararı verild",
+          "title": "İstanbul Üsküdar'da çocuklara çarpan otomobilin sürücüsü gözaltına alındı",
+          "summary": "İstanbul Üsküdar'da önce başka bir araca, daha sonra da kaldırımda yürüyen 4 çocuğa çarpan otomobilin 73 yaşındaki sürücüsü gözaltına alındı",
           "category": "Gündem",
-          "image": "/uploads/news/akin-gurlek-paylasti-19-supheliye-yasa-disi-b-1790286901643.webp",
-          "date": "Bugün, 09:16",
-          "views": "113.1K",
+          "image": "/uploads/news/istanbul-uskudarda-cocuklara-carpan-otomobili-1790287165968.webp",
+          "date": "41 Dk Önce",
+          "views": "112.6K",
           "author": "Z Yazar"
         },
         {
           "id": 103,
-          "title": "Eskişehir'de yolcu otobüsü devrildi",
-          "summary": "Eskişehir'de yolcu otobüsünün devrilmesi sonucu meydana gelen trafik kazasında 24 kişi yaralanırken, sürücünün ise direksiyon başında uyuduğu iddia edildi.",
+          "title": "Burhanettin Duran'dan İsrail Başbakanı Netanyahu'ya tepki",
+          "summary": "Cumhurbaşkanlığı İletişim Başkanı Burhanettin Duran, Birleşmiş Milletler Genel Kurulu'ndaki konuşması sırasında Cumhurbaşkanı Recep Tayyip Erdoğan'ı hedef alan İsrail Başbakanı Bin",
           "category": "Gündem",
-          "image": "/uploads/news/eskisehirde-yolcu-otobusu-devrildi-1790286901929.webp",
-          "date": "Bugün, 09:13",
-          "views": "114.7K",
-          "author": "A Yazar"
+          "image": "/uploads/news/burhanettin-durandan-israil-basbakani-netanya-1790287166122.webp",
+          "date": "1 Saat Önce",
+          "views": "77.1K",
+          "author": "B Yazar"
         },
         {
           "id": 104,
-          "title": "Ahbap soruşturmasına bilirkişi heyeti görevlendirildi",
-          "summary": "İstanbul Cumhuriyet Başsavcılığı, 6 Şubat depremi nedeniyle Ahbap Derneği tarafından toplanan bağış ve yardımların kullanımıyla alakalı bilirkişi heyeti görevlendirildiğini açıklad",
+          "title": "Ankara'da su deposunda silahlı kavga: 1 ölü",
+          "summary": "Ankara'da su deposunda çıkan silahlı kavgada 1 kişi hayatını kaybetti.",
           "category": "Gündem",
-          "image": "/uploads/news/ahbap-sorusturmasina-bilirkisi-heyeti-gorevle-1790286902835.webp",
-          "date": "Bugün, 09:04",
-          "views": "92.7K",
-          "author": "D Yazar"
+          "image": "/uploads/news/ankarada-su-deposunda-silahli-kavga-1-olu-1790287166191.webp",
+          "date": "1 Saat Önce",
+          "views": "99.8K",
+          "author": "C Yazar"
         }
       ]
     },
@@ -487,43 +487,43 @@
       "articles": [
         {
           "id": 201,
-          "title": "Ons altın 4 bin doların altına geriledi",
-          "summary": "Jeopolitik riskler petrol fiyatını artırırken, petrol fiyatlarının oluşturduğu baskı da altın fiyatlarının düşüşünü derinleştirdi. Günün başlangıcında ons altın 4 bin doların altın",
+          "title": "New York borsası düşüşle açıldı",
+          "summary": "ABD Başkanı Donald Trump ve Çin Devlet Başkanı Şi Cinping görüşmesi öncesinde New York borsası güne düşüşle başladı. Orta Doğu'daki gerilimle petrolün yüz doları aşması ve yükselen",
           "category": "Ekonomi",
-          "image": "/uploads/news/ons-altin-4-bin-dolarin-altina-geriledi-1790286902169.webp",
-          "date": "Bugün, 09:11",
-          "views": "33.6K",
+          "image": "/uploads/news/new-york-borsasi-dususle-acildi-1790287169276.webp",
+          "date": "7 Saat Önce",
+          "views": "79.9K",
           "author": "B Yazar"
         },
         {
           "id": 202,
-          "title": "NATO Zirvesi Ankara ekonomisine 900 milyon lira kazandırdı",
-          "summary": "Türkiye'nin ev sahipliğinde Ankara'da gerçekleştirilen 36. NATO Devlet ve Hükümet Başkanları Zirvesi, Başkent'te turizm ve hizmet sektörlerini hareketlendirdi.",
+          "title": "Ons altın 4 bin doların altına geriledi",
+          "summary": "Jeopolitik riskler petrol fiyatını artırırken, petrol fiyatlarının oluşturduğu baskı da altın fiyatlarının düşüşünü derinleştirdi. Günün başlangıcında ons altın 4 bin doların altın",
           "category": "Ekonomi",
-          "image": "/uploads/news/nato-zirvesi-ankara-ekonomisine-900-milyon-li-1790286911069.webp",
-          "date": "Bugün, 11:16",
-          "views": "39.6K",
-          "author": "Y Yazar"
+          "image": "/uploads/news/ons-altin-4-bin-dolarin-altina-geriledi-1790287170478.webp",
+          "date": "Bugün, 09:11",
+          "views": "52.7K",
+          "author": "D Yazar"
         },
         {
           "id": 203,
-          "title": "New York borsası düşüşle açıldı",
-          "summary": "ABD Başkanı Donald Trump ve Çin Devlet Başkanı Şi Cinping görüşmesi öncesinde New York borsası güne düşüşle başladı. Orta Doğu'daki gerilimle petrolün yüz doları aşması ve yükselen",
+          "title": "NATO Zirvesi Ankara ekonomisine 900 milyon lira kazandırdı",
+          "summary": "Türkiye'nin ev sahipliğinde Ankara'da gerçekleştirilen 36. NATO Devlet ve Hükümet Başkanları Zirvesi, Başkent'te turizm ve hizmet sektörlerini hareketlendirdi.",
           "category": "Ekonomi",
-          "image": "/uploads/news/new-york-borsasi-dususle-acildi-1790285689819.webp",
-          "date": "7 Saat Önce",
-          "views": "115.8K",
+          "image": "/uploads/news/nato-zirvesi-ankara-ekonomisine-900-milyon-li-1790287175656.webp",
+          "date": "Bugün, 11:16",
+          "views": "116.8K",
           "author": "A Yazar"
         },
         {
           "id": 204,
-          "title": "New York borsası düşüşle açıldı",
-          "summary": "ABD Başkanı Donald Trump ve Çin Devlet Başkanı Şi Cinping görüşmesi öncesinde New York borsası güne düşüşle başladı. Orta Doğu'daki gerilimle petrolün yüz doları aşması ve yükselen",
+          "title": "Haziran ayında 194 bin 740 adet taşıtın trafiğe kaydı yapıldı",
+          "summary": "2026 Haziran ayında Türkiye'de 194 bin 740 taşıtın trafiğe kaydı yapıldı. Motosikletler ve otomobiller bu sayıda büyük bir paya sahip oldu. Özel amaçlı taşıtların kaydı yapılan ade",
           "category": "Ekonomi",
-          "image": "/uploads/news/new-york-borsasi-dususle-acildi-1790285450409.webp",
-          "date": "7 Saat Önce",
-          "views": "61.2K",
-          "author": "A Yazar"
+          "image": "/uploads/news/haziran-ayinda-194-bin-740-adet-tasitin-trafi-1790287194661.webp",
+          "date": "Bugün, 10:32",
+          "views": "115.1K",
+          "author": "E Yazar"
         }
       ]
     },
@@ -534,42 +534,42 @@
       "articles": [
         {
           "id": 301,
-          "title": "Okan Buruk duyurdu: Victor Osimhen de yeni seçeceğimiz kaptanlar arasında",
-          "summary": "Sarı kırmızılıların belirleyeceği yeni kaptanlar arasında Victor Osimhen'in de yer aldığını açıklayan teknik direktör Okan Buruk 'Ona daha fazla sorumluluk vermek istiyoruz' dedi.",
+          "title": "Anadolu Efes deplasmanda Barcelona'ya yenildi",
+          "summary": "Anadolu Efes, EuroLeague'de 2026-2027 sezonunun ilk haftasında konuk olduğu Barcelona'ya 89-82 kaybetti.",
           "category": "Spor",
-          "image": "/uploads/news/okan-buruk-duyurdu-victor-osimhen-de-yeni-sec-1790286906006.webp",
-          "date": "Bugün, 21:40",
-          "views": "71.5K",
+          "image": "/uploads/news/anadolu-efes-deplasmanda-barcelonaya-yenildi-1790287165851.webp",
+          "date": "30 Dk Önce",
+          "views": "72.4K",
           "author": "Y Yazar"
         },
         {
           "id": 302,
-          "title": "Beşiktaş taraftarından 'Ya Allah bismillah, Mohamed Salah' tezahüratı",
-          "summary": "Leandro Trossard'ın imza töreninde tribünlerden yükselen Mohamed Salah tezahüratı, sosyal medyada kısa sürede gündem oldu. Siyah beyazlı taraftarların 'Ya Allah, Bismillah, Muhamme",
+          "title": "Vincenzo Montella: Buradaki işimin bittiğine inanmıyorum",
+          "summary": "A Milli Futbol Takımı Teknik Direktörü Vincenzo Montella, Fransa maçı öncesi düzenlenen basın toplantısında açıklamalarda bulundu. İtalyan teknik adam, hala Türkiye uzun bir yolunu",
           "category": "Spor",
-          "image": "/uploads/news/besiktas-taraftarindan-ya-allah-bismillah-moh-1790286906472.webp",
-          "date": "Bugün, 19:23",
-          "views": "42.2K",
+          "image": "/uploads/news/vincenzo-montella-buradaki-isimin-bittigine-i-1790287166673.webp",
+          "date": "3 Saat Önce",
+          "views": "103.6K",
           "author": "A Yazar"
         },
         {
           "id": 303,
-          "title": "Fenerbahçe, Mason Greenwood'a kavuştu!",
-          "summary": "Fenerbahçe'nin rekor bonservis bedeli ile renklerine bağladığı Mason Greenwood İstanbul'a geldi. Çok sayıda sarı-lacivertli taraftar, İngiliz yıldızı karşılamak için İstanbul Haval",
+          "title": "Cumhurbaşkanı Erdoğan'dan Havvanur Kethüda'ya tebrik telefonu",
+          "summary": "Cumhurbaşkanı Erdoğan 2026 Avrupa Boks Şampiyonası'nda altın madalya kazanarak şampiyon olan milli sporcu Havvanur Kethüda'yı arayarak tebriklerini iletti.",
           "category": "Spor",
-          "image": "/uploads/news/fenerbahce-mason-greenwooda-kavustu-1790286908731.webp",
-          "date": "Bugün, 14:37",
-          "views": "75.5K",
-          "author": "A Yazar"
+          "image": "/uploads/news/cumhurbaskani-erdogandan-havvanur-kethudaya-t-1790287167017.webp",
+          "date": "4 Saat Önce",
+          "views": "112.5K",
+          "author": "E Yazar"
         },
         {
           "id": 304,
-          "title": "Mauro Icardi'nin sarı-kırmızılı hikayesi: 4 yıllık yolculuk sona erdi...",
-          "summary": "Sarı-kırmızılı formayla geçirdiği 4 yılda kulüp tarihinde iz bırakan bir performans sergileyen Mauro Icardi'nin Galatasaray günleri sona erdi... Arjantinli yıldız, Galatasaray'a ge",
+          "title": "Zinedine Zidane'dan Türkiye açıklaması: Biliyorum ki bize problem çıkaracaklar",
+          "summary": "Fransa Milli Takımı Teknik Direktörü Zinedine Zidane, Türkiye maçı öncesinde açıklamalarda bulundu. Türkiye'nin son Dünya Kupası'nda gruptan çıkamamasının beklenmedik olduğunu ifad",
           "category": "Spor",
-          "image": "/uploads/news/mauro-icardinin-sari-kirmizili-hikayesi-4-yil-1790286911806.webp",
-          "date": "Bugün, 11:02",
-          "views": "33.2K",
+          "image": "/uploads/news/zinedine-zidanedan-turkiye-aciklamasi-biliyor-1790287167346.webp",
+          "date": "5 Saat Önce",
+          "views": "97.1K",
           "author": "A Yazar"
         }
       ]
@@ -584,40 +584,40 @@
           "title": "Nissan'ın en ucuz elektrikli otomobili Pixo tanıtıldı",
           "summary": "Japon otomotiv devi Nissan, 259 kilometre menzili, LFP bataryası ve Google Gemini yapay zeka desteğiyle öne çıkan yeni A segmenti elektrikli şehir otomobili Pixo'yu resmi olarak ta",
           "category": "Teknoloji",
-          "image": "/uploads/news/nissanin-en-ucuz-elektrikli-otomobili-pixo-ta-1790285689011.webp",
-          "date": "6 Saat Önce",
-          "views": "76.6K",
-          "author": "Y Yazar"
+          "image": "/uploads/news/nissanin-en-ucuz-elektrikli-otomobili-pixo-ta-1790287168519.webp",
+          "date": "7 Saat Önce",
+          "views": "90.9K",
+          "author": "Z Yazar"
         },
         {
           "id": 402,
           "title": "Renault Captur tamamen yenileniyor: İşte beklenen çıkış tarihi",
           "summary": "Renault'nun büyük bir tasarımsal değişime imza atacağı üçüncü nesil Captur modeli, yeni motor seçenekleri ve teknolojik donanımlarıyla 2027 yılının sonlarında yollara çıkmaya hazır",
           "category": "Teknoloji",
-          "image": "/uploads/news/renault-captur-tamamen-yenileniyor-iste-bekle-1790285689408.webp",
+          "image": "/uploads/news/renault-captur-tamamen-yenileniyor-iste-bekle-1790287168878.webp",
           "date": "7 Saat Önce",
-          "views": "90.5K",
-          "author": "D Yazar"
+          "views": "115.9K",
+          "author": "E Yazar"
         },
         {
           "id": 403,
-          "title": "Nissan'ın en ucuz elektrikli otomobili Pixo tanıtıldı",
-          "summary": "Japon otomotiv devi Nissan, 259 kilometre menzili, LFP bataryası ve Google Gemini yapay zeka desteğiyle öne çıkan yeni A segmenti elektrikli şehir otomobili Pixo'yu resmi olarak ta",
+          "title": "Fiat'ın ucuz elektrikli otomobili 2028 yılında yollarda olacak",
+          "summary": "Otomotiv devi Stellantis bünyesindeki Fiat, efsanevi Panda modelinin genlerini taşıyacak 15 bin euro bütçeli yeni küçük elektrikli otomobilini 2028 yılında yollara çıkarmaya hazırl",
           "category": "Teknoloji",
-          "image": "/uploads/news/nissanin-en-ucuz-elektrikli-otomobili-pixo-ta-1790285449571.webp",
-          "date": "6 Saat Önce",
-          "views": "104.3K",
-          "author": "Y Yazar"
+          "image": "/uploads/news/fiatin-ucuz-elektrikli-otomobili-2028-yilinda-1790287226971.webp",
+          "date": "Bugün, 09:06",
+          "views": "72.1K",
+          "author": "E Yazar"
         },
         {
           "id": 404,
-          "title": "Renault Captur tamamen yenileniyor: İşte beklenen çıkış tarihi",
-          "summary": "Renault'nun büyük bir tasarımsal değişime imza atacağı üçüncü nesil Captur modeli, yeni motor seçenekleri ve teknolojik donanımlarıyla 2027 yılının sonlarında yollara çıkmaya hazır",
+          "title": "BYD, beş yıl içinde Toyota'yı geride bırakmayı hedefliyor",
+          "summary": "Çinli otomotiv devi BYD, Amerika Birleşik Devletleri pazarına girmeden önümüzdeki beş yıl içinde Toyota'yı geride bırakarak dünyanın en çok satan otomobil üreticisi olmayı hedefliy",
           "category": "Teknoloji",
-          "image": "/uploads/news/renault-captur-tamamen-yenileniyor-iste-bekle-1790285449967.webp",
-          "date": "7 Saat Önce",
-          "views": "39.7K",
-          "author": "D Yazar"
+          "image": "/uploads/news/byd-bes-yil-icinde-toyotayi-geride-birakmayi--1790287227247.webp",
+          "date": "Bugün, 17:55",
+          "views": "102.9K",
+          "author": "X Yazar"
         }
       ]
     },
@@ -628,43 +628,43 @@
       "articles": [
         {
           "id": 501,
-          "title": "Dünya Kupası'nın gizli finali: İsrail destekçisi Arjantin'le, Filistin'in yanında olan İspanya!",
-          "summary": "Pazar günü oynanacak olası Arjantin-İspanya karşılaşması bir Dünya Kupası finalinin ötesinde anlamlar taşıyor. Bir yandan her fırsatta Arjantin'e yönelik destek açıklayan İsrail, d",
+          "title": "Binyamin Netanyahu tüm dünyayı çağrı cihazıyla tehdit etti",
+          "summary": "Birleşmiş Milletler Genel Kurulu'nda kendisini dinleyen ülkelerin temsilcilerine çağrı cihazı gösteren İsrail Başbakanı Binyamin Netanyahu, Eylül 2024'te Lübnan'da Hizbullah mensup",
           "category": "Dünya",
-          "image": "/uploads/news/dunya-kupasinin-gizli-finali-israil-destekcis-1790286900593.webp",
-          "date": "Bugün, 09:59",
-          "views": "37.4K",
-          "author": "X Yazar"
+          "image": "/uploads/news/binyamin-netanyahu-tum-dunyayi-cagri-cihaziyl-1790287166044.webp",
+          "date": "51 Dk Önce",
+          "views": "90.9K",
+          "author": "A Yazar"
         },
         {
           "id": 502,
-          "title": "Beyaz Saray: İran'ı her yerde, her zaman, her koşulda vurabiliriz",
-          "summary": "Basın mensuplarına açıklamalarda bulunan Beyaz Saray Sözcüsü Karoline Levavitt, son günlerde İran'a yönelik gerçekleştirilen saldırıların nedeninin Tahran yönetiminin mutabakat ihl",
+          "title": "Birleşmiş Milletler Genel Kurulu'na hitap eden Netanyahu protesto edildi",
+          "summary": "İsrail Başbakanı Binyamin Netanyahu, 81. Birleşmiş Milletler Genel Kurulu'nda konuşma yapmak için New York'a geldi. İsrail Başbakanı'nın hitap için kürsüye çıkmasının ardından yuha",
           "category": "Dünya",
-          "image": "/uploads/news/beyaz-saray-irani-her-yerde-her-zaman-her-kos-1790286902481.webp",
-          "date": "Bugün, 09:05",
-          "views": "63.4K",
+          "image": "/uploads/news/birlesmis-milletler-genel-kuruluna-hitap-eden-1790287166822.webp",
+          "date": "3 Saat Önce",
+          "views": "111.3K",
           "author": "C Yazar"
         },
         {
           "id": 503,
-          "title": "İran'ın Husilerden Kızıldeniz'i kapatmasını istediği iddiası",
-          "summary": "ABD'nin İran'ın enerji altyapısına yönelik muhtemel saldırıları halinde İran yönetiminin Yemen'deki Husilere Kızıldeniz'deki deniz taşımacılığı güzergahlarını kapatma çağrısında bu",
+          "title": "BAE, İran hava yolu şirketlerinin uçuşlarını durdurma kararı aldı",
+          "summary": "ABD'den gelen çağrınının ardından Birleşik Arap Emirlikleri (BAE), İran hava yolu şirketlerinin ülkeye ve ülkeden gerçekleştirdiği uçuşların bugünden itibaren ikinci bir duyuruya k",
           "category": "Dünya",
-          "image": "/uploads/news/iranin-husilerden-kizildenizi-kapatmasini-ist-1790286903063.webp",
-          "date": "Bugün, 09:01",
-          "views": "105.9K",
-          "author": "E Yazar"
+          "image": "/uploads/news/bae-iran-hava-yolu-sirketlerinin-ucuslarini-d-1790287166918.webp",
+          "date": "4 Saat Önce",
+          "views": "61.9K",
+          "author": "D Yazar"
         },
         {
           "id": 504,
-          "title": "ABD'de Trump'a destek oranı yüzde 37'de kaldı",
-          "summary": "ABD'de Başkan Donald Trump'a destek oranının yüzde 37 olduğu tespit edildi. İran ve ekonomi konularındaki karamsarlık nedeniyle Trump'a destek oranı başkanlık seçimlerini kaybettiğ",
+          "title": "Binyamin Netanyahu ile Kiryakos Miçotakis New York'ta bir araya geldi",
+          "summary": "İsrail Başbakanı Binyamin Netanyahu, Birleşmiş Milletler Genel Kurulu oturumu marjında Yunanistan Başbakanı Kiryakos Miçotakis ile bir görüşme gerçekleştirdi.",
           "category": "Dünya",
-          "image": "/uploads/news/abdde-trumpa-destek-orani-yuzde-37de-kaldi-1790286903905.webp",
-          "date": "Bugün, 09:00",
-          "views": "56.5K",
-          "author": "Y Yazar"
+          "image": "/uploads/news/binyamin-netanyahu-ile-kiryakos-micotakis-new-1790287167095.webp",
+          "date": "4 Saat Önce",
+          "views": "51.9K",
+          "author": "X Yazar"
         }
       ]
     },
@@ -675,6 +675,26 @@
       "articles": [
         {
           "id": 601,
+          "title": "Ordu'da torununun hayalini gerçekleştirdi: 90 yıllık meşe ağacına ev yaptı",
+          "summary": "85 yaşındaki Adnan Çandır, torununun çocukluk hayalini gerçeğe dönüştürerek yaklaşık 90 yıllık meşe ağacının üzerine ahşap ev yaptırdı. Yerden 6 metre yükseklikteki 16 metrekarelik",
+          "category": "Kelebek",
+          "image": "/uploads/news/orduda-torununun-hayalini-gerceklestirdi-90-y-1790287169092.webp",
+          "date": "7 Saat Önce",
+          "views": "62.2K",
+          "author": "Z Yazar"
+        },
+        {
+          "id": 602,
+          "title": "Türkiye, hafta sonu Afrika sıcaklıklarının etkisi altına girecek",
+          "summary": "Türkiye, hafta sonundan itibaren Afrika üzerinden gelecek sıcak hava dalgasının etkisi altına girecek. İstanbul ve Ankara'da sıcaklıkların 35 dereceye kadar çıkması beklenirken İzm",
+          "category": "Kelebek",
+          "image": "/uploads/news/turkiye-hafta-sonu-afrika-sicakliklarinin-etk-1790287173191.webp",
+          "date": "Bugün, 19:43",
+          "views": "81.2K",
+          "author": "B Yazar"
+        },
+        {
+          "id": 603,
           "title": "Türkiye, hafta sonu Afrika sıcaklıklarının etkisi altına girecek",
           "summary": "Türkiye, hafta sonundan itibaren Afrika üzerinden gelecek sıcak hava dalgasının etkisi altına girecek. İstanbul ve Ankara'da sıcaklıkların 35 dereceye kadar çıkması beklenirken İzm",
           "category": "Kelebek",
@@ -684,33 +704,13 @@
           "author": "Z Yazar"
         },
         {
-          "id": 602,
+          "id": 604,
           "title": "Ordu'da torununun hayalini gerçekleştirdi: 90 yıllık meşe ağacına ev yaptı",
           "summary": "85 yaşındaki Adnan Çandır, torununun çocukluk hayalini gerçeğe dönüştürerek yaklaşık 90 yıllık meşe ağacının üzerine ahşap ev yaptırdı. Yerden 6 metre yükseklikteki 16 metrekarelik",
           "category": "Kelebek",
           "image": "/uploads/news/orduda-torununun-hayalini-gerceklestirdi-90-y-1790285689631.webp",
           "date": "7 Saat Önce",
           "views": "92.1K",
-          "author": "Y Yazar"
-        },
-        {
-          "id": 603,
-          "title": "Ordu'da torununun hayalini gerçekleştirdi: 90 yıllık meşe ağacına ev yaptı",
-          "summary": "85 yaşındaki Adnan Çandır, torununun çocukluk hayalini gerçeğe dönüştürerek yaklaşık 90 yıllık meşe ağacının üzerine ahşap ev yaptırdı. Yerden 6 metre yükseklikteki 16 metrekarelik",
-          "category": "Kelebek",
-          "image": "/uploads/news/orduda-torununun-hayalini-gerceklestirdi-90-y-1790285450213.webp",
-          "date": "7 Saat Önce",
-          "views": "33.7K",
-          "author": "Y Yazar"
-        },
-        {
-          "id": 604,
-          "title": "Venedik Film Festivali'nden Büyük Ödülle Dönen Türk Yönetmenden Tarihi Başarı",
-          "summary": "Anadolu'nun kadim hikayesini beyaz perdeye taşıyan film, jüriden tam not alarak festivalin en prestijli ödülü olan Gümüş Aslan'a layık görüldü.",
-          "category": "Kelebek",
-          "image": "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=600&q=80",
-          "date": "40 Dk Önce",
-          "views": "68.3K",
           "author": "Y Yazar"
         }
       ]
@@ -722,43 +722,43 @@
       "articles": [
         {
           "id": 701,
-          "title": "Sağlık Bakanlığı'ndan Kış Öncesi Aşı Genelgesi: Risk Grupları İçin Tanımlandı",
-          "summary": "Okulların açılması ve hava sıcaklıklarının düşmesiyle birlikte sağlık ocaklarında koruyucu aşılama programı başlatıldı.",
+          "title": "Diyetisyen Ersin Özdemir anlattı: En sağlıklı tuz hangisidir",
+          "summary": "Ensohaber Youtube kanalına konuk olan diyetisyen Ersin Özdemir, tuz kullanımına ve çeşitleri hakkında konuştu. Tuzun insan vücuduna etkilerine dikkat çeken Özdemir, en sağlıklı tuz",
           "category": "Sağlık",
-          "image": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=600&q=80",
-          "date": "30 Dk Önce",
-          "views": "81.9K",
-          "author": "D Yazar"
+          "image": "/uploads/news/diyetisyen-ersin-ozdemir-anlatti-en-saglikli--1790287215308.webp",
+          "date": "Bugün, 17:05",
+          "views": "86.2K",
+          "author": "C Yazar"
         },
         {
           "id": 702,
-          "title": "Akdeniz Tipi Beslenmenin Beyin Sağlığına Etkileri: 10 Yıllık Araştırma Sonuçlandı",
-          "summary": "Zeytinyağı, ceviz ve taze sebzelerle beslenen bireylerde hafıza kaybı ve nörodejeneratif riskler %35 oranında daha düşük çıktı.",
+          "title": "Oytun Erbaş, sağlıklı bir cinsel yaşamın sırrını verdi",
+          "summary": "Sağlıklı cinsel yaşamın sırrını veren Oytun Erbaş, \"Hocam erken boşalma sorunum var yaşım 32\" diyen bir izleyicinin sorusunu yanıtladı.",
           "category": "Sağlık",
-          "image": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=600&q=80",
-          "date": "1.5 Saat Önce",
-          "views": "63.2K",
-          "author": "E Yazar"
-        },
-        {
-          "id": 703,
-          "title": "Uyku Kalitesini Bozan 3 Akşam Alışkanlığı: Nörologlardan Gece Uyanmalarına Karşı İpuçları",
-          "summary": "Yatmadan önce mavi ışığa maruz kalmak melatonin salınımını %60 oranında geciktiriyor. Uzmanlar karanlık ortam öneriyor.",
-          "category": "Sağlık",
-          "image": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=600&q=80",
-          "date": "2.5 Saat Önce",
-          "views": "74.8K",
+          "image": "/uploads/news/oytun-erbas-saglikli-bir-cinsel-yasamin-sirri-1790287215517.webp",
+          "date": "Bugün, 12:41",
+          "views": "112.7K",
           "author": "D Yazar"
         },
         {
-          "id": 704,
-          "title": "Yapay Zeka Destekli Erken Teşhis Sistemi Türkiye'deki Hastanelerde Uygulamada",
-          "summary": "Radyoloji görüntülerinde milimetrik lezyonları saniyeler içinde saptayan yapay zeka yazılımı doktorların tanı hızını iki katına çıkardı.",
+          "id": 703,
+          "title": "Akupunktur: Vücudun enerjisini dengeliyor, zayıflatıyor",
+          "summary": "Bir Çin buluşu olan tedavi yöntemi akupunktur, yardımcı tedavi olarak ülkemizde de çok yaygın uygulanıyor. Akupunktur yönteminin Ağrıdan enerjiye, sinir sistemi rahatsızlıklarından",
           "category": "Sağlık",
-          "image": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=600&q=80",
-          "date": "4 Saat Önce",
-          "views": "58.4K",
-          "author": "B Yazar"
+          "image": "/uploads/news/akupunktur-vucudun-enerjisini-dengeliyor-zayi-1790287215682.webp",
+          "date": "Bugün, 11:00",
+          "views": "74.4K",
+          "author": "E Yazar"
+        },
+        {
+          "id": 704,
+          "title": "Diyetisyen Ersin Özdemir, fazla kilolardan kurtulmanın sırrını verdi",
+          "summary": "Ensonhaber’de kilo verme rutinini anlatan Diyetisyen Ersin Özdemir, sabah aç karnına yürüyüş yaptığını, akşam yemeğini erken kestiğini ve göbek bölgesini güneşlendirdiğini söyledi.",
+          "category": "Sağlık",
+          "image": "/uploads/news/diyetisyen-ersin-ozdemir-fazla-kilolardan-kur-1790287215823.webp",
+          "date": "Bugün, 08:37",
+          "views": "104.4K",
+          "author": "X Yazar"
         }
       ]
     }
@@ -896,5 +896,5 @@
       "author": "B Yazar"
     }
   ],
-  "lastUpdated": "2026-09-24T21:55:12.823Z"
+  "lastUpdated": "2026-09-24T22:00:38.952Z"
 }
