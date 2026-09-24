@@ -103,3 +103,93 @@ export async function getLatestNews(limit = 20, category?: string): Promise<INew
   }
   return articles.slice(0, limit);
 }
+
+/**
+ * Finds a single article by its exact unique slug.
+ * Returns null if not found (enables throwing notFound() in Next.js).
+ */
+export async function findArticleBySlug(slug: string): Promise<INewsArticle | null> {
+  if (!slug) return null;
+  const decodedSlug = decodeURIComponent(slug).toLowerCase().trim();
+
+  // 1. Search in storedNews.json
+  const articles = await getAllStoredArticles();
+  let found = articles.find((a) => a.slug && a.slug.toLowerCase() === decodedSlug);
+  if (found) return found;
+
+  // 2. Search by matching id or guid
+  found = articles.find((a) => String(a.id) === decodedSlug || (a.guid && a.guid === decodedSlug));
+  if (found) return found;
+
+  // 3. Fallback search in newsData.json by slug
+  try {
+    const newsDataFile = path.join(DATA_DIR, 'newsData.json');
+    if (fs.existsSync(newsDataFile)) {
+      const newsData = JSON.parse(fs.readFileSync(newsDataFile, 'utf8'));
+
+      const allItems: any[] = [
+        ...(newsData.headlineSlider || []),
+        ...(newsData.sliderSideNews || []),
+        ...(newsData.todayEvents || []),
+        ...(newsData.sicakGundem || []),
+        ...(newsData.categories || []).flatMap((c: any) => c.articles || []),
+      ];
+
+      const item = allItems.find((n) => n.slug && n.slug.toLowerCase() === decodedSlug);
+      if (item) {
+        return {
+          id: String(item.id || item.slug),
+          guid: item.guid || item.link || item.slug,
+          title: item.title,
+          slug: item.slug,
+          summary: item.summary || item.title,
+          content: item.content || item.summary || item.title,
+          sourceLink: item.link || item.sourceLink || `https://www.habernoktasi.com.tr/haber/${item.slug}`,
+          sourceName: item.sourceName || 'Haber Noktası',
+          category: item.category || 'Gündem',
+          imageUrl: item.image || item.imageUrl || '/placeholder.webp',
+          publishedAt: item.date || item.pubDate || new Date().toISOString(),
+          createdAt: new Date().toISOString(),
+          isHeadline: !!item.isHeadline,
+        };
+      }
+    }
+  } catch (err) {
+    console.error('[NewsRepository Error] Failed to search newsData:', err);
+  }
+
+  return null;
+}
+
+/**
+ * Returns all existing slugs for static generation
+ */
+export async function getAllSlugs(): Promise<string[]> {
+  const articles = await getAllStoredArticles();
+  const slugSet = new Set<string>();
+
+  for (const art of articles) {
+    if (art.slug) slugSet.add(art.slug);
+  }
+
+  try {
+    const newsDataFile = path.join(DATA_DIR, 'newsData.json');
+    if (fs.existsSync(newsDataFile)) {
+      const newsData = JSON.parse(fs.readFileSync(newsDataFile, 'utf8'));
+      const allItems: any[] = [
+        ...(newsData.headlineSlider || []),
+        ...(newsData.sliderSideNews || []),
+        ...(newsData.todayEvents || []),
+        ...(newsData.sicakGundem || []),
+        ...(newsData.categories || []).flatMap((c: any) => c.articles || []),
+      ];
+      for (const item of allItems) {
+        if (item.slug) slugSet.add(item.slug);
+      }
+    }
+  } catch (err) {
+    // Ignore error in fallback
+  }
+
+  return Array.from(slugSet);
+}

@@ -62,7 +62,7 @@ export default function TodayEventsBar() {
 
             {/* Net Haber Başlığı (Açıklama olmaksızın sadece başlık) */}
             <Link 
-              href={`/haber/${currentItem.id || 1}`}
+              href={`/haber/${currentItem.slug || currentItem.id || 1}`}
               className="font-black text-white hover:text-amber-300 transition-colors truncate text-xs sm:text-sm tracking-tight flex-1 min-w-0"
             >
               {itemTitle}

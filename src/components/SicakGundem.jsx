@@ -33,8 +33,8 @@ export default function SicakGundem() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
         {items.map((item) => (
           <Link
-            key={item.id}
-            href={`/haber/${item.id}`}
+            key={item.slug || item.id}
+            href={`/haber/${item.slug || item.id}`}
             className="group relative h-44 sm:h-48 rounded-lg overflow-hidden border border-neutral-300 dark:border-neutral-800 hover:border-red-500 dark:hover:border-red-500 shadow-sm hover:shadow-md transition-all duration-300 block"
           >
             {/* Background Image */}

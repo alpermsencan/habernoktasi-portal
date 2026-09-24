@@ -1,6 +1,39 @@
 import Parser from 'rss-parser';
+import slugify from 'slugify';
+
+/**
+ * Clean Turkish slug generation with unique ID/GUID suffix
+ */
+export function generateNewsSlug(title: string, uniqueIdOrGuid?: string): string {
+  const cleanTitle = slugify(title || 'haber', {
+    lower: true,
+    strict: true,
+    locale: 'tr',
+    trim: true,
+    remove: /[*+~.()'"!:@/]/g,
+  });
+
+  let suffix = '';
+  if (uniqueIdOrGuid) {
+    const match = String(uniqueIdOrGuid).match(/h?(\d{4,})/i);
+    if (match) {
+      suffix = match[1];
+    } else {
+      const cleanChars = String(uniqueIdOrGuid).replace(/[^a-zA-Z0-9]/g, '');
+      suffix = cleanChars.slice(-6);
+    }
+  }
+
+  if (!suffix) {
+    suffix = Math.random().toString(36).substring(2, 8);
+  }
+
+  return `${cleanTitle}-${suffix}`;
+}
 
 export interface ParsedNews {
+  id?: string;
+  slug?: string;
   title: string;
   link: string;
   guid: string;
@@ -267,8 +300,12 @@ export async function parseEnsonhaberRSS(
         }
 
         const imageUrl = extractMediaImageUrl(item);
+        const slug = generateNewsSlug(title, guid || link);
+        const id = `eh-${guid.replace(/[^a-zA-Z0-9]/g, '').slice(-12) || Math.random().toString(36).slice(-6)}`;
 
         return {
+          id,
+          slug,
           title,
           link,
           guid,

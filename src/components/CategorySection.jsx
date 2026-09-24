@@ -60,8 +60,8 @@ export default function CategorySection({ category }) {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 items-stretch">
         {displayArticles.map((article, idx) => (
           <Link
-            key={article.id || idx}
-            href={`/haber/${article.id}`}
+            key={article.slug || article.id || idx}
+            href={`/haber/${article.slug || article.id}`}
             className="group bg-white dark:bg-neutral-900 rounded-lg overflow-hidden border border-neutral-300 dark:border-neutral-800 hover:border-red-500 dark:hover:border-red-500 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between"
           >
             {/* Optimized Next/Image Thumbnail (16:9 / 16:10) */}

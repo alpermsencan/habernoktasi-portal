@@ -38,13 +38,24 @@ export default function BreakingNewsBar() {
           onMouseLeave={() => setIsPaused(false)}
         >
           <div className="w-full flex items-center justify-between min-w-0">
-            <Link
-              href="/haber/1"
-              key={currentIndex}
-              className="text-xs sm:text-sm md:text-base font-extrabold truncate text-white hover:text-amber-200 transition-all duration-300 inline-block py-0.5 animate-fade-in tracking-tight flex-1 min-w-0"
-            >
-              {newsList[currentIndex]}
-            </Link>
+            {(() => {
+              const currentHeadline = newsList[currentIndex] || '';
+              const clean = currentHeadline.replace(/^SON\s*DAKİKA\s*[:|-]?\s*/i, '').trim();
+              const matched = (newsData.headlineSlider || []).find((h) => 
+                h.title && (h.title.includes(clean.slice(0, 20)) || clean.includes(h.title.slice(0, 20)))
+              ) || (newsData.headlineSlider || [])[0];
+              const targetSlug = matched?.slug || '';
+
+              return (
+                <Link
+                  href={targetSlug ? `/haber/${targetSlug}` : '/'}
+                  key={currentIndex}
+                  className="text-xs sm:text-sm md:text-base font-extrabold truncate text-white hover:text-amber-200 transition-all duration-300 inline-block py-0.5 animate-fade-in tracking-tight flex-1 min-w-0"
+                >
+                  {currentHeadline}
+                </Link>
+              );
+            })()}
 
             <div className="flex items-center gap-3 shrink-0 ml-4">
               <span className="hidden md:inline-block text-[11px] text-white/80 font-mono">

@@ -81,8 +81,8 @@ export default function DetailSidebar() {
         <div className="divide-y divide-neutral-100 dark:divide-neutral-800">
           {newsData.mostRead.map((item) => (
             <Link
-              key={item.id}
-              href={`/haber/${item.id}`}
+              key={item.slug || item.id}
+              href={`/haber/${item.slug || item.id}`}
               className="flex items-center gap-3 py-3 group first:pt-0 last:pb-0"
             >
               {/* Image thumbnail with rank badge */}
@@ -141,8 +141,8 @@ export default function DetailSidebar() {
         <div className="space-y-3">
           {newsData.editorsPicks.map((pick) => (
             <Link
-              key={pick.id}
-              href={`/haber/${pick.id}`}
+              key={pick.slug || pick.id}
+              href={`/haber/${pick.slug || pick.id}`}
               className="flex items-center gap-3 group p-1.5 rounded-lg hover:bg-neutral-50 dark:hover:bg-neutral-800/60 transition"
             >
               <div className="relative w-16 h-16 rounded-md overflow-hidden shrink-0 bg-neutral-100 dark:bg-neutral-800">

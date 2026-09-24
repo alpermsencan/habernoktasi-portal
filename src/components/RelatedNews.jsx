@@ -22,8 +22,8 @@ export default function RelatedNews({ articles = [], currentCategory = 'GÜNDEM'
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {articles.slice(0, 4).map((art) => (
           <Link
-            key={art.id}
-            href={`/haber/${art.id}`}
+            key={art.slug || art.id}
+            href={`/haber/${art.slug || art.id}`}
             className="group flex flex-col bg-white dark:bg-neutral-900 rounded-xl overflow-hidden border border-neutral-200 dark:border-neutral-800 hover:shadow-md hover:border-hurriyet-red/50 transition-all duration-200"
           >
             {/* Thumbnail */}

@@ -2,7 +2,7 @@ import React from 'react';
 import BreakingNewsBar from '@/components/BreakingNewsBar';
 import TodayEventsBar from '@/components/TodayEventsBar';
 import LiveFinanceSection from '@/components/LiveFinanceSection';
-import NewsSlider from '@/components/NewsSlider';
+import HeadlineSlider from '@/components/HeadlineSlider';
 import CategorySection from '@/components/CategorySection';
 import DynamicNewsFeed from '@/components/DynamicNewsFeed';
 import SyncedNewsFeed from '@/components/SyncedNewsFeed';
@@ -56,7 +56,7 @@ export default function HomePage() {
         {/* 2. Ana Bölüm (Grid 12 Kolon):
             - Sol / Merkez (8 Kolon): Manşet Slider (Headline Slider)
             - Sağ (4 Kolon): Sıcak Gündem (Trending / Side Feed: 5-6 güncel haber) */}
-        <NewsSlider />
+        <HeadlineSlider />
 
         {/* 3. Alt Kategori Blokları (Gündem, Spor, Ekonomi, Dünya, Teknoloji - 4'lü kart ızgarası) */}
         <div className="space-y-6 sm:space-y-8">

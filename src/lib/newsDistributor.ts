@@ -1,9 +1,11 @@
 import fs from 'fs';
 import path from 'path';
-import { ParsedNews } from './rssParser';
+import { ParsedNews, generateNewsSlug } from './rssParser';
 
 export interface DistributableArticle {
   id?: string | number;
+  slug?: string;
+  guid?: string;
   title: string;
   summary: string;
   category: string;
@@ -108,9 +110,14 @@ export async function distributeNews(
        catName === 'Kelebek' ? 'kelebek' :
        catName === 'Sağlık' ? 'saglik' : 'gundem');
 
+    const title = (art.title || '').trim();
+    const slug = art.slug || generateNewsSlug(title, art.guid || art.link || art.id);
+    const id = art.id || `art-${slug.slice(-12)}`;
+
     return {
-      id: art.id ? Number(art.id) || idx + 1000 : 1000 + idx,
-      title: (art.title || '').trim(),
+      id,
+      slug,
+      title,
       summary: (art.summary || art.title || '').slice(0, 180).trim(),
       category: catName.toUpperCase(),
       categoryNormal: catName,
@@ -145,8 +152,9 @@ export async function distributeNews(
   // 2. Sıcak Gündem / Trending Side Feed (6 items from hard news only)
   let sicakGundem = existingData.sicakGundem || [];
   if (hardNewsArticles.length > 0) {
-    sicakGundem = hardNewsArticles.slice(0, 6).map((art, idx) => ({
-      id: 101 + idx,
+    sicakGundem = hardNewsArticles.slice(0, 6).map((art) => ({
+      id: art.id,
+      slug: art.slug,
       title: art.title,
       summary: art.summary,
       category: art.category,
@@ -160,8 +168,9 @@ export async function distributeNews(
   // 3. Slider Side News (2 items from hard news only)
   let sliderSideNews = existingData.sliderSideNews || [];
   if (sicakGundem.length >= 2) {
-    sliderSideNews = sicakGundem.slice(0, 2).map((art: any, idx: number) => ({
-      id: 21 + idx,
+    sliderSideNews = sicakGundem.slice(0, 2).map((art: any) => ({
+      id: art.id,
+      slug: art.slug,
       title: art.title,
       summary: art.summary,
       category: art.category,
@@ -175,8 +184,9 @@ export async function distributeNews(
   let headlineSlider = existingData.headlineSlider || [];
   if (hardNewsArticles.length > 0) {
     const sliderSource = hardNewsArticles.slice(0, 15);
-    headlineSlider = sliderSource.map((art, idx) => ({
-      id: idx + 1,
+    headlineSlider = sliderSource.map((art) => ({
+      id: art.id,
+      slug: art.slug,
       title: art.title,
       summary: art.summary,
       category: art.category,
@@ -189,9 +199,9 @@ export async function distributeNews(
 
     if (headlineSlider.length < 15 && Array.isArray(existingData.headlineSlider)) {
       const needed = 15 - headlineSlider.length;
-      const fillers = existingData.headlineSlider.slice(0, needed).map((f: any, i: number) => ({
+      const fillers = existingData.headlineSlider.slice(0, needed).map((f: any) => ({
         ...f,
-        id: headlineSlider.length + i + 1,
+        slug: f.slug || generateNewsSlug(f.title, f.id),
         isHeadline: true,
       }));
       headlineSlider = [...headlineSlider, ...fillers];
@@ -228,8 +238,9 @@ export async function distributeNews(
 
     // Kelebek/Magazin can keep up to 40 articles for the dedicated category page
     const maxArticlesForCategory = def.slug === 'kelebek' ? 40 : 4;
-    const newArticles = matched.slice(0, maxArticlesForCategory).map((art, aIdx) => ({
-      id: (cIdx + 1) * 100 + aIdx + 1,
+    const newArticles = matched.slice(0, maxArticlesForCategory).map((art) => ({
+      id: art.id,
+      slug: art.slug,
       title: art.title,
       summary: art.summary,
       category: def.name,
@@ -243,9 +254,9 @@ export async function distributeNews(
     let finalCatArticles = [...newArticles];
     if (finalCatArticles.length < 4 && existingArticles.length > 0) {
       const remainingNeeded = 4 - finalCatArticles.length;
-      const existingFillers = existingArticles.slice(0, remainingNeeded).map((ea: any, idx: number) => ({
+      const existingFillers = existingArticles.slice(0, remainingNeeded).map((ea: any) => ({
         ...ea,
-        id: (cIdx + 1) * 100 + finalCatArticles.length + idx + 1,
+        slug: ea.slug || generateNewsSlug(ea.title, ea.id),
       }));
       finalCatArticles = [...finalCatArticles, ...existingFillers];
     }
@@ -265,8 +276,9 @@ export async function distributeNews(
   // 6. Update todayEvents (top 10 hashtag ribbon items from hard news only)
   let todayEvents = existingData.todayEvents || [];
   if (hardNewsArticles.length > 0) {
-    todayEvents = hardNewsArticles.slice(0, 10).map((art, idx) => ({
-      id: idx + 1,
+    todayEvents = hardNewsArticles.slice(0, 10).map((art) => ({
+      id: art.id,
+      slug: art.slug,
       tag: `#${art.category}`,
       title: art.title,
       summary: art.summary,

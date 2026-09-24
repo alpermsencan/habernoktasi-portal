@@ -222,7 +222,7 @@ export default function DynamicNewsFeed() {
 
                     <div className="flex items-center gap-3">
                       <Link
-                        href={`/haber/${item.id}`}
+                        href={`/haber/${item.slug || item.id}`}
                         className="text-neutral-500 hover:text-neutral-900 dark:hover:text-white font-semibold flex items-center gap-1"
                       >
                         <span>Sayfaya Git</span>
@@ -256,7 +256,7 @@ export default function DynamicNewsFeed() {
                       Kaynak: <strong>Haber Noktası Muhabir Ağı</strong>
                     </span>
                     <Link
-                      href={`/haber/${item.id}`}
+                      href={`/haber/${item.slug || item.id}`}
                       className="bg-[#E31E24] hover:bg-[#B71015] text-white px-3 py-1.5 rounded font-bold transition flex items-center gap-1.5"
                     >
                       <span>Haberin Tamamını ve Yorumları Oku</span>
