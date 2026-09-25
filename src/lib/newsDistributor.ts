@@ -273,18 +273,35 @@ export async function distributeNews(
     };
   });
 
-  // 6. Update todayEvents (top 10 hashtag ribbon items from hard news only)
+  // 6. Update todayEvents (Major important news: Deprem, Siyaset, Spor - strictly distinct from breakingNews)
   let todayEvents = existingData.todayEvents || [];
-  if (hardNewsArticles.length > 0) {
-    todayEvents = hardNewsArticles.slice(0, 10).map((art) => ({
-      id: art.id,
-      slug: art.slug,
-      tag: `#${art.category}`,
-      title: art.title,
-      summary: art.summary,
-      time: art.time,
-      image: art.image,
-    }));
+  if (hardNewsArticles.length > 8) {
+    // Exclude the ones used in breaking news
+    const breakingTitles = new Set(hardNewsArticles.slice(0, 8).map((a) => a.title.toLowerCase().trim()));
+    const remainingCandidates = hardNewsArticles.filter((a) => !breakingTitles.has(a.title.toLowerCase().trim()));
+
+    // Prioritize major topics: deprem, siyaset, spor, ekonomi
+    const prioritized = remainingCandidates.sort((a, b) => {
+      const aScore = /deprem|sarsıntı|tbmm|bakan|meclis|kabine|derbi|şampiyon|fenerbahçe|galatasaray|beşiktaş|borsa/i.test(a.title) ? 2 : 1;
+      const bScore = /deprem|sarsıntı|tbmm|bakan|meclis|kabine|derbi|şampiyon|fenerbahçe|galatasaray|beşiktaş|borsa/i.test(b.title) ? 2 : 1;
+      return bScore - aScore;
+    });
+
+    todayEvents = (prioritized.length >= 10 ? prioritized.slice(0, 10) : remainingCandidates.slice(0, 10)).map((art) => {
+      let tag = `#${art.category}`;
+      if (/deprem|sarsıntı/i.test(art.title)) tag = '#DEPREM';
+      else if (/tbmm|bakan|meclis|kabine|seçim/i.test(art.title)) tag = '#SİYASET';
+      else if (/derbi|futbol|galatasaray|fenerbahçe|beşiktaş|transfer/i.test(art.title)) tag = '#SPOR';
+
+      return {
+        id: art.id,
+        slug: art.slug,
+        tag,
+        title: art.title,
+        summary: art.summary,
+        image: art.image,
+      };
+    });
   }
 
   // Construct complete updated newsData payload

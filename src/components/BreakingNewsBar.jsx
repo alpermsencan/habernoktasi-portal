@@ -52,7 +52,7 @@ export default function BreakingNewsBar() {
                   key={currentIndex}
                   className="text-xs sm:text-sm md:text-base font-extrabold truncate text-white hover:text-amber-200 transition-all duration-300 inline-block py-0.5 animate-fade-in tracking-tight flex-1 min-w-0"
                 >
-                  {currentHeadline}
+                  {clean}
                 </Link>
               );
             })()}

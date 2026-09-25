@@ -99,7 +99,9 @@ export default async function NewsDetailPage({ params }: PageProps) {
   }
 
   const publishDateFormatted = formatDateTurkish(article.publishedAt);
-  const categoryName = (article.category || 'Gündem').toUpperCase();
+  const cleanTitle = (article.title || '').replace(/^SON\s*DAKİKA\s*[:|-]?\s*/i, '').trim();
+  const rawCat = (article.category || 'Gündem').trim();
+  const categoryName = rawCat.toLowerCase().includes('son dakika') ? 'HABER' : rawCat.toUpperCase();
   const categorySlug = (article.category || 'gundem')
     .toLowerCase()
     .replace('ı', 'i')
@@ -166,7 +168,7 @@ export default async function NewsDetailPage({ params }: PageProps) {
           </Link>
           <ChevronRight className="w-3.5 h-3.5 text-neutral-400 shrink-0" />
           <span className="text-neutral-400 truncate max-w-[280px] sm:max-w-md">
-            {article.title}
+            {cleanTitle}
           </span>
         </nav>
 
@@ -181,7 +183,7 @@ export default async function NewsDetailPage({ params }: PageProps) {
 
             {/* Main Headline (H1, bold, 28-40px) - Belongs strictly to queried article */}
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-[40px] font-black text-neutral-900 dark:text-white leading-tight tracking-tight mb-4">
-              {article.title}
+              {cleanTitle}
             </h1>
 
             {/* Spot / Summary Text - Belongs strictly to queried article */}
@@ -283,7 +285,7 @@ export default async function NewsDetailPage({ params }: PageProps) {
                 <Tag className="w-3.5 h-3.5" />
                 Etiketler:
               </span>
-              {[article.category, 'Son Dakika', 'Gündem', 'Türkiye'].map((tag, tIdx) => (
+              {[article.category, 'Haber', 'Gündem', 'Türkiye'].map((tag, tIdx) => (
                 <span
                   key={tIdx}
                   className="text-xs font-medium px-3 py-1 rounded-full bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300"

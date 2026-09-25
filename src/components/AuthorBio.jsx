@@ -29,7 +29,7 @@ export default function AuthorBio({ author }) {
             <div>
               <div className="flex items-center justify-center sm:justify-start gap-1.5 text-xs font-bold text-hurriyet-red uppercase tracking-wider">
                 <PenTool className="w-3.5 h-3.5" />
-                <span>HÜRRİYET YAZARI</span>
+                <span>HABER NOKTASI YAZARI</span>
               </div>
               <h3 className="text-lg sm:text-xl font-black text-neutral-900 dark:text-white">
                 {author.name}

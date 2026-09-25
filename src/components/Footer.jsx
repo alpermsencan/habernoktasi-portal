@@ -62,7 +62,7 @@ export default function Footer() {
         { label: 'e-Gazete Dijital Baskı', href: '#egazete' },
         { label: 'RSS Akışları', href: '#rss' },
         { label: 'Haber Bültenleri', href: '#bulten' },
-        { label: 'Canlı Borsa & Piyasalar', href: '#piyasa' }
+        { label: 'Piyasalar & Ekonomi', href: '/kategori/ekonomi' }
       ]
     }
   ];

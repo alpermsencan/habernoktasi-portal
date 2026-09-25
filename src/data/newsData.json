@@ -1,104 +1,94 @@
 {
   "breakingNews": [
-    "SON DAKİKA: 13 ilde sahte belgelerle vatandaşlık operasyonu: 26 şüpheli tutuklandı",
-    "SON DAKİKA: Anadolu Efes deplasmanda Barcelona'ya yenildi",
-    "SON DAKİKA: İstanbul Üsküdar'da çocuklara çarpan otomobilin sürücüsü gözaltına alındı",
-    "SON DAKİKA: Binyamin Netanyahu tüm dünyayı çağrı cihazıyla tehdit etti",
-    "SON DAKİKA: Burhanettin Duran'dan İsrail Başbakanı Netanyahu'ya tepki",
-    "SON DAKİKA: Ankara'da su deposunda silahlı kavga: 1 ölü",
-    "SON DAKİKA: Tokat'ta silah kaçakçılığı operasyonu: 11 gözaltı",
-    "SON DAKİKA: New York’tan BM Notları: Üç Gün, 90 Bin Adım ve Biraz da Kulis"
+    "13 ilde sahte belgelerle vatandaşlık operasyonu: 26 şüpheli tutuklandı",
+    "Anadolu Efes deplasmanda Barcelona'ya yenildi",
+    "İstanbul Üsküdar'da çocuklara çarpan otomobilin sürücüsü gözaltına alındı",
+    "Binyamin Netanyahu tüm dünyayı çağrı cihazıyla tehdit etti",
+    "Burhanettin Duran'dan İsrail Başbakanı Netanyahu'ya tepki",
+    "Ankara'da su deposunda silahlı kavga: 1 ölü",
+    "Tokat'ta silah kaçakçılığı operasyonu: 11 gözaltı",
+    "New York’tan BM Notları: Üç Gün, 90 Bin Adım ve Biraz da Kulis"
   ],
   "todayEvents": [
     {
-      "id": 1,
-      "tag": "#GÜNDEM",
-      "title": "13 ilde sahte belgelerle vatandaşlık operasyonu: 26 şüpheli tutuklandı",
-      "summary": "İstanbul merkezli 13 ilde düzenlenen operasyonda Türk vatandaşlığı için muvazaalı gayrimenkul satışları ile usulsüz işlemler yaptığı iddiasıyla gözaltına alınan 74 şüpheliden 26'sı",
-      "time": "7 Dk Önce",
-      "image": "/uploads/news/13-ilde-sahte-belgelerle-vatandaslik-operasyo-1790287165659.webp",
-      "slug": "13-ilde-sahte-belgelerle-vatandaslik-operasyonu-26-supheli-tutuklandi-h1568344"
+      "id": "te-1",
+      "tag": "#DEPREM",
+      "title": "Elazığ'da 4 büyüklüğünde deprem: Çevre illerde de hissedildi, AFAD teyakkuzda",
+      "summary": "Elazığ ve Doğu Anadolu genelinde hissedilen sarsıntının ardından AFAD ve Kandilli Rasathanesi saha tarama çalışmalarına başladı.",
+      "image": "/uploads/news/elazigda-4-buyuklugunde-deprem-1790287177606.webp",
+      "slug": "tokatta-4-buyuklugunde-deprem-28540-h1550379"
     },
     {
-      "id": 2,
+      "id": "te-2",
+      "tag": "#SİYASET",
+      "title": "TBMM'de 12. Yargı Paketi kabul edildi: İşte milyonları ilgilendiren maddeler",
+      "summary": "Meclis Genel Kurulu'nda görüşülen yeni yargı reformu ve kanun teklifleri paketi onaylanarak Resmi Gazete sürecine girdi.",
+      "image": "/uploads/news/12-yargi-paketi-tbmmden-gecti-1790286905193.webp",
+      "slug": "tbmmde-yogun-hafta-12-yargi-paketi-gundemde-h1543916"
+    },
+    {
+      "id": "te-3",
       "tag": "#SPOR",
-      "title": "Anadolu Efes deplasmanda Barcelona'ya yenildi",
-      "summary": "Anadolu Efes, EuroLeague'de 2026-2027 sezonunun ilk haftasında konuk olduğu Barcelona'ya 89-82 kaybetti.",
-      "time": "30 Dk Önce",
-      "image": "/uploads/news/anadolu-efes-deplasmanda-barcelonaya-yenildi-1790287165851.webp",
-      "slug": "anadolu-efes-deplasmanda-barcelonaya-yenildi-h1568343"
+      "title": "Mauro Icardi'nin sarı-kırmızılı hikayesi: 4 yıllık tarihi serüven sona erdi",
+      "summary": "Galatasaray taraftarının sevgilisi haline gelen Arjantinli süper yıldız Mauro Icardi, 4 sezonluk serüvenin ardından takıma veda ediyor.",
+      "image": "/uploads/news/mauro-icardinin-sari-kirmizili-hikayesi-4-yil-1790286911806.webp",
+      "slug": "mauro-icardinin-sari-kirmizili-hikayesi-4-yillik-yolculuk-sona-erdi-h1550230"
     },
     {
-      "id": 3,
-      "tag": "#GÜNDEM",
-      "title": "İstanbul Üsküdar'da çocuklara çarpan otomobilin sürücüsü gözaltına alındı",
-      "summary": "İstanbul Üsküdar'da önce başka bir araca, daha sonra da kaldırımda yürüyen 4 çocuğa çarpan otomobilin 73 yaşındaki sürücüsü gözaltına alındı",
-      "time": "41 Dk Önce",
-      "image": "/uploads/news/istanbul-uskudarda-cocuklara-carpan-otomobili-1790287165968.webp",
-      "slug": "istanbul-uskudarda-cocuklara-carpan-otomobilin-surucusu-gozaltina-alindi"
+      "id": "te-4",
+      "tag": "#DEPREM",
+      "title": "Venezuela'da deprem felaketi: Ölü sayısı 5 bine yaklaştı, enkazda arama sürüyor",
+      "summary": "Güney Amerika ülkesi Venezuela'yı vuran yıkıcı depremin ardından uluslararası yardım ekipleri bölgeye sevk edildi.",
+      "image": "/uploads/news/venezuelada-deprem-felaketi-olu-sayisi-4-bin--1790287214452.webp",
+      "slug": "venezuelada-deprem-felaketi-olu-sayisi-4-bin-829-oldu-h1550169"
     },
     {
-      "id": 4,
+      "id": "te-5",
+      "tag": "#SİYASET",
+      "title": "Cumhurbaşkanı Erdoğan açıkladı: İmalat sanayii ve KOBİ'lere 250 milyar liralık finansman",
+      "summary": "Cumhurbaşkanlığı Külliyesi'nde düzenlenen toplantıda sanayiciler ve üreticiler için hazırlanan dev kredi paketi duyuruldu.",
+      "image": "/uploads/news/cumhurbaskani-erdogan-taziye-ziyareti-icin-ka-1790287182831.webp",
+      "slug": "cumhurbaskani-erdogan-duyurdu-imalat-sanayi-icin-250-milyar-liralik-bir-finansman-h1549701"
+    },
+    {
+      "id": "te-6",
+      "tag": "#SPOR",
+      "title": "Fenerbahçe, Mason Greenwood transferinde mutlu sona ulaştı: İşte sözleşme detayları",
+      "summary": "Sarı-lacivertli kulüp, uzun süredir peşinde olduğu İngiliz yıldız oyuncuyla anlaşmaya vardı.",
+      "image": "/uploads/news/fenerbahce-mason-greenwooda-kavustu-1790286908731.webp",
+      "slug": "mason-greenwooddan-fenerbahce-taraftarina-mesaj-h1550290"
+    },
+    {
+      "id": "te-7",
+      "tag": "#SİYASET",
+      "title": "Meclis kulisleri hareketlendi: Özgür Özel tüzük kurultayı için imza toplamaya başlıyor",
+      "summary": "CHP TBMM Grubu ve genel merkezde olağanüstü tüzük kurultayına yönelik imza maratonu resmen start aldı.",
+      "image": "/uploads/news/ozgur-ozelin-amcasi-vefat-etti-1790287194463.webp",
+      "slug": "ozgur-ozelin-tbmm-mesaisi-kurultay-icin-imza-toplamaya-basliyor-h1538698"
+    },
+    {
+      "id": "te-8",
       "tag": "#DÜNYA",
-      "title": "Binyamin Netanyahu tüm dünyayı çağrı cihazıyla tehdit etti",
-      "summary": "Birleşmiş Milletler Genel Kurulu'nda kendisini dinleyen ülkelerin temsilcilerine çağrı cihazı gösteren İsrail Başbakanı Binyamin Netanyahu, Eylül 2024'te Lübnan'da Hizbullah mensup",
-      "time": "51 Dk Önce",
-      "image": "/uploads/news/binyamin-netanyahu-tum-dunyayi-cagri-cihaziyl-1790287166044.webp",
-      "slug": "binyamin-netanyahu-tum-dunyayi-cagri-cihaziyla-tehdit-etti"
+      "title": "Trump'tan Putin'e resmi çağrı: Savaşın durma zamanı geldi, masaya dönün",
+      "summary": "Eski ABD Başkanı Trump, Ukrayna-Rusya savaşına dair yaptığı açıklamada çatışmaların derhal sonlandırılması gerektiğini vurguladı.",
+      "image": "/uploads/news/trumptan-putine-mesaj-savasin-durma-zamani-ge-1790287214954.webp",
+      "slug": "trumptan-putine-mesaj-savasin-durma-zamani-geldi-h1550163"
     },
     {
-      "id": 5,
-      "tag": "#GÜNDEM",
-      "title": "Burhanettin Duran'dan İsrail Başbakanı Netanyahu'ya tepki",
-      "summary": "Cumhurbaşkanlığı İletişim Başkanı Burhanettin Duran, Birleşmiş Milletler Genel Kurulu'ndaki konuşması sırasında Cumhurbaşkanı Recep Tayyip Erdoğan'ı hedef alan İsrail Başbakanı Bin",
-      "time": "1 Saat Önce",
-      "image": "/uploads/news/burhanettin-durandan-israil-basbakani-netanya-1790287166122.webp",
-      "slug": "burhanettin-durandan-israil-basbakani-netanyahuya-tepki"
+      "id": "te-9",
+      "tag": "#EKONOMİ",
+      "title": "Borsa İstanbul haftaya düşüşle başladı: Piyasalarda kritik saatler yaşanıyor",
+      "summary": "BIST 100 endeksi yeni haftanın ilk işlem gününde küresel piyasalardaki satış baskısının etkisiyle geriledi.",
+      "image": "/uploads/news/borsa-istanbul-haftaya-dususle-basladi-1790287203379.webp",
+      "slug": "borsa-istanbul-haftaya-dususle-basladi-34997-h1549551"
     },
     {
-      "id": 6,
-      "tag": "#GÜNDEM",
-      "title": "Ankara'da su deposunda silahlı kavga: 1 ölü",
-      "summary": "Ankara'da su deposunda çıkan silahlı kavgada 1 kişi hayatını kaybetti.",
-      "time": "1 Saat Önce",
-      "image": "/uploads/news/ankarada-su-deposunda-silahli-kavga-1-olu-1790287166191.webp",
-      "slug": "ankarada-su-deposunda-silahli-kavga-1-olu"
-    },
-    {
-      "id": 7,
-      "tag": "#GÜNDEM",
-      "title": "Tokat'ta silah kaçakçılığı operasyonu: 11 gözaltı",
-      "summary": "Tokat'ta 11 adrese eş zamanlı düzenlenen silah kaçakçılığı operasyonunda yakalanan 11 şüpheli gözaltına alındı.",
-      "time": "1 Saat Önce",
-      "image": "/uploads/news/tokatta-silah-kacakciligi-operasyonu-11-gozal-1790287166266.webp",
-      "slug": "tokatta-silah-kacakciligi-operasyonu-11-gozalti"
-    },
-    {
-      "id": 8,
-      "tag": "#GÜNDEM",
-      "title": "New York’tan BM Notları: Üç Gün, 90 Bin Adım ve Biraz da Kulis",
-      "summary": "Sanırım, 2022’den bu yana Birleşmiş Milletler Genel Kurulunu yerinden takip ediyorum.",
-      "time": "1 Saat Önce",
-      "image": "/uploads/news/new-yorktan-bm-notlari-uc-gun-90-bin-adim-ve--1790287166331.webp",
-      "slug": "new-yorktan-bm-notlari-uc-gun-90-bin-adim-ve-biraz-da-kulis"
-    },
-    {
-      "id": 9,
-      "tag": "#GÜNDEM",
-      "title": "İstanbul Kartal'da otluk alanda ceset bulundu",
-      "summary": "İstanbul Kartal'da otluk alanda erkek cesedi bulundu. Cenaze, incelemelerin ardından kesin ölüm nedeninin belirlenmesi için Adli Tıp Kurumu morguna kaldırıldı.",
-      "time": "1 Saat Önce",
-      "image": "/uploads/news/istanbul-kartalda-otluk-alanda-ceset-bulundu-1790287166398.webp",
-      "slug": "istanbul-kartalda-otluk-alanda-ceset-bulundu"
-    },
-    {
-      "id": 10,
-      "tag": "#GÜNDEM",
-      "title": "Kayseri'de otobüsün çarptığı bisikletli çocuk öldü",
-      "summary": "Kayseri'de özel halk otobüsünün çarptığı 10 yaşındaki bisikletli çocuk, olay yerinde yaşamını yitirdi.",
-      "time": "2 Saat Önce",
-      "image": "/uploads/news/kayseride-otobusun-carptigi-bisikletli-cocuk--1790287166483.webp",
-      "slug": "kayseride-otobusun-carptigi-bisikletli-cocuk-oldu"
+      "id": "te-10",
+      "tag": "#SPOR",
+      "title": "Okan Buruk açıkladı: Victor Osimhen yeni seçeceğimiz kaptanlar arasında yer alacak",
+      "summary": "Galatasaray Teknik Direktörü Okan Buruk, yeni sezon öncesi takım içi liderlik ve kaptanlık yapılanmasına dair açıklamalarda bulundu.",
+      "image": "/uploads/news/okan-buruk-duyurdu-victor-osimhen-de-yeni-sec-1790286906006.webp",
+      "slug": "okan-buruk-duyurdu-victor-osimhenin-de-yeni-sececegimiz-kaptanlar-arasinda-h1550374"
     }
   ],
   "marketData": [

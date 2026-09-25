@@ -21,7 +21,6 @@ export default function TodayEventsBar() {
   if (!events.length) return null;
   const currentItem = events[currentIndex] || events[0];
   const itemTitle = currentItem.title || currentItem.text || 'Günün sıcak gelişmeleri';
-  const itemTime = currentItem.time || 'Az önce';
 
   return (
     <div 
@@ -60,18 +59,13 @@ export default function TodayEventsBar() {
               {(currentItem.tag || '#GÜNDEM').replace('#', '')}
             </span>
 
-            {/* Net Haber Başlığı (Açıklama olmaksızın sadece başlık) */}
+            {/* Net Haber Başlığı (Açıklama ve zaman olmaksızın sadece başlık) */}
             <Link 
               href={`/haber/${currentItem.slug || currentItem.id || 1}`}
               className="font-black text-white hover:text-amber-300 transition-colors truncate text-xs sm:text-sm tracking-tight flex-1 min-w-0"
             >
               {itemTitle}
             </Link>
-
-            {/* Zaman Göstergesi */}
-            <span className="text-amber-400 font-bold text-[10px] sm:text-xs shrink-0 pl-1.5">
-              {itemTime}
-            </span>
           </div>
         </div>
 

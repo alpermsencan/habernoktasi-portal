@@ -1,7 +1,7 @@
 import React from 'react';
 import BreakingNewsBar from '@/components/BreakingNewsBar';
 import TodayEventsBar from '@/components/TodayEventsBar';
-import LiveFinanceSection from '@/components/LiveFinanceSection';
+import FeaturedDuoNews from '@/components/FeaturedDuoNews';
 import HeadlineSlider from '@/components/HeadlineSlider';
 import CategorySection from '@/components/CategorySection';
 import DynamicNewsFeed from '@/components/DynamicNewsFeed';
@@ -50,8 +50,8 @@ export default function HomePage() {
 
       {/* Ana Gövde Düzeni */}
       <main className="max-w-7xl mx-auto px-2.5 sm:px-4 py-2 sm:py-3 space-y-4 sm:space-y-6">
-        {/* Canlı Piyasalar (Dolar, Euro, Altın, BIST) */}
-        <LiveFinanceSection />
+        {/* Günün Öne Çıkan 2 Resimli Manşeti (Büyük, kalın, merak uyandırıcı başlıklar resim üzerinde) */}
+        <FeaturedDuoNews />
 
         {/* 2. Ana Bölüm (Grid 12 Kolon):
             - Sol / Merkez (8 Kolon): Manşet Slider (Headline Slider)
