@@ -3,7 +3,6 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight, Clock, Eye } from 'lucide-react';
 import newsData from '@/data/newsData.json';
 import EnsonhaberBanner from '@/components/EnsonhaberBanner';
@@ -83,47 +82,58 @@ export default function HeadlineSlider() {
         >
           {/* Visual Canvas Area */}
           <div className="relative flex-1 w-full overflow-hidden bg-neutral-900 select-none touch-pan-y">
-            <AnimatePresence mode="popLayout" initial={false}>
-              <motion.div
-                key={currentSlide.slug || currentSlide.id}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 0.3, ease: 'easeOut' }}
-                className="absolute inset-0 w-full h-full overflow-hidden"
-                style={{
-                  willChange: 'opacity',
-                  transform: 'translateZ(0)',
-                  WebkitBackfaceVisibility: 'hidden',
-                  backfaceVisibility: 'hidden',
-                }}
-              >
-                <Image
-                  src={currentSlide.image}
-                  alt={currentSlide.title}
-                  fill
-                  priority={activeIndex === 0}
-                  sizes="(max-width: 1024px) 100vw, 66vw"
-                  className="object-cover object-center"
-                  draggable={false}
-                />
+            {/* Visual Canvas Area - Sıfır Titreme, Donma ve Gecikmesiz Donanım Hızlandırmalı Geçiş */}
+            {slides.map((slide, idx) => {
+              const isActive = activeIndex === idx;
+              // Aktif, önceki ve sonraki slaytları önceden belleğe al (Gecikme ve beyaz/siyah flaşları sıfırla)
+              const isAdjacent =
+                Math.abs(idx - activeIndex) <= 1 ||
+                (activeIndex === 0 && idx === slides.length - 1) ||
+                (activeIndex === slides.length - 1 && idx === 0);
 
-                {/* Sadece Haber Başlığı - Ensonhaber Tarzı Renkli & Çeşitli Banner (Resim Karartması Yok) */}
-                <Link
-                  href={`/haber/${currentSlide.slug}`}
-                  className="absolute inset-0 z-10 flex flex-col justify-end p-3 sm:p-5 md:p-6 group/slide cursor-pointer"
-                  title={currentSlide.title}
+              return (
+                <div
+                  key={slide.slug || slide.id || idx}
+                  className={`absolute inset-0 w-full h-full overflow-hidden transition-opacity duration-300 ease-out ${
+                    isActive
+                      ? 'opacity-100 z-10 pointer-events-auto'
+                      : 'opacity-0 z-0 pointer-events-none'
+                  }`}
+                  style={{
+                    willChange: 'opacity',
+                    transform: 'translate3d(0, 0, 0)',
+                    WebkitBackfaceVisibility: 'hidden',
+                    backfaceVisibility: 'hidden',
+                  }}
                 >
-                  <EnsonhaberBanner
-                    title={currentSlide.title}
-                    index={activeIndex}
-                    id={currentSlide.id}
-                    slug={currentSlide.slug}
-                    size="xl"
+                  <Image
+                    src={slide.image}
+                    alt={slide.title}
+                    fill
+                    priority={idx === 0 || isAdjacent}
+                    loading={isAdjacent ? 'eager' : 'lazy'}
+                    sizes="(max-width: 1024px) 100vw, 66vw"
+                    className="object-cover object-center"
+                    draggable={false}
                   />
-                </Link>
-              </motion.div>
-            </AnimatePresence>
+
+                  {/* Sadece Haber Başlığı - Ensonhaber Tarzı Renkli & Çeşitli Banner (Resim Karartması Yok) */}
+                  <Link
+                    href={`/haber/${slide.slug}`}
+                    className="absolute inset-0 z-10 flex flex-col justify-end p-3 sm:p-5 md:p-6 group/slide cursor-pointer"
+                    title={slide.title}
+                  >
+                    <EnsonhaberBanner
+                      title={slide.title}
+                      index={idx}
+                      id={slide.id}
+                      slug={slide.slug}
+                      size="xl"
+                    />
+                  </Link>
+                </div>
+              );
+            })}
 
             {/* Nav Arrows */}
             <button
