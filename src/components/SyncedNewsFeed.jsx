@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { Newspaper, ExternalLink, RefreshCw, Clock, CheckCircle2 } from 'lucide-react';
+import EnsonhaberBanner from '@/components/EnsonhaberBanner';
 
 export default function SyncedNewsFeed() {
   const [articles, setArticles] = useState([]);
@@ -120,13 +121,13 @@ export default function SyncedNewsFeed() {
                   sizes="(max-width: 640px) 100vw, 33vw"
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
                 />
-                <div className="absolute top-2 left-2 flex items-center gap-1">
-                  <span className="bg-[#E31E24] text-white text-[9px] font-black uppercase px-2 py-0.5 rounded shadow">
-                    {item.sourceName}
-                  </span>
-                  <span className="bg-black/70 text-white text-[9px] font-bold px-1.5 py-0.5 rounded backdrop-blur-sm">
-                    {item.category}
-                  </span>
+                {/* Ensonhaber Tarzı Başlık Bannerı */}
+                <div className="absolute inset-0 z-10 flex flex-col justify-end p-1.5 sm:p-2">
+                  <EnsonhaberBanner
+                    title={item.title}
+                    id={item.id}
+                    size="sm"
+                  />
                 </div>
               </div>
 

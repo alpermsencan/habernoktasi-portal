@@ -3,7 +3,7 @@
 import React, { useMemo } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Sparkles, ArrowRight } from 'lucide-react';
+import EnsonhaberBanner from '@/components/EnsonhaberBanner';
 
 export interface DuoNewsItem {
   id: string | number;
@@ -170,7 +170,7 @@ export default function FeaturedDuoNews() {
       className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 my-2.5 sm:my-3" 
       aria-label="Günün Öne Çıkan İki Manşeti"
     >
-      {activePair.map((item) => (
+      {activePair.map((item, idx) => (
         <Link
           key={item.slug || item.id}
           href={`/haber/${item.slug}`}
@@ -186,27 +186,15 @@ export default function FeaturedDuoNews() {
             className="object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-out"
           />
 
-          {/* Derinlik ve Yüksek Kontrastlı Gradyan Katmanı */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/65 to-transparent opacity-95 group-hover:opacity-90 transition-opacity" />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-transparent to-transparent hidden sm:block" />
-
-          {/* Sol Üst: Kategori & Özel Rozet */}
-          <div className="absolute top-3 left-3 z-10 flex items-center gap-1.5">
-            <span className="bg-[#E31E24] text-white text-[10px] sm:text-xs font-black uppercase px-2.5 py-1 rounded shadow-md tracking-wider">
-              {item.badge || item.category}
-            </span>
-          </div>
-
-          {/* RESİM ÜZERİNDE BÜYÜK, KALIN VE MERAK UYANDIRICI BAŞLIK */}
-          <div className="absolute bottom-0 inset-x-0 p-4 sm:p-5 z-10 text-white">
-            <h2 className="font-black text-lg sm:text-xl md:text-2xl lg:text-[23px] leading-snug sm:leading-tight text-white drop-shadow-2xl group-hover:text-amber-300 transition-colors line-clamp-3 tracking-tight">
-              {item.title}
-            </h2>
-
-            <div className="mt-2.5 flex items-center gap-1 text-[11px] sm:text-xs font-black text-amber-300 group-hover:translate-x-1.5 transition-transform duration-200">
-              <span>Hemen Oku</span>
-              <ArrowRight className="w-3.5 h-3.5" />
-            </div>
+          {/* RESİM ÜZERİNDE ENSONHABER TARZI BÜYÜK, KALIN VE RENKLİ BAŞLIK BANNERI (Resim Karartması Yok) */}
+          <div className="absolute inset-0 z-10 flex flex-col justify-end p-3 sm:p-4">
+            <EnsonhaberBanner
+              title={item.title}
+              index={idx}
+              id={item.id}
+              slug={item.slug}
+              size="lg"
+            />
           </div>
         </Link>
       ))}

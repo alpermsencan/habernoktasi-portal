@@ -16,6 +16,7 @@ import {
   MessageSquare
 } from 'lucide-react';
 import newsData from '@/data/newsData.json';
+import EnsonhaberBanner from '@/components/EnsonhaberBanner';
 
 // Additional mock batches to continuously stream down
 const extraBatches = [
@@ -172,10 +173,13 @@ export default function DynamicNewsFeed() {
                     sizes="(max-width: 640px) 100vw, 180px"
                     className="object-cover hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute top-1.5 left-1.5">
-                    <span className="bg-[#E31E24] text-white text-[9px] font-black uppercase px-2 py-0.5 rounded shadow">
-                      {item.category}
-                    </span>
+                  {/* Ensonhaber Tarzı Başlık Bannerı */}
+                  <div className="absolute inset-0 z-10 flex flex-col justify-end p-1 sm:p-1.5">
+                    <EnsonhaberBanner
+                      title={item.title}
+                      id={item.id}
+                      size="sm"
+                    />
                   </div>
                 </div>
 

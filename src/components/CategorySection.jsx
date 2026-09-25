@@ -4,6 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ChevronRight, Clock, Eye, ArrowRight } from 'lucide-react';
+import EnsonhaberBanner from '@/components/EnsonhaberBanner';
 
 const categoryBorderColors = {
   gündem: 'border-[#E31E24] text-[#E31E24]',
@@ -64,7 +65,7 @@ export default function CategorySection({ category }) {
             href={`/haber/${article.slug || article.id}`}
             className="group bg-white dark:bg-neutral-900 rounded-lg overflow-hidden border border-neutral-300 dark:border-neutral-800 hover:border-red-500 dark:hover:border-red-500 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between"
           >
-            {/* Optimized Next/Image Thumbnail (16:9 / 16:10) */}
+            {/* Optimized Next/Image Thumbnail - Ensonhaber Banner Kuşağı (Resim Karartması Yok) */}
             <div className="relative aspect-[16/10] w-full overflow-hidden bg-neutral-200 dark:bg-neutral-800 shrink-0">
               <Image
                 src={article.image || '/placeholder.webp'}
@@ -73,11 +74,16 @@ export default function CategorySection({ category }) {
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 className="object-cover group-hover:scale-105 transition-transform duration-300 ease-out"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-70 group-hover:opacity-40 transition-opacity" />
 
-              {/* Category Badge on Image */}
-              <div className={`absolute top-2 left-2 text-[9px] font-black uppercase px-2 py-0.5 rounded text-white shadow-sm tracking-wider ${barColor}`}>
-                {name}
+              {/* Resim Üzerinde Ensonhaber Tarzı Büyük ve Renkli Başlık Bannerı */}
+              <div className="absolute inset-0 z-10 flex flex-col justify-end p-2 sm:p-2.5">
+                <EnsonhaberBanner
+                  title={article.title}
+                  index={idx}
+                  id={article.id}
+                  slug={article.slug}
+                  size="md"
+                />
               </div>
             </div>
 

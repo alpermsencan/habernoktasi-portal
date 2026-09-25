@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight, Clock, Eye } from 'lucide-react';
 import newsData from '@/data/newsData.json';
+import EnsonhaberBanner from '@/components/EnsonhaberBanner';
 
 export interface SlideItem {
   id?: string | number;
@@ -22,122 +23,7 @@ export interface SlideItem {
   isHeadline?: boolean;
 }
 
-// Ensonhaber.com Tarzı Renkli, Kalın ve Çoklu Alternatifli Manşet Başlık Bannerları
-function renderEnsonhaberBanner(slide: SlideItem, index: number) {
-  const rawTitle = (slide.title || '').replace(/^son\s*dakika\s*[:\-]\s*/i, '').trim();
-  const hasColon = rawTitle.includes(':');
-  
-  let part1 = '';
-  let part2 = '';
-  
-  if (hasColon) {
-    const split = rawTitle.split(':');
-    part1 = split[0].trim().toLocaleUpperCase('tr-TR');
-    part2 = split.slice(1).join(':').trim().toLocaleUpperCase('tr-TR');
-  } else {
-    const words = rawTitle.split(' ');
-    const half = Math.max(2, Math.floor(words.length / 2));
-    part1 = words.slice(0, half).join(' ').toLocaleUpperCase('tr-TR');
-    part2 = words.slice(half).join(' ').toLocaleUpperCase('tr-TR');
-  }
 
-  const fullUpper = rawTitle.toLocaleUpperCase('tr-TR');
-  const variant = index % 6;
-
-  switch (variant) {
-    // 1. ALTERNATİF: YARISI SARI YARISI BEYAZ (Ensonhaber Klasik)
-    case 0:
-      return (
-        <div className="inline-block max-w-[96%] sm:max-w-[88%] bg-black/90 backdrop-blur-xs p-3 sm:p-4 rounded-xl border-l-[6px] border-[#FFE500] shadow-[0_12px_35px_rgba(0,0,0,0.85)] group-hover/slide:brightness-110 transition-all">
-          <div className="font-black tracking-tight text-base sm:text-2xl md:text-[27px] uppercase leading-snug sm:leading-tight">
-            <span className="text-[#FFE500] mr-2 inline drop-shadow-[0_2px_4px_rgba(0,0,0,0.9)]">
-              {part1}
-            </span>
-            <span className="text-white inline drop-shadow-[0_2px_4px_rgba(0,0,0,0.9)]">
-              {part2}
-            </span>
-          </div>
-        </div>
-      );
-
-    // 2. ALTERNATİF: '' TIRNAK İÇİNDE (Alıntı & Şok İfade)
-    case 1:
-      return (
-        <div className="inline-block max-w-[96%] sm:max-w-[88%] bg-neutral-950/92 backdrop-blur-xs p-3 sm:p-4 rounded-xl border-l-[6px] border-[#00E5FF] shadow-[0_12px_35px_rgba(0,0,0,0.85)] group-hover/slide:brightness-110 transition-all">
-          {hasColon && (
-            <div className="inline-block bg-[#00E5FF] text-black font-black text-[10px] sm:text-xs px-2.5 py-0.5 rounded-xs uppercase tracking-wider mb-1.5 shadow-sm">
-              {part1}
-            </div>
-          )}
-          <div className="font-black tracking-tight text-base sm:text-2xl md:text-[27px] uppercase leading-snug sm:leading-tight text-white">
-            <span className="text-[#00E5FF] font-serif text-2xl sm:text-3xl font-black mr-1 select-none">“</span>
-            <span className="text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.9)]">{hasColon ? part2 : fullUpper}</span>
-            <span className="text-[#00E5FF] font-serif text-2xl sm:text-3xl font-black ml-1 select-none">”</span>
-          </div>
-        </div>
-      );
-
-    // 3. ALTERNATİF: DİKEY ŞERİTLİ & SARI BAŞLIK (Dikey Sol Çizgi & Ensonhaber Flaşı)
-    case 2:
-      return (
-        <div className="flex items-stretch max-w-[96%] sm:max-w-[88%] bg-black/90 backdrop-blur-xs rounded-xl overflow-hidden shadow-[0_12px_35px_rgba(0,0,0,0.85)] group-hover/slide:brightness-110 transition-all">
-          <div className="w-2.5 sm:w-3.5 bg-[#E31E24] shrink-0" />
-          <div className="p-3 sm:p-4 flex-1">
-            <div className="inline-block bg-[#E31E24] text-white font-black text-[10px] sm:text-xs px-2 py-0.5 rounded-xs uppercase tracking-widest mb-1 shadow">
-              {part1}
-            </div>
-            <div className="font-black tracking-tight text-base sm:text-2xl md:text-[27px] uppercase leading-snug sm:leading-tight text-[#FFE600] drop-shadow-[0_2px_4px_rgba(0,0,0,0.9)]">
-              {part2}
-            </div>
-          </div>
-        </div>
-      );
-
-    // 4. ALTERNATİF: ELEKTRİK MAVİSİ & BEYAZ İKİLİ BANNER
-    case 3:
-      return (
-        <div className="inline-block max-w-[96%] sm:max-w-[88%] bg-slate-950/92 backdrop-blur-xs p-3 sm:p-4 rounded-xl border-l-[6px] border-[#38BDF8] shadow-[0_12px_35px_rgba(0,0,0,0.85)] group-hover/slide:brightness-110 transition-all">
-          <div className="font-black tracking-tight text-base sm:text-2xl md:text-[27px] uppercase leading-snug sm:leading-tight">
-            <span className="text-[#38BDF8] mr-2 inline drop-shadow-[0_2px_4px_rgba(0,0,0,0.9)]">
-              {part1}
-            </span>
-            <span className="text-white inline drop-shadow-[0_2px_4px_rgba(0,0,0,0.9)]">
-              {part2}
-            </span>
-          </div>
-        </div>
-      );
-
-    // 5. ALTERNATİF: YATAY ÇİFT KUTU BLOK BANNER (Sarı Üst Kutu - Siyah Alt Kutu)
-    case 4:
-      return (
-        <div className="flex flex-col items-start gap-1 max-w-[96%] sm:max-w-[88%] group-hover/slide:brightness-110 transition-all">
-          <div className="bg-[#FFE500] text-black font-black text-xs sm:text-lg md:text-xl uppercase px-2.5 sm:px-3.5 py-1 rounded-sm shadow-[0_8px_20px_rgba(0,0,0,0.7)] tracking-tight leading-snug">
-            {part1}
-          </div>
-          <div className="bg-black/95 text-white font-black text-sm sm:text-2xl md:text-[26px] uppercase px-2.5 sm:px-3.5 py-1 sm:py-1.5 rounded-sm shadow-[0_8px_20px_rgba(0,0,0,0.7)] tracking-tight leading-snug border-l-4 border-[#E31E24]">
-            {part2}
-          </div>
-        </div>
-      );
-
-    // 6. ALTERNATİF: ATEŞ KIRMIZISI & ALTIN SARISI MANŞET
-    case 5:
-    default:
-      return (
-        <div className="inline-block max-w-[96%] sm:max-w-[88%] bg-neutral-950/90 backdrop-blur-xs p-3 sm:p-4 rounded-xl border-l-[6px] border-[#FF3B30] shadow-[0_12px_35px_rgba(0,0,0,0.85)] group-hover/slide:brightness-110 transition-all">
-          <div className="font-black tracking-tight text-base sm:text-2xl md:text-[27px] uppercase leading-snug sm:leading-tight">
-            <span className="text-[#FF3B30] mr-2 inline drop-shadow-[0_2px_4px_rgba(0,0,0,0.9)]">
-              {part1}
-            </span>
-            <span className="text-[#FFDE00] inline drop-shadow-[0_2px_4px_rgba(0,0,0,0.9)]">
-              {part2}
-            </span>
-          </div>
-        </div>
-      );
-  }
-}
 
 export default function HeadlineSlider() {
   const [activeIndex, setActiveIndex] = useState<number>(0);
@@ -228,7 +114,13 @@ export default function HeadlineSlider() {
                   className="absolute inset-0 z-10 flex flex-col justify-end p-3 sm:p-5 md:p-6 group/slide cursor-pointer"
                   title={currentSlide.title}
                 >
-                  {renderEnsonhaberBanner(currentSlide, activeIndex)}
+                  <EnsonhaberBanner
+                    title={currentSlide.title}
+                    index={activeIndex}
+                    id={currentSlide.id}
+                    slug={currentSlide.slug}
+                    size="xl"
+                  />
                 </Link>
               </motion.div>
             </AnimatePresence>

@@ -4,6 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Newspaper, ChevronRight } from 'lucide-react';
+import EnsonhaberBanner from '@/components/EnsonhaberBanner';
 
 export default function RelatedNews({ articles = [], currentCategory = 'GÜNDEM' }) {
   if (!articles || articles.length === 0) return null;
@@ -35,9 +36,15 @@ export default function RelatedNews({ articles = [], currentCategory = 'GÜNDEM'
                 sizes="(max-width: 640px) 100vw, 300px"
                 className="object-cover group-hover:scale-105 transition-transform duration-300"
               />
-              <span className="absolute top-2 left-2 bg-hurriyet-red text-white text-[10px] font-black uppercase px-2 py-0.5 rounded shadow">
-                {art.category || currentCategory}
-              </span>
+              {/* Ensonhaber Tarzı Başlık Bannerı */}
+              <div className="absolute inset-0 z-10 flex flex-col justify-end p-2">
+                <EnsonhaberBanner
+                  title={art.title}
+                  id={art.id}
+                  slug={art.slug}
+                  size="md"
+                />
+              </div>
             </div>
 
             {/* Info */}

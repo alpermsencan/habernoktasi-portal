@@ -4,6 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Eye, Clock, ArrowRight } from 'lucide-react';
+import EnsonhaberBanner from '@/components/EnsonhaberBanner';
 
 export interface NewsCardArticle {
   id?: string | number;
@@ -59,9 +60,14 @@ export default function NewsCard({ article, category, isFeature = false }: NewsC
             sizes="(max-width: 768px) 100vw, 550px"
             className="object-cover group-hover:scale-105 transition-transform duration-300 ease-out"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent opacity-70 group-hover:opacity-50 transition-opacity" />
-          <div className={`absolute top-2.5 left-2.5 text-[10px] font-black uppercase px-2.5 py-0.5 rounded shadow tracking-wider ${badgeClass}`}>
-            {category || article.category}
+          {/* Ensonhaber Tarzı Büyük ve Renkli Başlık Bannerı (Resim Karartması Yok) */}
+          <div className="absolute inset-0 z-10 flex flex-col justify-end p-2.5 sm:p-3">
+            <EnsonhaberBanner
+              title={article.title}
+              id={article.id}
+              slug={targetSlug}
+              size="lg"
+            />
           </div>
         </div>
 
@@ -119,8 +125,14 @@ export default function NewsCard({ article, category, isFeature = false }: NewsC
           sizes="(max-width: 640px) 100vw, 160px"
           className="object-cover group-hover:scale-105 transition-transform duration-300"
         />
-        <div className={`absolute top-1 left-1 text-[9px] font-black uppercase px-1.5 py-0.5 rounded sm:hidden ${badgeClass}`}>
-          {category || article.category}
+        {/* Ensonhaber Tarzı Başlık Bannerı */}
+        <div className="absolute inset-0 z-10 flex flex-col justify-end p-1 sm:p-1.5">
+          <EnsonhaberBanner
+            title={article.title}
+            id={article.id}
+            slug={targetSlug}
+            size="sm"
+          />
         </div>
       </div>
 
